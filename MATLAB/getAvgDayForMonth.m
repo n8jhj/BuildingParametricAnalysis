@@ -1,0 +1,3 @@
+function demand = getAvgDayForMonth()
+
+end
