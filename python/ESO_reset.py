@@ -42,7 +42,7 @@ def delete(name):
         logging.error('Failed to unlink ' + name + ' - ' + str(e))
 
 def logStart():
-    logging.basicConfig(filename='log.txt', \
+    logging.basicConfig(filename='ESO_log.txt', \
                         level=logging.DEBUG, \
                         format=' %(asctime)s - %(levelname)s - %(message)s')
     logging.info('START: ' + os.path.basename(__file__))
