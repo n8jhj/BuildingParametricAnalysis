@@ -1,0 +1,5 @@
+ 2017-06-09 11:03:11,864 - INFO - START: getNumFilesInFolder.py
+ 2017-06-09 11:03:11,864 - INFO - 149 files (including getNumFilesInFolder.py and log) in C:\Users\Admin\Downloads\NYSERDA_datafiles
+ 2017-06-09 11:03:11,864 - INFO - END: getNumFilesInFolder.py
+
+

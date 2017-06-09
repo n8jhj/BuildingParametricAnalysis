@@ -5,7 +5,9 @@ System that have data for Total Facility Demand (kW) and Total Facility Energy
 Requires Firefox.
 Requires that Downloads folder be emptied of all .csv files starting with
 "Dat".
-Requires that dataDir (defined below under imports) is completely empty
+Requires that dataDir (defined below under imports) does not contain files
+with the same name as files that will be downloaded. (If no files have been
+downloaded yet, then dataDir should either be empty or not exist.)
 
 MAKE SURE THAT ON THE FIRST BUILDING DOWNLOAD, FIREFOX IS SET TO AUTOMATICALLY
 DOWNLOAD TO DOWNLOADS FOLDER. IF NOT SET TO AUTOMATICALLY DOWNLOAD, BE SURE TO
