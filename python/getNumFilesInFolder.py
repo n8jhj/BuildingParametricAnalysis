@@ -2,9 +2,14 @@ import logging
 import os
 
 def main():
+    thisFile = os.path.basename(__file__)
     cwd = os.getcwd()
-    files = os.listdir(dataDir)
-    print str(len(files)) + ' files in ' + str(cwd)
+    files = os.listdir(cwd)
+    nFiles = len(files)
+    msg = str(nFiles) + ' files (including ' + thisFile + ' and log) in ' + \
+          str(cwd)
+    print msg
+    logging.info(msg)
 
 def logStart():
     logging.basicConfig(filename='log.txt', \

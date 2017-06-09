@@ -1,0 +1,1825 @@
+ 2017-06-09 09:25:50,836 - INFO - START: NYSERDA_downloadTotalsData.py
+ 2017-06-09 09:25:58,352 - INFO - Begin data probing at b = 329
+ 2017-06-09 09:26:00,125 - INFO - Next building clicked.
+ 2017-06-09 09:26:01,213 - INFO - Monitored Data clicked.
+ 2017-06-09 09:26:02,286 - INFO - Additional Options clicked.
+ 2017-06-09 09:26:03,167 - INFO - Total Facility Energy and Demand selected.
+ 2017-06-09 09:26:03,196 - INFO - Continue clicked.
+ 2017-06-09 09:26:03,719 - INFO - Continue clicked again.
+ 2017-06-09 09:26:06,772 - INFO - Failed to find element. Assume last row reached. b = 329. - Message: 
+
+ 2017-06-09 09:26:06,775 - INFO - END: NYSERDA_downloadTotalsData.py
+
+
+ 2017-06-09 09:33:36,917 - INFO - START: NYSERDA_downloadTotalsData.py
+ 2017-06-09 09:33:42,526 - INFO - Begin data probing at b = 329
+ 2017-06-09 09:33:44,177 - INFO - Next building clicked.
+ 2017-06-09 09:33:45,240 - INFO - Monitored Data clicked.
+ 2017-06-09 09:33:46,348 - INFO - Additional Options clicked.
+ 2017-06-09 09:33:47,464 - INFO - Total Facility Energy and Demand selected.
+ 2017-06-09 09:33:47,489 - INFO - Continue clicked.
+ 2017-06-09 09:33:48,061 - INFO - Continue clicked again.
+ 2017-06-09 09:33:48,717 - INFO - Create Report clicked.
+ 2017-06-09 09:33:48,737 - INFO - Switched to tab 2.
+ 2017-06-09 09:33:52,877 - INFO - Building name acquired.
+ 2017-06-09 09:33:52,957 - INFO - Switched to tab 3.
+ 2017-06-09 09:34:08,348 - INFO - Downloading building on row 329 -- Remeeder House - Alabama - Brooklyn, NY
+ 2017-06-09 09:34:08,848 - INFO - Data file downloaded.
+ 2017-06-09 09:34:08,848 - INFO - Data file renamed.
+ 2017-06-09 09:34:08,884 - INFO - Data file moved.
+ 2017-06-09 09:34:08,920 - INFO - Tab 3 closed.
+ 2017-06-09 09:34:08,927 - INFO - Switched to tab 2.
+ 2017-06-09 09:34:08,966 - INFO - Tab 2 closed.
+ 2017-06-09 09:34:08,966 - INFO - Switched to tab 1.
+ 2017-06-09 09:34:10,615 - INFO - Went back 5 times to Facilities.
+ 2017-06-09 09:34:10,615 - INFO - b = 329. Moving to b = 330.
+ 2017-06-09 09:34:10,684 - INFO - Next building clicked.
+ 2017-06-09 09:34:11,779 - INFO - Monitored Data clicked.
+ 2017-06-09 09:34:12,426 - INFO - Additional Options clicked.
+ 2017-06-09 09:34:13,144 - INFO - Total Facility Energy and Demand selected.
+ 2017-06-09 09:34:13,164 - INFO - Continue clicked.
+ 2017-06-09 09:34:13,747 - INFO - Continue clicked again.
+ 2017-06-09 09:34:14,394 - INFO - Create Report clicked.
+ 2017-06-09 09:34:14,463 - INFO - Switched to tab 2.
+ 2017-06-09 09:34:18,128 - INFO - Building name acquired.
+ 2017-06-09 09:34:18,233 - INFO - Switched to tab 3.
+ 2017-06-09 09:34:26,753 - INFO - Downloading building on row 330 -- Remeeder House - Blake - Brooklyn, NY
+ 2017-06-09 09:34:27,263 - INFO - Data file downloaded.
+ 2017-06-09 09:34:27,263 - INFO - Data file renamed.
+ 2017-06-09 09:34:27,263 - INFO - Data file moved.
+ 2017-06-09 09:34:27,289 - INFO - Tab 3 closed.
+ 2017-06-09 09:34:27,305 - INFO - Switched to tab 2.
+ 2017-06-09 09:34:27,332 - INFO - Tab 2 closed.
+ 2017-06-09 09:34:27,332 - INFO - Switched to tab 1.
+ 2017-06-09 09:34:28,595 - INFO - b = 330. Moving to b = 331.
+ 2017-06-09 09:34:30,349 - INFO - Next building clicked.
+ 2017-06-09 09:34:31,447 - INFO - Monitored Data clicked.
+ 2017-06-09 09:34:32,032 - INFO - Additional Options clicked.
+ 2017-06-09 09:34:32,721 - INFO - Total Facility Energy and Demand selected.
+ 2017-06-09 09:34:32,747 - INFO - Continue clicked.
+ 2017-06-09 09:34:33,332 - INFO - Continue clicked again.
+ 2017-06-09 09:34:33,996 - INFO - Create Report clicked.
+ 2017-06-09 09:34:34,002 - INFO - Switched to tab 2.
+ 2017-06-09 09:34:38,180 - INFO - Building name acquired.
+ 2017-06-09 09:34:38,249 - INFO - Switched to tab 3.
+ 2017-06-09 09:34:47,319 - INFO - Downloading building on row 331 -- Remeeder House - Sheffield - Brooklyn, NY
+ 2017-06-09 09:34:47,845 - INFO - Data file downloaded.
+ 2017-06-09 09:34:47,845 - INFO - Data file renamed.
+ 2017-06-09 09:34:47,846 - INFO - Data file moved.
+ 2017-06-09 09:34:47,865 - INFO - Tab 3 closed.
+ 2017-06-09 09:34:47,881 - INFO - Switched to tab 2.
+ 2017-06-09 09:34:47,917 - INFO - Tab 2 closed.
+ 2017-06-09 09:34:47,924 - INFO - Switched to tab 1.
+ 2017-06-09 09:34:49,427 - INFO - Went back 5 times to Facilities.
+ 2017-06-09 09:34:49,427 - INFO - b = 331. Moving to b = 332.
+ 2017-06-09 09:34:49,565 - INFO - Next building clicked.
+ 2017-06-09 09:34:50,632 - INFO - Monitored Data clicked.
+ 2017-06-09 09:34:51,299 - INFO - Additional Options clicked.
+ 2017-06-09 09:34:51,999 - INFO - Total Facility Energy and Demand selected.
+ 2017-06-09 09:34:52,015 - INFO - Continue clicked.
+ 2017-06-09 09:34:52,595 - INFO - Continue clicked again.
+ 2017-06-09 09:34:53,263 - INFO - Create Report clicked.
+ 2017-06-09 09:34:53,266 - INFO - Switched to tab 2.
+ 2017-06-09 09:34:56,842 - INFO - Building name acquired.
+ 2017-06-09 09:34:56,913 - INFO - Switched to tab 3.
+ 2017-06-09 09:35:05,683 - INFO - Downloading building on row 332 -- Remeeder House - Sutter - Brooklyn, NY
+ 2017-06-09 09:35:06,197 - INFO - Data file downloaded.
+ 2017-06-09 09:35:06,197 - INFO - Data file renamed.
+ 2017-06-09 09:35:06,197 - INFO - Data file moved.
+ 2017-06-09 09:35:06,229 - INFO - Tab 3 closed.
+ 2017-06-09 09:35:06,232 - INFO - Switched to tab 2.
+ 2017-06-09 09:35:06,263 - INFO - Tab 2 closed.
+ 2017-06-09 09:35:06,283 - INFO - Switched to tab 1.
+ 2017-06-09 09:35:07,749 - INFO - Went back 5 times to Facilities.
+ 2017-06-09 09:35:07,749 - INFO - b = 332. Moving to b = 333.
+ 2017-06-09 09:35:07,798 - INFO - Next building clicked.
+ 2017-06-09 09:35:08,900 - INFO - Monitored Data clicked.
+ 2017-06-09 09:35:09,516 - INFO - Additional Options clicked.
+ 2017-06-09 09:35:13,257 - INFO - Energy and Demand data not found.
+ 2017-06-09 09:35:14,697 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 09:35:14,697 - INFO - b = 333. Moving to b = 334.
+ 2017-06-09 09:35:14,763 - INFO - Next building clicked.
+ 2017-06-09 09:35:15,854 - INFO - Monitored Data clicked.
+ 2017-06-09 09:35:16,464 - INFO - Additional Options clicked.
+ 2017-06-09 09:35:20,122 - INFO - Energy and Demand data not found.
+ 2017-06-09 09:35:21,298 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 09:35:21,298 - INFO - b = 334. Moving to b = 335.
+ 2017-06-09 09:35:21,365 - INFO - Next building clicked.
+ 2017-06-09 09:35:21,980 - INFO - Monitored Data clicked.
+ 2017-06-09 09:35:22,614 - INFO - Additional Options clicked.
+ 2017-06-09 09:35:23,302 - INFO - Total Facility Energy and Demand selected.
+ 2017-06-09 09:35:23,321 - INFO - Continue clicked.
+ 2017-06-09 09:35:23,895 - INFO - Continue clicked again.
+ 2017-06-09 09:35:24,499 - INFO - Create Report clicked.
+ 2017-06-09 09:35:24,513 - INFO - Switched to tab 2.
+ 2017-06-09 09:35:37,552 - INFO - Building name acquired.
+ 2017-06-09 09:35:37,667 - INFO - Switched to tab 3.
+ 2017-06-09 09:35:56,898 - INFO - Downloading building on row 335 -- River Point Towers - Bronx, NY
+ 2017-06-09 09:36:05,480 - INFO - Data file downloaded.
+ 2017-06-09 09:36:05,480 - INFO - Data file renamed.
+ 2017-06-09 09:36:05,480 - INFO - Data file moved.
+ 2017-06-09 09:36:05,512 - INFO - Tab 3 closed.
+ 2017-06-09 09:36:05,522 - INFO - Switched to tab 2.
+ 2017-06-09 09:36:05,546 - INFO - Tab 2 closed.
+ 2017-06-09 09:36:05,562 - INFO - Switched to tab 1.
+ 2017-06-09 09:36:07,788 - INFO - Went back 5 times to Facilities.
+ 2017-06-09 09:36:07,788 - INFO - b = 335. Moving to b = 336.
+ 2017-06-09 09:36:07,834 - INFO - Next building clicked.
+ 2017-06-09 09:36:08,436 - INFO - Monitored Data clicked.
+ 2017-06-09 09:36:09,036 - INFO - Additional Options clicked.
+ 2017-06-09 09:36:09,742 - INFO - Total Facility Energy and Demand selected.
+ 2017-06-09 09:36:09,782 - INFO - Continue clicked.
+ 2017-06-09 09:36:10,382 - INFO - Continue clicked again.
+ 2017-06-09 09:36:10,996 - INFO - Create Report clicked.
+ 2017-06-09 09:36:10,996 - INFO - Switched to tab 2.
+ 2017-06-09 09:36:21,796 - INFO - Building name acquired.
+ 2017-06-09 09:36:21,898 - INFO - Switched to tab 3.
+ 2017-06-09 09:36:38,931 - INFO - Downloading building on row 336 -- Rivington House - New York, NY
+ 2017-06-09 09:36:44,506 - INFO - Data file downloaded.
+ 2017-06-09 09:36:44,507 - INFO - Data file renamed.
+ 2017-06-09 09:36:44,515 - INFO - Data file moved.
+ 2017-06-09 09:36:44,530 - INFO - Tab 3 closed.
+ 2017-06-09 09:36:44,546 - INFO - Switched to tab 2.
+ 2017-06-09 09:36:44,584 - INFO - Tab 2 closed.
+ 2017-06-09 09:36:44,598 - INFO - Switched to tab 1.
+ 2017-06-09 09:36:47,230 - INFO - Went back 5 times to Facilities.
+ 2017-06-09 09:36:47,230 - INFO - b = 336. Moving to b = 337.
+ 2017-06-09 09:36:47,276 - INFO - Next building clicked.
+ 2017-06-09 09:36:48,346 - INFO - Monitored Data clicked.
+ 2017-06-09 09:36:49,450 - INFO - Additional Options clicked.
+ 2017-06-09 09:36:53,198 - INFO - Energy and Demand data not found.
+ 2017-06-09 09:36:55,131 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 09:36:55,131 - INFO - b = 337. Moving to b = 338.
+ 2017-06-09 09:36:55,335 - INFO - Next building clicked.
+ 2017-06-09 09:36:56,397 - INFO - Monitored Data clicked.
+ 2017-06-09 09:36:57,480 - INFO - Additional Options clicked.
+ 2017-06-09 09:37:01,174 - INFO - Energy and Demand data not found.
+ 2017-06-09 09:37:02,828 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 09:37:02,828 - INFO - b = 338. Moving to b = 339.
+ 2017-06-09 09:37:02,895 - INFO - Next building clicked.
+ 2017-06-09 09:37:03,966 - INFO - Monitored Data clicked.
+ 2017-06-09 09:37:05,049 - INFO - Additional Options clicked.
+ 2017-06-09 09:37:08,713 - INFO - Energy and Demand data not found.
+ 2017-06-09 09:37:10,214 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 09:37:10,214 - INFO - b = 339. Moving to b = 340.
+ 2017-06-09 09:37:10,262 - INFO - Next building clicked.
+ 2017-06-09 09:37:10,829 - INFO - Monitored Data clicked.
+ 2017-06-09 09:37:11,430 - INFO - Additional Options clicked.
+ 2017-06-09 09:37:12,246 - INFO - Total Facility Energy and Demand selected.
+ 2017-06-09 09:37:12,263 - INFO - Continue clicked.
+ 2017-06-09 09:37:12,836 - INFO - Continue clicked again.
+ 2017-06-09 09:37:13,479 - INFO - Create Report clicked.
+ 2017-06-09 09:37:13,502 - INFO - Switched to tab 2.
+ 2017-06-09 09:37:31,483 - INFO - Building name acquired.
+ 2017-06-09 09:37:31,546 - INFO - Switched to tab 3.
+ 2017-06-09 09:37:54,555 - INFO - Downloading building on row 340 -- Rochester International Airport - Rochester, NY
+ 2017-06-09 09:38:06,145 - INFO - Data file downloaded.
+ 2017-06-09 09:38:06,147 - INFO - Data file renamed.
+ 2017-06-09 09:38:06,147 - INFO - Data file moved.
+ 2017-06-09 09:38:06,164 - INFO - Tab 3 closed.
+ 2017-06-09 09:38:06,164 - INFO - Switched to tab 2.
+ 2017-06-09 09:38:06,216 - INFO - Tab 2 closed.
+ 2017-06-09 09:38:06,229 - INFO - Switched to tab 1.
+ 2017-06-09 09:38:07,471 - INFO - b = 340. Moving to b = 341.
+ 2017-06-09 09:38:09,263 - INFO - Next building clicked.
+ 2017-06-09 09:38:12,328 - INFO - Monitored Data not found.
+ 2017-06-09 09:38:13,246 - INFO - Went back 1 times to Facilities.
+ 2017-06-09 09:38:13,246 - INFO - b = 341. Moving to b = 342.
+ 2017-06-09 09:38:13,292 - INFO - Next building clicked.
+ 2017-06-09 09:38:13,957 - INFO - Monitored Data clicked.
+ 2017-06-09 09:38:14,529 - INFO - Additional Options clicked.
+ 2017-06-09 09:38:15,671 - INFO - Total Facility Energy and Demand selected.
+ 2017-06-09 09:38:15,697 - INFO - Continue clicked.
+ 2017-06-09 09:38:16,246 - INFO - Continue clicked again.
+ 2017-06-09 09:38:16,861 - INFO - Create Report clicked.
+ 2017-06-09 09:38:16,913 - INFO - Switched to tab 2.
+ 2017-06-09 09:38:39,190 - INFO - Building name acquired.
+ 2017-06-09 09:38:39,267 - INFO - Switched to tab 3.
+ 2017-06-09 09:38:58,292 - INFO - Downloading building on row 342 -- Rome Memorial Hospital - Rome, NY
+ 2017-06-09 09:39:05,845 - INFO - Data file downloaded.
+ 2017-06-09 09:39:05,848 - INFO - Data file renamed.
+ 2017-06-09 09:39:05,848 - INFO - Data file moved.
+ 2017-06-09 09:39:05,862 - INFO - Tab 3 closed.
+ 2017-06-09 09:39:05,887 - INFO - Switched to tab 2.
+ 2017-06-09 09:39:05,928 - INFO - Tab 2 closed.
+ 2017-06-09 09:39:05,944 - INFO - Switched to tab 1.
+ 2017-06-09 09:39:07,535 - INFO - Went back 5 times to Facilities.
+ 2017-06-09 09:39:07,535 - INFO - b = 342. Moving to b = 343.
+ 2017-06-09 09:39:07,578 - INFO - Next building clicked.
+ 2017-06-09 09:39:08,661 - INFO - Monitored Data clicked.
+ 2017-06-09 09:39:09,244 - INFO - Additional Options clicked.
+ 2017-06-09 09:39:09,996 - INFO - Total Facility Energy and Demand selected.
+ 2017-06-09 09:39:10,026 - INFO - Continue clicked.
+ 2017-06-09 09:39:11,095 - INFO - Continue clicked again.
+ 2017-06-09 09:39:11,779 - INFO - Create Report clicked.
+ 2017-06-09 09:39:11,796 - INFO - Switched to tab 2.
+ 2017-06-09 09:39:17,482 - INFO - Building name acquired.
+ 2017-06-09 09:39:17,542 - INFO - Switched to tab 3.
+ 2017-06-09 09:39:27,512 - INFO - Downloading building on row 343 -- Ronald McDonald House - New York, NY
+ 2017-06-09 09:39:29,013 - INFO - Data file downloaded.
+ 2017-06-09 09:39:29,013 - INFO - Data file renamed.
+ 2017-06-09 09:39:29,016 - INFO - Data file moved.
+ 2017-06-09 09:39:29,029 - INFO - Tab 3 closed.
+ 2017-06-09 09:39:29,046 - INFO - Switched to tab 2.
+ 2017-06-09 09:39:29,075 - INFO - Tab 2 closed.
+ 2017-06-09 09:39:29,098 - INFO - Switched to tab 1.
+ 2017-06-09 09:39:30,625 - INFO - Went back 5 times to Facilities.
+ 2017-06-09 09:39:30,625 - INFO - b = 343. Moving to b = 344.
+ 2017-06-09 09:39:30,696 - INFO - Next building clicked.
+ 2017-06-09 09:39:31,858 - INFO - Monitored Data clicked.
+ 2017-06-09 09:39:32,477 - INFO - Additional Options clicked.
+ 2017-06-09 09:39:33,188 - INFO - Total Facility Energy and Demand selected.
+ 2017-06-09 09:39:33,211 - INFO - Continue clicked.
+ 2017-06-09 09:39:33,779 - INFO - Continue clicked again.
+ 2017-06-09 09:39:34,443 - INFO - Create Report clicked.
+ 2017-06-09 09:39:34,456 - INFO - Switched to tab 2.
+ 2017-06-09 09:39:43,209 - INFO - Building name acquired.
+ 2017-06-09 09:39:43,303 - INFO - Switched to tab 3.
+ 2017-06-09 09:39:57,845 - INFO - Downloading building on row 344 -- Roosevelt Landings - New York, NY
+ 2017-06-09 09:40:01,361 - INFO - Data file downloaded.
+ 2017-06-09 09:40:01,361 - INFO - Data file renamed.
+ 2017-06-09 09:40:01,361 - INFO - Data file moved.
+ 2017-06-09 09:40:01,391 - INFO - Tab 3 closed.
+ 2017-06-09 09:40:01,395 - INFO - Switched to tab 2.
+ 2017-06-09 09:40:01,427 - INFO - Tab 2 closed.
+ 2017-06-09 09:40:01,453 - INFO - Switched to tab 1.
+ 2017-06-09 09:40:03,296 - INFO - Went back 5 times to Facilities.
+ 2017-06-09 09:40:03,296 - INFO - b = 344. Moving to b = 345.
+ 2017-06-09 09:40:03,380 - INFO - Next building clicked.
+ 2017-06-09 09:40:04,490 - INFO - Monitored Data clicked.
+ 2017-06-09 09:40:05,118 - INFO - Additional Options clicked.
+ 2017-06-09 09:40:05,812 - INFO - Total Facility Energy and Demand selected.
+ 2017-06-09 09:40:05,828 - INFO - Continue clicked.
+ 2017-06-09 09:40:06,418 - INFO - Continue clicked again.
+ 2017-06-09 09:40:07,029 - INFO - Create Report clicked.
+ 2017-06-09 09:40:07,052 - INFO - Switched to tab 2.
+ 2017-06-09 09:40:11,200 - INFO - Building name acquired.
+ 2017-06-09 09:40:11,405 - INFO - Switched to tab 3.
+ 2017-06-09 09:40:20,948 - INFO - Downloading building on row 345 -- Roosevelt Terrace - Jackson Heights, NY
+ 2017-06-09 09:40:22,460 - INFO - Data file downloaded.
+ 2017-06-09 09:40:22,460 - INFO - Data file renamed.
+ 2017-06-09 09:40:22,460 - INFO - Data file moved.
+ 2017-06-09 09:40:22,494 - INFO - Tab 3 closed.
+ 2017-06-09 09:40:22,519 - INFO - Switched to tab 2.
+ 2017-06-09 09:40:22,551 - INFO - Tab 2 closed.
+ 2017-06-09 09:40:22,558 - INFO - Switched to tab 1.
+ 2017-06-09 09:40:24,061 - INFO - Went back 5 times to Facilities.
+ 2017-06-09 09:40:24,061 - INFO - b = 345. Moving to b = 346.
+ 2017-06-09 09:40:24,111 - INFO - Next building clicked.
+ 2017-06-09 09:40:24,759 - INFO - Monitored Data clicked.
+ 2017-06-09 09:40:25,377 - INFO - Additional Options clicked.
+ 2017-06-09 09:40:26,059 - INFO - Total Facility Energy and Demand selected.
+ 2017-06-09 09:40:26,078 - INFO - Continue clicked.
+ 2017-06-09 09:40:26,721 - INFO - Continue clicked again.
+ 2017-06-09 09:40:27,461 - INFO - Create Report clicked.
+ 2017-06-09 09:40:27,493 - INFO - Switched to tab 2.
+ 2017-06-09 09:40:42,410 - INFO - Building name acquired.
+ 2017-06-09 09:40:42,482 - INFO - Switched to tab 3.
+ 2017-06-09 09:41:04,645 - INFO - Downloading building on row 346 -- Sabic Innovative Plastics - Selkirk, NY
+ 2017-06-09 09:41:14,250 - INFO - Data file downloaded.
+ 2017-06-09 09:41:14,250 - INFO - Data file renamed.
+ 2017-06-09 09:41:14,250 - INFO - Data file moved.
+ 2017-06-09 09:41:14,282 - INFO - Tab 3 closed.
+ 2017-06-09 09:41:14,290 - INFO - Switched to tab 2.
+ 2017-06-09 09:41:14,309 - INFO - Tab 2 closed.
+ 2017-06-09 09:41:14,334 - INFO - Switched to tab 1.
+ 2017-06-09 09:41:15,950 - INFO - Went back 5 times to Facilities.
+ 2017-06-09 09:41:15,950 - INFO - b = 346. Moving to b = 347.
+ 2017-06-09 09:41:16,009 - INFO - Next building clicked.
+ 2017-06-09 09:41:16,581 - INFO - Monitored Data clicked.
+ 2017-06-09 09:41:17,640 - INFO - Additional Options clicked.
+ 2017-06-09 09:41:18,410 - INFO - Total Facility Energy and Demand selected.
+ 2017-06-09 09:41:18,440 - INFO - Continue clicked.
+ 2017-06-09 09:41:19,016 - INFO - Continue clicked again.
+ 2017-06-09 09:41:19,676 - INFO - Create Report clicked.
+ 2017-06-09 09:41:19,684 - INFO - Switched to tab 2.
+ 2017-06-09 09:41:37,763 - INFO - Building name acquired.
+ 2017-06-09 09:41:37,877 - INFO - Switched to tab 3.
+ 2017-06-09 09:42:02,088 - INFO - Downloading building on row 347 -- Saints Joachim and Anne Nursing and Rehabilitation - Brooklyn, NY
+ 2017-06-09 09:42:14,723 - INFO - Data file downloaded.
+ 2017-06-09 09:42:14,723 - INFO - Data file renamed.
+ 2017-06-09 09:42:14,723 - INFO - Data file moved.
+ 2017-06-09 09:42:14,737 - INFO - Tab 3 closed.
+ 2017-06-09 09:42:14,753 - INFO - Switched to tab 2.
+ 2017-06-09 09:42:14,785 - INFO - Tab 2 closed.
+ 2017-06-09 09:42:14,801 - INFO - Switched to tab 1.
+ 2017-06-09 09:42:16,411 - INFO - Went back 5 times to Facilities.
+ 2017-06-09 09:42:16,411 - INFO - b = 347. Moving to b = 348.
+ 2017-06-09 09:42:16,464 - INFO - Next building clicked.
+ 2017-06-09 09:42:17,546 - INFO - Monitored Data clicked.
+ 2017-06-09 09:42:18,167 - INFO - Additional Options clicked.
+ 2017-06-09 09:42:21,793 - INFO - Energy and Demand data not found.
+ 2017-06-09 09:42:23,109 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 09:42:23,109 - INFO - b = 348. Moving to b = 349.
+ 2017-06-09 09:42:23,180 - INFO - Next building clicked.
+ 2017-06-09 09:42:24,267 - INFO - Monitored Data clicked.
+ 2017-06-09 09:42:25,384 - INFO - Additional Options clicked.
+ 2017-06-09 09:42:26,489 - INFO - Total Facility Energy and Demand selected.
+ 2017-06-09 09:42:26,516 - INFO - Continue clicked.
+ 2017-06-09 09:42:27,108 - INFO - Continue clicked again.
+ 2017-06-09 09:42:27,719 - INFO - Create Report clicked.
+ 2017-06-09 09:42:27,727 - INFO - Switched to tab 2.
+ 2017-06-09 09:42:48,671 - INFO - Building name acquired.
+ 2017-06-09 09:42:48,792 - INFO - Switched to tab 3.
+ 2017-06-09 09:43:17,382 - INFO - Downloading building on row 349 -- Schwab House - New York, NY
+ 2017-06-09 09:43:30,984 - INFO - Data file downloaded.
+ 2017-06-09 09:43:30,984 - INFO - Data file renamed.
+ 2017-06-09 09:43:30,984 - INFO - Data file moved.
+ 2017-06-09 09:43:31,000 - INFO - Tab 3 closed.
+ 2017-06-09 09:43:31,016 - INFO - Switched to tab 2.
+ 2017-06-09 09:43:31,039 - INFO - Tab 2 closed.
+ 2017-06-09 09:43:31,053 - INFO - Switched to tab 1.
+ 2017-06-09 09:43:32,640 - INFO - Went back 5 times to Facilities.
+ 2017-06-09 09:43:32,640 - INFO - b = 349. Moving to b = 350.
+ 2017-06-09 09:43:32,687 - INFO - Next building clicked.
+ 2017-06-09 09:43:33,288 - INFO - Monitored Data clicked.
+ 2017-06-09 09:43:33,888 - INFO - Additional Options clicked.
+ 2017-06-09 09:43:34,572 - INFO - Total Facility Energy and Demand selected.
+ 2017-06-09 09:43:34,605 - INFO - Continue clicked.
+ 2017-06-09 09:43:35,174 - INFO - Continue clicked again.
+ 2017-06-09 09:43:35,775 - INFO - Create Report clicked.
+ 2017-06-09 09:43:35,775 - INFO - Switched to tab 2.
+ 2017-06-09 09:43:43,982 - INFO - Building name acquired.
+ 2017-06-09 09:43:44,101 - INFO - Switched to tab 3.
+ 2017-06-09 09:43:56,960 - INFO - Downloading building on row 350 -- Sea Park East - Brooklyn, NY
+ 2017-06-09 09:44:01,486 - INFO - Data file downloaded.
+ 2017-06-09 09:44:01,486 - INFO - Data file renamed.
+ 2017-06-09 09:44:01,486 - INFO - Data file moved.
+ 2017-06-09 09:44:01,502 - INFO - Tab 3 closed.
+ 2017-06-09 09:44:01,517 - INFO - Switched to tab 2.
+ 2017-06-09 09:44:01,552 - INFO - Tab 2 closed.
+ 2017-06-09 09:44:01,555 - INFO - Switched to tab 1.
+ 2017-06-09 09:44:02,773 - INFO - b = 350. Moving to b = 351.
+ 2017-06-09 09:44:04,437 - INFO - Next building clicked.
+ 2017-06-09 09:44:04,992 - INFO - Monitored Data clicked.
+ 2017-06-09 09:44:05,565 - INFO - Additional Options clicked.
+ 2017-06-09 09:44:06,280 - INFO - Total Facility Energy and Demand selected.
+ 2017-06-09 09:44:06,312 - INFO - Continue clicked.
+ 2017-06-09 09:44:06,897 - INFO - Continue clicked again.
+ 2017-06-09 09:44:07,536 - INFO - Create Report clicked.
+ 2017-06-09 09:44:07,536 - INFO - Switched to tab 2.
+ 2017-06-09 09:44:14,223 - INFO - Building name acquired.
+ 2017-06-09 09:44:14,292 - INFO - Switched to tab 3.
+ 2017-06-09 09:44:31,986 - INFO - Downloading building on row 351 -- Sea Park West - Brooklyn , NY
+ 2017-06-09 09:44:40,545 - INFO - Data file downloaded.
+ 2017-06-09 09:44:40,545 - INFO - Data file renamed.
+ 2017-06-09 09:44:40,545 - INFO - Data file moved.
+ 2017-06-09 09:44:40,561 - INFO - Tab 3 closed.
+ 2017-06-09 09:44:40,575 - INFO - Switched to tab 2.
+ 2017-06-09 09:44:40,598 - INFO - Tab 2 closed.
+ 2017-06-09 09:44:40,614 - INFO - Switched to tab 1.
+ 2017-06-09 09:44:42,477 - INFO - Went back 5 times to Facilities.
+ 2017-06-09 09:44:42,477 - INFO - b = 351. Moving to b = 352.
+ 2017-06-09 09:44:42,516 - INFO - Next building clicked.
+ 2017-06-09 09:44:43,605 - INFO - Monitored Data clicked.
+ 2017-06-09 09:44:44,236 - INFO - Additional Options clicked.
+ 2017-06-09 09:44:47,897 - INFO - Energy and Demand data not found.
+ 2017-06-09 09:44:49,198 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 09:44:49,198 - INFO - b = 352. Moving to b = 353.
+ 2017-06-09 09:44:49,252 - INFO - Next building clicked.
+ 2017-06-09 09:44:49,851 - INFO - Monitored Data clicked.
+ 2017-06-09 09:44:50,921 - INFO - Additional Options clicked.
+ 2017-06-09 09:44:52,053 - INFO - Total Facility Energy and Demand selected.
+ 2017-06-09 09:44:52,069 - INFO - Continue clicked.
+ 2017-06-09 09:44:52,638 - INFO - Continue clicked again.
+ 2017-06-09 09:44:53,255 - INFO - Create Report clicked.
+ 2017-06-09 09:44:53,269 - INFO - Switched to tab 2.
+ 2017-06-09 09:45:05,098 - INFO - Building name acquired.
+ 2017-06-09 09:45:05,250 - INFO - Switched to tab 3.
+ 2017-06-09 09:45:23,989 - INFO - Downloading building on row 353 -- Seaside Apartments - Staten Island, NY
+ 2017-06-09 09:45:30,535 - INFO - Data file downloaded.
+ 2017-06-09 09:45:30,535 - INFO - Data file renamed.
+ 2017-06-09 09:45:30,535 - INFO - Data file moved.
+ 2017-06-09 09:45:30,572 - INFO - Tab 3 closed.
+ 2017-06-09 09:45:30,588 - INFO - Switched to tab 2.
+ 2017-06-09 09:45:30,618 - INFO - Tab 2 closed.
+ 2017-06-09 09:45:30,634 - INFO - Switched to tab 1.
+ 2017-06-09 09:45:32,878 - INFO - Went back 5 times to Facilities.
+ 2017-06-09 09:45:32,878 - INFO - b = 353. Moving to b = 354.
+ 2017-06-09 09:45:32,924 - INFO - Next building clicked.
+ 2017-06-09 09:45:33,963 - INFO - Monitored Data clicked.
+ 2017-06-09 09:45:34,579 - INFO - Additional Options clicked.
+ 2017-06-09 09:45:38,198 - INFO - Energy and Demand data not found.
+ 2017-06-09 09:45:39,717 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 09:45:39,717 - INFO - b = 354. Moving to b = 355.
+ 2017-06-09 09:45:39,802 - INFO - Next building clicked.
+ 2017-06-09 09:45:42,822 - INFO - Monitored Data not found.
+ 2017-06-09 09:45:44,055 - INFO - Went back 1 times to Facilities.
+ 2017-06-09 09:45:44,055 - INFO - b = 355. Moving to b = 356.
+ 2017-06-09 09:45:44,155 - INFO - Next building clicked.
+ 2017-06-09 09:45:44,793 - INFO - Monitored Data clicked.
+ 2017-06-09 09:45:45,878 - INFO - Additional Options clicked.
+ 2017-06-09 09:45:49,529 - INFO - Energy and Demand data not found.
+ 2017-06-09 09:45:51,278 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 09:45:51,278 - INFO - b = 356. Moving to b = 357.
+ 2017-06-09 09:45:51,345 - INFO - Next building clicked.
+ 2017-06-09 09:45:52,477 - INFO - Monitored Data clicked.
+ 2017-06-09 09:45:53,515 - INFO - Additional Options clicked.
+ 2017-06-09 09:45:54,263 - INFO - Total Facility Energy and Demand selected.
+ 2017-06-09 09:45:54,295 - INFO - Continue clicked.
+ 2017-06-09 09:45:54,832 - INFO - Continue clicked again.
+ 2017-06-09 09:45:55,414 - INFO - Create Report clicked.
+ 2017-06-09 09:45:55,417 - INFO - Switched to tab 2.
+ 2017-06-09 09:46:07,207 - INFO - Building name acquired.
+ 2017-06-09 09:46:07,276 - INFO - Switched to tab 3.
+ 2017-06-09 09:46:25,756 - INFO - Downloading building on row 357 -- Sheraton New York Hotel and Tower - New York, NY
+ 2017-06-09 09:46:33,311 - INFO - Data file downloaded.
+ 2017-06-09 09:46:33,311 - INFO - Data file renamed.
+ 2017-06-09 09:46:33,311 - INFO - Data file moved.
+ 2017-06-09 09:46:33,325 - INFO - Tab 3 closed.
+ 2017-06-09 09:46:33,342 - INFO - Switched to tab 2.
+ 2017-06-09 09:46:33,394 - INFO - Tab 2 closed.
+ 2017-06-09 09:46:33,394 - INFO - Switched to tab 1.
+ 2017-06-09 09:46:35,446 - INFO - Went back 5 times to Facilities.
+ 2017-06-09 09:46:35,446 - INFO - b = 357. Moving to b = 358.
+ 2017-06-09 09:46:35,515 - INFO - Next building clicked.
+ 2017-06-09 09:46:36,048 - INFO - Monitored Data clicked.
+ 2017-06-09 09:46:37,131 - INFO - Additional Options clicked.
+ 2017-06-09 09:46:37,832 - INFO - Total Facility Energy and Demand selected.
+ 2017-06-09 09:46:37,901 - INFO - Continue clicked.
+ 2017-06-09 09:46:38,486 - INFO - Continue clicked again.
+ 2017-06-09 09:46:39,132 - INFO - Create Report clicked.
+ 2017-06-09 09:46:39,132 - INFO - Switched to tab 2.
+ 2017-06-09 09:47:01,565 - INFO - Building name acquired.
+ 2017-06-09 09:47:01,651 - INFO - Switched to tab 3.
+ 2017-06-09 10:02:56,858 - INFO - START: NYSERDA_downloadTotalsData.py
+ 2017-06-09 10:03:02,433 - INFO - Begin data probing at b = 358
+ 2017-06-09 10:03:04,025 - INFO - Next building clicked.
+ 2017-06-09 10:03:04,624 - INFO - Monitored Data clicked.
+ 2017-06-09 10:03:05,196 - INFO - Additional Options clicked.
+ 2017-06-09 10:03:06,009 - INFO - Total Facility Energy and Demand selected.
+ 2017-06-09 10:03:06,029 - INFO - Continue clicked.
+ 2017-06-09 10:03:06,618 - INFO - Continue clicked again.
+ 2017-06-09 10:03:07,266 - INFO - Create Report clicked.
+ 2017-06-09 10:03:07,288 - INFO - Switched to tab 2.
+ 2017-06-09 10:03:20,612 - INFO - Building name acquired.
+ 2017-06-09 10:03:20,677 - INFO - Switched to tab 3.
+ 2017-06-09 10:03:45,348 - INFO - Downloading building on row 358 -- Shoprite Supermarket - Brooklyn, NY
+ 2017-06-09 10:03:51,885 - INFO - Data file downloaded.
+ 2017-06-09 10:03:51,901 - INFO - Data file renamed.
+ 2017-06-09 10:03:51,901 - INFO - Data file moved.
+ 2017-06-09 10:03:51,924 - INFO - Tab 3 closed.
+ 2017-06-09 10:03:51,940 - INFO - Switched to tab 2.
+ 2017-06-09 10:03:51,986 - INFO - Tab 2 closed.
+ 2017-06-09 10:03:51,986 - INFO - Switched to tab 1.
+ 2017-06-09 10:03:53,688 - INFO - Went back 5 times to Facilities.
+ 2017-06-09 10:03:53,688 - INFO - b = 358. Moving to b = 359.
+ 2017-06-09 10:03:53,743 - INFO - Next building clicked.
+ 2017-06-09 10:03:54,792 - INFO - Monitored Data clicked.
+ 2017-06-09 10:03:55,392 - INFO - Additional Options clicked.
+ 2017-06-09 10:03:56,078 - INFO - Total Facility Energy and Demand selected.
+ 2017-06-09 10:03:56,109 - INFO - Continue clicked.
+ 2017-06-09 10:03:56,680 - INFO - Continue clicked again.
+ 2017-06-09 10:03:57,312 - INFO - Create Report clicked.
+ 2017-06-09 10:03:57,334 - INFO - Switched to tab 2.
+ 2017-06-09 10:04:03,533 - INFO - Building name acquired.
+ 2017-06-09 10:04:03,645 - INFO - Switched to tab 3.
+ 2017-06-09 10:04:15,803 - INFO - Downloading building on row 359 -- Shore View Nursing & Rehabilitation Center #2 - Brooklyn, NY
+ 2017-06-09 10:04:18,312 - INFO - Data file downloaded.
+ 2017-06-09 10:04:18,312 - INFO - Data file renamed.
+ 2017-06-09 10:04:18,312 - INFO - Data file moved.
+ 2017-06-09 10:04:18,342 - INFO - Tab 3 closed.
+ 2017-06-09 10:04:18,342 - INFO - Switched to tab 2.
+ 2017-06-09 10:04:18,381 - INFO - Tab 2 closed.
+ 2017-06-09 10:04:18,395 - INFO - Switched to tab 1.
+ 2017-06-09 10:04:20,582 - INFO - Went back 5 times to Facilities.
+ 2017-06-09 10:04:20,582 - INFO - b = 359. Moving to b = 360.
+ 2017-06-09 10:04:20,630 - INFO - Next building clicked.
+ 2017-06-09 10:04:23,711 - INFO - Monitored Data not found.
+ 2017-06-09 10:04:24,944 - INFO - b = 360. Moving to b = 361.
+ 2017-06-09 10:04:26,631 - INFO - Next building clicked.
+ 2017-06-09 10:04:27,686 - INFO - Monitored Data clicked.
+ 2017-06-09 10:04:28,285 - INFO - Additional Options clicked.
+ 2017-06-09 10:04:29,039 - INFO - Total Facility Energy and Demand selected.
+ 2017-06-09 10:04:29,053 - INFO - Continue clicked.
+ 2017-06-09 10:04:29,640 - INFO - Continue clicked again.
+ 2017-06-09 10:04:30,226 - INFO - Create Report clicked.
+ 2017-06-09 10:04:30,240 - INFO - Switched to tab 2.
+ 2017-06-09 10:04:51,579 - INFO - Building name acquired.
+ 2017-06-09 10:04:51,642 - INFO - Switched to tab 3.
+ 2017-06-09 10:05:15,625 - INFO - Downloading building on row 361 -- Silver Towers - New York, NY
+ 2017-06-09 10:05:27,219 - INFO - Data file downloaded.
+ 2017-06-09 10:05:27,220 - INFO - Data file renamed.
+ 2017-06-09 10:05:27,223 - INFO - Data file moved.
+ 2017-06-09 10:05:27,240 - INFO - Tab 3 closed.
+ 2017-06-09 10:05:27,240 - INFO - Switched to tab 2.
+ 2017-06-09 10:05:27,272 - INFO - Tab 2 closed.
+ 2017-06-09 10:05:27,288 - INFO - Switched to tab 1.
+ 2017-06-09 10:05:29,153 - INFO - Went back 5 times to Facilities.
+ 2017-06-09 10:05:29,153 - INFO - b = 361. Moving to b = 362.
+ 2017-06-09 10:05:29,200 - INFO - Next building clicked.
+ 2017-06-09 10:05:30,239 - INFO - Monitored Data clicked.
+ 2017-06-09 10:05:30,838 - INFO - Additional Options clicked.
+ 2017-06-09 10:05:34,476 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:05:36,515 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:05:36,515 - INFO - b = 362. Moving to b = 363.
+ 2017-06-09 10:05:36,584 - INFO - Next building clicked.
+ 2017-06-09 10:05:37,667 - INFO - Monitored Data clicked.
+ 2017-06-09 10:05:38,769 - INFO - Additional Options clicked.
+ 2017-06-09 10:05:42,414 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:05:43,999 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:05:43,999 - INFO - b = 363. Moving to b = 364.
+ 2017-06-09 10:05:44,078 - INFO - Next building clicked.
+ 2017-06-09 10:05:45,151 - INFO - Monitored Data clicked.
+ 2017-06-09 10:05:45,736 - INFO - Additional Options clicked.
+ 2017-06-09 10:05:49,345 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:05:51,076 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:05:51,076 - INFO - b = 364. Moving to b = 365.
+ 2017-06-09 10:05:51,177 - INFO - Next building clicked.
+ 2017-06-09 10:05:52,262 - INFO - Monitored Data clicked.
+ 2017-06-09 10:05:53,332 - INFO - Additional Options clicked.
+ 2017-06-09 10:05:56,976 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:05:58,697 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:05:58,697 - INFO - b = 365. Moving to b = 366.
+ 2017-06-09 10:05:58,828 - INFO - Next building clicked.
+ 2017-06-09 10:05:59,903 - INFO - Monitored Data clicked.
+ 2017-06-09 10:06:00,536 - INFO - Additional Options clicked.
+ 2017-06-09 10:06:04,180 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:06:05,880 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:06:05,880 - INFO - b = 366. Moving to b = 367.
+ 2017-06-09 10:06:06,033 - INFO - Next building clicked.
+ 2017-06-09 10:06:07,164 - INFO - Monitored Data clicked.
+ 2017-06-09 10:06:08,273 - INFO - Additional Options clicked.
+ 2017-06-09 10:06:11,855 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:06:13,193 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:06:13,193 - INFO - b = 367. Moving to b = 368.
+ 2017-06-09 10:06:13,230 - INFO - Next building clicked.
+ 2017-06-09 10:06:14,293 - INFO - Monitored Data clicked.
+ 2017-06-09 10:06:14,982 - INFO - Additional Options clicked.
+ 2017-06-09 10:06:18,681 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:06:20,301 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:06:20,301 - INFO - b = 368. Moving to b = 369.
+ 2017-06-09 10:06:20,332 - INFO - Next building clicked.
+ 2017-06-09 10:06:21,417 - INFO - Monitored Data clicked.
+ 2017-06-09 10:06:22,602 - INFO - Additional Options clicked.
+ 2017-06-09 10:06:26,717 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:06:28,249 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:06:28,249 - INFO - b = 369. Moving to b = 370.
+ 2017-06-09 10:06:28,434 - INFO - Next building clicked.
+ 2017-06-09 10:06:29,006 - INFO - Monitored Data clicked.
+ 2017-06-09 10:06:30,038 - INFO - Additional Options clicked.
+ 2017-06-09 10:06:30,753 - INFO - Total Facility Energy and Demand selected.
+ 2017-06-09 10:06:30,808 - INFO - Continue clicked.
+ 2017-06-09 10:06:31,372 - INFO - Continue clicked again.
+ 2017-06-09 10:06:31,996 - INFO - Create Report clicked.
+ 2017-06-09 10:06:32,010 - INFO - Switched to tab 2.
+ 2017-06-09 10:06:48,259 - INFO - Building name acquired.
+ 2017-06-09 10:06:48,322 - INFO - Switched to tab 3.
+ 2017-06-09 10:07:12,867 - INFO - Downloading building on row 370 -- St Elizabeths CHP Plant - Utica, NY
+ 2017-06-09 10:07:23,490 - INFO - Data file downloaded.
+ 2017-06-09 10:07:23,490 - INFO - Data file renamed.
+ 2017-06-09 10:07:23,490 - INFO - Data file moved.
+ 2017-06-09 10:07:23,506 - INFO - Tab 3 closed.
+ 2017-06-09 10:07:23,536 - INFO - Switched to tab 2.
+ 2017-06-09 10:07:23,589 - INFO - Tab 2 closed.
+ 2017-06-09 10:07:23,605 - INFO - Switched to tab 1.
+ 2017-06-09 10:07:24,921 - INFO - b = 370. Moving to b = 371.
+ 2017-06-09 10:07:26,588 - INFO - Next building clicked.
+ 2017-06-09 10:07:27,714 - INFO - Monitored Data clicked.
+ 2017-06-09 10:07:28,757 - INFO - Additional Options clicked.
+ 2017-06-09 10:07:29,536 - INFO - Total Facility Energy and Demand selected.
+ 2017-06-09 10:07:29,558 - INFO - Continue clicked.
+ 2017-06-09 10:07:30,190 - INFO - Continue clicked again.
+ 2017-06-09 10:07:30,775 - INFO - Create Report clicked.
+ 2017-06-09 10:07:30,790 - INFO - Switched to tab 2.
+ 2017-06-09 10:07:40,463 - INFO - Building name acquired.
+ 2017-06-09 10:07:40,532 - INFO - Switched to tab 3.
+ 2017-06-09 10:07:57,177 - INFO - Downloading building on row 371 -- St Joseph's Hospital - Syracuse, NY
+ 2017-06-09 10:08:01,719 - INFO - Data file downloaded.
+ 2017-06-09 10:08:01,719 - INFO - Data file renamed.
+ 2017-06-09 10:08:01,719 - INFO - Data file moved.
+ 2017-06-09 10:08:01,766 - INFO - Tab 3 closed.
+ 2017-06-09 10:08:01,766 - INFO - Switched to tab 2.
+ 2017-06-09 10:08:01,803 - INFO - Tab 2 closed.
+ 2017-06-09 10:08:01,819 - INFO - Switched to tab 1.
+ 2017-06-09 10:08:03,858 - INFO - Went back 5 times to Facilities.
+ 2017-06-09 10:08:03,858 - INFO - b = 371. Moving to b = 372.
+ 2017-06-09 10:08:03,907 - INFO - Next building clicked.
+ 2017-06-09 10:08:04,990 - INFO - Monitored Data clicked.
+ 2017-06-09 10:08:05,628 - INFO - Additional Options clicked.
+ 2017-06-09 10:08:06,729 - INFO - Total Facility Energy and Demand selected.
+ 2017-06-09 10:08:06,759 - INFO - Continue clicked.
+ 2017-06-09 10:08:07,313 - INFO - Continue clicked again.
+ 2017-06-09 10:08:07,946 - INFO - Create Report clicked.
+ 2017-06-09 10:08:07,946 - INFO - Switched to tab 2.
+ 2017-06-09 10:08:15,019 - INFO - Building name acquired.
+ 2017-06-09 10:08:15,088 - INFO - Switched to tab 3.
+ 2017-06-09 10:08:26,305 - INFO - Downloading building on row 372 -- St Tropez Condominium - New York, NY
+ 2017-06-09 10:08:28,808 - INFO - Data file downloaded.
+ 2017-06-09 10:08:28,808 - INFO - Data file renamed.
+ 2017-06-09 10:08:28,808 - INFO - Data file moved.
+ 2017-06-09 10:08:28,829 - INFO - Tab 3 closed.
+ 2017-06-09 10:08:28,845 - INFO - Switched to tab 2.
+ 2017-06-09 10:08:28,875 - INFO - Tab 2 closed.
+ 2017-06-09 10:08:28,891 - INFO - Switched to tab 1.
+ 2017-06-09 10:08:30,868 - INFO - Went back 5 times to Facilities.
+ 2017-06-09 10:08:30,868 - INFO - b = 372. Moving to b = 373.
+ 2017-06-09 10:08:30,914 - INFO - Next building clicked.
+ 2017-06-09 10:08:31,989 - INFO - Monitored Data clicked.
+ 2017-06-09 10:08:32,588 - INFO - Additional Options clicked.
+ 2017-06-09 10:08:36,263 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:08:37,969 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:08:37,970 - INFO - b = 373. Moving to b = 374.
+ 2017-06-09 10:08:38,036 - INFO - Next building clicked.
+ 2017-06-09 10:08:39,075 - INFO - Monitored Data clicked.
+ 2017-06-09 10:08:39,723 - INFO - Additional Options clicked.
+ 2017-06-09 10:08:43,913 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:08:45,497 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:08:45,497 - INFO - b = 374. Moving to b = 375.
+ 2017-06-09 10:08:45,598 - INFO - Next building clicked.
+ 2017-06-09 10:08:46,700 - INFO - Monitored Data clicked.
+ 2017-06-09 10:08:47,252 - INFO - Additional Options clicked.
+ 2017-06-09 10:08:50,878 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:08:52,680 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:08:52,680 - INFO - b = 375. Moving to b = 376.
+ 2017-06-09 10:08:52,779 - INFO - Next building clicked.
+ 2017-06-09 10:08:53,865 - INFO - Monitored Data clicked.
+ 2017-06-09 10:08:54,517 - INFO - Additional Options clicked.
+ 2017-06-09 10:08:58,137 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:08:59,957 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:08:59,957 - INFO - b = 376. Moving to b = 377.
+ 2017-06-09 10:09:00,072 - INFO - Next building clicked.
+ 2017-06-09 10:09:01,207 - INFO - Monitored Data clicked.
+ 2017-06-09 10:09:01,812 - INFO - Additional Options clicked.
+ 2017-06-09 10:09:05,578 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:09:06,964 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:09:06,964 - INFO - b = 377. Moving to b = 378.
+ 2017-06-09 10:09:07,128 - INFO - Next building clicked.
+ 2017-06-09 10:09:10,190 - INFO - Monitored Data not found.
+ 2017-06-09 10:09:11,075 - INFO - Went back 1 times to Facilities.
+ 2017-06-09 10:09:11,075 - INFO - b = 378. Moving to b = 379.
+ 2017-06-09 10:09:11,223 - INFO - Next building clicked.
+ 2017-06-09 10:09:12,326 - INFO - Monitored Data clicked.
+ 2017-06-09 10:09:13,392 - INFO - Additional Options clicked.
+ 2017-06-09 10:09:17,107 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:09:18,476 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:09:18,476 - INFO - b = 379. Moving to b = 380.
+ 2017-06-09 10:09:18,622 - INFO - Next building clicked.
+ 2017-06-09 10:09:19,759 - INFO - Monitored Data clicked.
+ 2017-06-09 10:09:20,378 - INFO - Additional Options clicked.
+ 2017-06-09 10:09:24,098 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:09:25,530 - INFO - b = 380. Moving to b = 381.
+ 2017-06-09 10:09:27,203 - INFO - Next building clicked.
+ 2017-06-09 10:09:28,267 - INFO - Monitored Data clicked.
+ 2017-06-09 10:09:28,857 - INFO - Additional Options clicked.
+ 2017-06-09 10:09:32,756 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:09:34,230 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:09:34,230 - INFO - b = 381. Moving to b = 382.
+ 2017-06-09 10:09:34,278 - INFO - Next building clicked.
+ 2017-06-09 10:09:35,397 - INFO - Monitored Data clicked.
+ 2017-06-09 10:09:36,453 - INFO - Additional Options clicked.
+ 2017-06-09 10:09:40,101 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:09:41,671 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:09:41,671 - INFO - b = 382. Moving to b = 383.
+ 2017-06-09 10:09:41,719 - INFO - Next building clicked.
+ 2017-06-09 10:09:44,783 - INFO - Monitored Data not found.
+ 2017-06-09 10:09:45,907 - INFO - Went back 1 times to Facilities.
+ 2017-06-09 10:09:45,907 - INFO - b = 383. Moving to b = 384.
+ 2017-06-09 10:09:46,138 - INFO - Next building clicked.
+ 2017-06-09 10:09:47,207 - INFO - Monitored Data clicked.
+ 2017-06-09 10:09:47,809 - INFO - Additional Options clicked.
+ 2017-06-09 10:09:51,424 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:09:53,058 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:09:53,058 - INFO - b = 384. Moving to b = 385.
+ 2017-06-09 10:09:53,095 - INFO - Next building clicked.
+ 2017-06-09 10:09:54,158 - INFO - Monitored Data clicked.
+ 2017-06-09 10:09:55,213 - INFO - Additional Options clicked.
+ 2017-06-09 10:09:58,832 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:10:00,421 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:10:00,421 - INFO - b = 385. Moving to b = 386.
+ 2017-06-09 10:10:00,451 - INFO - Next building clicked.
+ 2017-06-09 10:10:01,522 - INFO - Monitored Data clicked.
+ 2017-06-09 10:10:02,799 - INFO - Additional Options clicked.
+ 2017-06-09 10:10:06,490 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:10:08,193 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:10:08,193 - INFO - b = 386. Moving to b = 387.
+ 2017-06-09 10:10:08,240 - INFO - Next building clicked.
+ 2017-06-09 10:10:09,313 - INFO - Monitored Data clicked.
+ 2017-06-09 10:10:10,357 - INFO - Additional Options clicked.
+ 2017-06-09 10:10:14,049 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:10:15,963 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:10:15,963 - INFO - b = 387. Moving to b = 388.
+ 2017-06-09 10:10:16,194 - INFO - Next building clicked.
+ 2017-06-09 10:10:17,282 - INFO - Monitored Data clicked.
+ 2017-06-09 10:10:18,328 - INFO - Additional Options clicked.
+ 2017-06-09 10:10:22,451 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:10:24,019 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:10:24,019 - INFO - b = 388. Moving to b = 389.
+ 2017-06-09 10:10:24,328 - INFO - Next building clicked.
+ 2017-06-09 10:10:25,385 - INFO - Monitored Data clicked.
+ 2017-06-09 10:10:25,986 - INFO - Additional Options clicked.
+ 2017-06-09 10:10:29,645 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:10:31,062 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:10:31,062 - INFO - b = 389. Moving to b = 390.
+ 2017-06-09 10:10:31,380 - INFO - Next building clicked.
+ 2017-06-09 10:10:32,487 - INFO - Monitored Data clicked.
+ 2017-06-09 10:10:33,566 - INFO - Additional Options clicked.
+ 2017-06-09 10:10:37,857 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:10:39,073 - INFO - b = 390. Moving to b = 391.
+ 2017-06-09 10:10:40,759 - INFO - Next building clicked.
+ 2017-06-09 10:10:41,890 - INFO - Monitored Data clicked.
+ 2017-06-09 10:10:43,249 - INFO - Additional Options clicked.
+ 2017-06-09 10:10:46,984 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:10:48,746 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:10:48,746 - INFO - b = 391. Moving to b = 392.
+ 2017-06-09 10:10:49,322 - INFO - Next building clicked.
+ 2017-06-09 10:10:50,403 - INFO - Monitored Data clicked.
+ 2017-06-09 10:10:51,530 - INFO - Additional Options clicked.
+ 2017-06-09 10:10:55,174 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:10:56,816 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:10:56,816 - INFO - b = 392. Moving to b = 393.
+ 2017-06-09 10:10:57,118 - INFO - Next building clicked.
+ 2017-06-09 10:10:58,213 - INFO - Monitored Data clicked.
+ 2017-06-09 10:10:58,798 - INFO - Additional Options clicked.
+ 2017-06-09 10:11:02,453 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:11:03,625 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:11:03,625 - INFO - b = 393. Moving to b = 394.
+ 2017-06-09 10:11:03,959 - INFO - Next building clicked.
+ 2017-06-09 10:11:04,595 - INFO - Monitored Data clicked.
+ 2017-06-09 10:11:05,180 - INFO - Additional Options clicked.
+ 2017-06-09 10:11:05,881 - INFO - Total Facility Energy and Demand selected.
+ 2017-06-09 10:11:05,911 - INFO - Continue clicked.
+ 2017-06-09 10:11:06,453 - INFO - Continue clicked again.
+ 2017-06-09 10:11:07,095 - INFO - Create Report clicked.
+ 2017-06-09 10:11:07,102 - INFO - Switched to tab 2.
+ 2017-06-09 10:11:11,770 - INFO - Building name acquired.
+ 2017-06-09 10:11:11,933 - INFO - Switched to tab 3.
+ 2017-06-09 10:11:23,351 - INFO - Downloading building on row 394 -- Sunrise Bakery - Brooklyn, NY
+ 2017-06-09 10:11:24,882 - INFO - Data file downloaded.
+ 2017-06-09 10:11:24,882 - INFO - Data file renamed.
+ 2017-06-09 10:11:24,882 - INFO - Data file moved.
+ 2017-06-09 10:11:24,914 - INFO - Tab 3 closed.
+ 2017-06-09 10:11:24,914 - INFO - Switched to tab 2.
+ 2017-06-09 10:11:24,951 - INFO - Tab 2 closed.
+ 2017-06-09 10:11:24,967 - INFO - Switched to tab 1.
+ 2017-06-09 10:11:27,019 - INFO - Went back 5 times to Facilities.
+ 2017-06-09 10:11:27,019 - INFO - b = 394. Moving to b = 395.
+ 2017-06-09 10:11:27,072 - INFO - Next building clicked.
+ 2017-06-09 10:11:28,121 - INFO - Monitored Data clicked.
+ 2017-06-09 10:11:28,706 - INFO - Additional Options clicked.
+ 2017-06-09 10:11:32,875 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:11:34,414 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:11:34,414 - INFO - b = 395. Moving to b = 396.
+ 2017-06-09 10:11:34,463 - INFO - Next building clicked.
+ 2017-06-09 10:11:35,532 - INFO - Monitored Data clicked.
+ 2017-06-09 10:11:36,119 - INFO - Additional Options clicked.
+ 2017-06-09 10:11:39,756 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:11:41,358 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:11:41,358 - INFO - b = 396. Moving to b = 397.
+ 2017-06-09 10:11:41,411 - INFO - Next building clicked.
+ 2017-06-09 10:11:42,515 - INFO - Monitored Data clicked.
+ 2017-06-09 10:11:43,618 - INFO - Additional Options clicked.
+ 2017-06-09 10:11:44,868 - INFO - Total Facility Energy and Demand selected.
+ 2017-06-09 10:11:44,904 - INFO - Continue clicked.
+ 2017-06-09 10:11:45,539 - INFO - Continue clicked again.
+ 2017-06-09 10:11:46,207 - INFO - Create Report clicked.
+ 2017-06-09 10:11:46,207 - INFO - Switched to tab 2.
+ 2017-06-09 10:12:08,719 - INFO - Building name acquired.
+ 2017-06-09 10:12:08,786 - INFO - Switched to tab 3.
+ 2017-06-09 10:12:29,653 - INFO - Downloading building on row 397 -- SUNY Buffalo - Buffalo, NY
+ 2017-06-09 10:12:34,201 - INFO - Data file downloaded.
+ 2017-06-09 10:12:34,201 - INFO - Data file renamed.
+ 2017-06-09 10:12:34,201 - INFO - Data file moved.
+ 2017-06-09 10:12:34,233 - INFO - Tab 3 closed.
+ 2017-06-09 10:12:34,247 - INFO - Switched to tab 2.
+ 2017-06-09 10:12:34,286 - INFO - Tab 2 closed.
+ 2017-06-09 10:12:34,302 - INFO - Switched to tab 1.
+ 2017-06-09 10:12:36,621 - INFO - Went back 5 times to Facilities.
+ 2017-06-09 10:12:36,621 - INFO - b = 397. Moving to b = 398.
+ 2017-06-09 10:12:36,673 - INFO - Next building clicked.
+ 2017-06-09 10:12:37,736 - INFO - Monitored Data clicked.
+ 2017-06-09 10:12:38,305 - INFO - Additional Options clicked.
+ 2017-06-09 10:12:41,996 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:12:43,565 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:12:43,565 - INFO - b = 398. Moving to b = 399.
+ 2017-06-09 10:12:43,602 - INFO - Next building clicked.
+ 2017-06-09 10:12:46,658 - INFO - Monitored Data not found.
+ 2017-06-09 10:12:47,612 - INFO - Went back 1 times to Facilities.
+ 2017-06-09 10:12:47,612 - INFO - b = 399. Moving to b = 400.
+ 2017-06-09 10:12:47,691 - INFO - Next building clicked.
+ 2017-06-09 10:12:48,801 - INFO - Monitored Data clicked.
+ 2017-06-09 10:12:49,865 - INFO - Additional Options clicked.
+ 2017-06-09 10:12:50,602 - INFO - Total Facility Energy and Demand selected.
+ 2017-06-09 10:12:50,634 - INFO - Continue clicked.
+ 2017-06-09 10:12:51,203 - INFO - Continue clicked again.
+ 2017-06-09 10:12:51,822 - INFO - Create Report clicked.
+ 2017-06-09 10:12:51,838 - INFO - Switched to tab 2.
+ 2017-06-09 10:12:58,476 - INFO - Building name acquired.
+ 2017-06-09 10:12:58,546 - INFO - Switched to tab 3.
+ 2017-06-09 10:13:10,542 - INFO - Downloading building on row 400 -- SUNY ESF - Microturbine - Syracuse, NY
+ 2017-06-09 10:13:12,078 - INFO - Data file downloaded.
+ 2017-06-09 10:13:12,078 - INFO - Data file renamed.
+ 2017-06-09 10:13:12,078 - INFO - Data file moved.
+ 2017-06-09 10:13:12,109 - INFO - Tab 3 closed.
+ 2017-06-09 10:13:12,125 - INFO - Switched to tab 2.
+ 2017-06-09 10:13:12,147 - INFO - Tab 2 closed.
+ 2017-06-09 10:13:12,163 - INFO - Switched to tab 1.
+ 2017-06-09 10:13:13,426 - INFO - b = 400. Moving to b = 401.
+ 2017-06-09 10:13:15,128 - INFO - Next building clicked.
+ 2017-06-09 10:13:16,252 - INFO - Monitored Data clicked.
+ 2017-06-09 10:13:16,831 - INFO - Additional Options clicked.
+ 2017-06-09 10:13:20,582 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:13:22,000 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:13:22,000 - INFO - b = 401. Moving to b = 402.
+ 2017-06-09 10:13:22,046 - INFO - Next building clicked.
+ 2017-06-09 10:13:23,131 - INFO - Monitored Data clicked.
+ 2017-06-09 10:13:24,203 - INFO - Additional Options clicked.
+ 2017-06-09 10:13:27,825 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:13:29,357 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:13:29,357 - INFO - b = 402. Moving to b = 403.
+ 2017-06-09 10:13:29,395 - INFO - Next building clicked.
+ 2017-06-09 10:13:29,959 - INFO - Monitored Data clicked.
+ 2017-06-09 10:13:31,049 - INFO - Additional Options clicked.
+ 2017-06-09 10:13:34,720 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:13:36,539 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:13:36,539 - INFO - b = 403. Moving to b = 404.
+ 2017-06-09 10:13:36,624 - INFO - Next building clicked.
+ 2017-06-09 10:13:37,171 - INFO - Monitored Data clicked.
+ 2017-06-09 10:13:38,292 - INFO - Additional Options clicked.
+ 2017-06-09 10:13:39,035 - INFO - Total Facility Energy and Demand selected.
+ 2017-06-09 10:13:39,065 - INFO - Continue clicked.
+ 2017-06-09 10:13:39,618 - INFO - Continue clicked again.
+ 2017-06-09 10:13:40,283 - INFO - Create Report clicked.
+ 2017-06-09 10:13:40,283 - INFO - Switched to tab 2.
+ 2017-06-09 10:13:57,022 - INFO - Building name acquired.
+ 2017-06-09 10:13:57,091 - INFO - Switched to tab 3.
+ 2017-06-09 10:14:25,184 - INFO - Downloading building on row 404 -- Syracuse University Green Data Center - Syracuse, NY
+ 2017-06-09 10:14:36,762 - INFO - Data file downloaded.
+ 2017-06-09 10:14:36,762 - INFO - Data file renamed.
+ 2017-06-09 10:14:36,762 - INFO - Data file moved.
+ 2017-06-09 10:14:36,776 - INFO - Tab 3 closed.
+ 2017-06-09 10:14:36,792 - INFO - Switched to tab 2.
+ 2017-06-09 10:14:36,823 - INFO - Tab 2 closed.
+ 2017-06-09 10:14:36,841 - INFO - Switched to tab 1.
+ 2017-06-09 10:14:39,266 - INFO - Went back 5 times to Facilities.
+ 2017-06-09 10:14:39,266 - INFO - b = 404. Moving to b = 405.
+ 2017-06-09 10:14:39,346 - INFO - Next building clicked.
+ 2017-06-09 10:14:40,414 - INFO - Monitored Data clicked.
+ 2017-06-09 10:14:41,517 - INFO - Additional Options clicked.
+ 2017-06-09 10:14:45,177 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:14:46,826 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:14:46,826 - INFO - b = 405. Moving to b = 406.
+ 2017-06-09 10:14:46,911 - INFO - Next building clicked.
+ 2017-06-09 10:14:47,982 - INFO - Monitored Data clicked.
+ 2017-06-09 10:14:48,608 - INFO - Additional Options clicked.
+ 2017-06-09 10:14:52,332 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:14:53,703 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:14:53,703 - INFO - b = 406. Moving to b = 407.
+ 2017-06-09 10:14:53,789 - INFO - Next building clicked.
+ 2017-06-09 10:14:54,890 - INFO - Monitored Data clicked.
+ 2017-06-09 10:14:56,006 - INFO - Additional Options clicked.
+ 2017-06-09 10:14:59,622 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:15:01,275 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:15:01,275 - INFO - b = 407. Moving to b = 408.
+ 2017-06-09 10:15:01,358 - INFO - Next building clicked.
+ 2017-06-09 10:15:02,463 - INFO - Monitored Data clicked.
+ 2017-06-09 10:15:03,095 - INFO - Additional Options clicked.
+ 2017-06-09 10:15:06,749 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:15:10,035 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:15:10,035 - INFO - b = 408. Moving to b = 409.
+ 2017-06-09 10:15:10,118 - INFO - Next building clicked.
+ 2017-06-09 10:15:11,296 - INFO - Monitored Data clicked.
+ 2017-06-09 10:15:11,868 - INFO - Additional Options clicked.
+ 2017-06-09 10:15:15,569 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:15:18,934 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:15:18,934 - INFO - b = 409. Moving to b = 410.
+ 2017-06-09 10:15:19,072 - INFO - Next building clicked.
+ 2017-06-09 10:15:20,161 - INFO - Monitored Data clicked.
+ 2017-06-09 10:15:20,739 - INFO - Additional Options clicked.
+ 2017-06-09 10:15:24,342 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:15:25,729 - INFO - b = 410. Moving to b = 411.
+ 2017-06-09 10:15:27,483 - INFO - Next building clicked.
+ 2017-06-09 10:15:28,532 - INFO - Monitored Data clicked.
+ 2017-06-09 10:15:29,677 - INFO - Additional Options clicked.
+ 2017-06-09 10:15:33,436 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:15:34,733 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:15:34,733 - INFO - b = 411. Moving to b = 412.
+ 2017-06-09 10:15:34,779 - INFO - Next building clicked.
+ 2017-06-09 10:15:35,979 - INFO - Monitored Data clicked.
+ 2017-06-09 10:15:36,579 - INFO - Additional Options clicked.
+ 2017-06-09 10:15:40,739 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:15:42,654 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:15:42,654 - INFO - b = 412. Moving to b = 413.
+ 2017-06-09 10:15:42,822 - INFO - Next building clicked.
+ 2017-06-09 10:15:43,923 - INFO - Monitored Data clicked.
+ 2017-06-09 10:15:44,529 - INFO - Additional Options clicked.
+ 2017-06-09 10:15:48,221 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:15:51,664 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:15:51,664 - INFO - b = 413. Moving to b = 414.
+ 2017-06-09 10:15:52,309 - INFO - Next building clicked.
+ 2017-06-09 10:15:53,377 - INFO - Monitored Data clicked.
+ 2017-06-09 10:15:53,993 - INFO - Additional Options clicked.
+ 2017-06-09 10:15:57,880 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:15:59,464 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:15:59,464 - INFO - b = 414. Moving to b = 415.
+ 2017-06-09 10:15:59,512 - INFO - Next building clicked.
+ 2017-06-09 10:16:00,755 - INFO - Monitored Data clicked.
+ 2017-06-09 10:16:01,822 - INFO - Additional Options clicked.
+ 2017-06-09 10:16:05,493 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:16:07,460 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:16:07,460 - INFO - b = 415. Moving to b = 416.
+ 2017-06-09 10:16:07,688 - INFO - Next building clicked.
+ 2017-06-09 10:16:08,757 - INFO - Monitored Data clicked.
+ 2017-06-09 10:16:09,395 - INFO - Additional Options clicked.
+ 2017-06-09 10:16:13,121 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:16:16,345 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:16:16,345 - INFO - b = 416. Moving to b = 417.
+ 2017-06-09 10:16:16,612 - INFO - Next building clicked.
+ 2017-06-09 10:16:17,698 - INFO - Monitored Data clicked.
+ 2017-06-09 10:16:18,782 - INFO - Additional Options clicked.
+ 2017-06-09 10:16:22,502 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:16:25,900 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:16:25,900 - INFO - b = 417. Moving to b = 418.
+ 2017-06-09 10:16:26,127 - INFO - Next building clicked.
+ 2017-06-09 10:16:27,223 - INFO - Monitored Data clicked.
+ 2017-06-09 10:16:27,809 - INFO - Additional Options clicked.
+ 2017-06-09 10:16:31,444 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:16:35,265 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:16:35,265 - INFO - b = 418. Moving to b = 419.
+ 2017-06-09 10:16:35,581 - INFO - Next building clicked.
+ 2017-06-09 10:16:36,697 - INFO - Monitored Data clicked.
+ 2017-06-09 10:16:37,799 - INFO - Additional Options clicked.
+ 2017-06-09 10:16:41,992 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:16:45,263 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:16:45,263 - INFO - b = 419. Moving to b = 420.
+ 2017-06-09 10:16:45,563 - INFO - Next building clicked.
+ 2017-06-09 10:16:46,700 - INFO - Monitored Data clicked.
+ 2017-06-09 10:16:47,486 - INFO - Additional Options clicked.
+ 2017-06-09 10:16:51,243 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:16:52,852 - INFO - b = 420. Moving to b = 421.
+ 2017-06-09 10:16:54,454 - INFO - Next building clicked.
+ 2017-06-09 10:16:55,155 - INFO - Monitored Data clicked.
+ 2017-06-09 10:16:55,756 - INFO - Additional Options clicked.
+ 2017-06-09 10:16:59,493 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:17:01,496 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:17:01,496 - INFO - b = 421. Moving to b = 422.
+ 2017-06-09 10:17:02,052 - INFO - Next building clicked.
+ 2017-06-09 10:17:03,111 - INFO - Monitored Data clicked.
+ 2017-06-09 10:17:04,186 - INFO - Additional Options clicked.
+ 2017-06-09 10:17:04,836 - INFO - Total Facility Energy and Demand selected.
+ 2017-06-09 10:17:04,884 - INFO - Continue clicked.
+ 2017-06-09 10:17:05,532 - INFO - Continue clicked again.
+ 2017-06-09 10:17:06,153 - INFO - Create Report clicked.
+ 2017-06-09 10:17:06,168 - INFO - Switched to tab 2.
+ 2017-06-09 10:17:17,796 - INFO - Building name acquired.
+ 2017-06-09 10:17:17,865 - INFO - Switched to tab 3.
+ 2017-06-09 10:17:34,332 - INFO - Downloading building on row 422 -- Terrace Gardens #1 - Staten Island, NY
+ 2017-06-09 10:17:36,852 - INFO - Data file downloaded.
+ 2017-06-09 10:17:36,852 - INFO - Data file renamed.
+ 2017-06-09 10:17:36,854 - INFO - Data file moved.
+ 2017-06-09 10:17:36,875 - INFO - Tab 3 closed.
+ 2017-06-09 10:17:36,890 - INFO - Switched to tab 2.
+ 2017-06-09 10:17:36,937 - INFO - Tab 2 closed.
+ 2017-06-09 10:17:36,959 - INFO - Switched to tab 1.
+ 2017-06-09 10:17:39,285 - INFO - Went back 5 times to Facilities.
+ 2017-06-09 10:17:39,285 - INFO - b = 422. Moving to b = 423.
+ 2017-06-09 10:17:39,332 - INFO - Next building clicked.
+ 2017-06-09 10:17:40,417 - INFO - Monitored Data clicked.
+ 2017-06-09 10:17:41,467 - INFO - Additional Options clicked.
+ 2017-06-09 10:17:42,221 - INFO - Total Facility Energy and Demand selected.
+ 2017-06-09 10:17:42,253 - INFO - Continue clicked.
+ 2017-06-09 10:17:42,891 - INFO - Continue clicked again.
+ 2017-06-09 10:17:43,555 - INFO - Create Report clicked.
+ 2017-06-09 10:17:43,575 - INFO - Switched to tab 2.
+ 2017-06-09 10:17:53,723 - INFO - Building name acquired.
+ 2017-06-09 10:17:53,803 - INFO - Switched to tab 3.
+ 2017-06-09 10:18:10,996 - INFO - Downloading building on row 423 -- Terrace Gardens #2 - Staten Island, NY
+ 2017-06-09 10:18:16,559 - INFO - Data file downloaded.
+ 2017-06-09 10:18:16,559 - INFO - Data file renamed.
+ 2017-06-09 10:18:16,559 - INFO - Data file moved.
+ 2017-06-09 10:18:16,589 - INFO - Tab 3 closed.
+ 2017-06-09 10:18:16,589 - INFO - Switched to tab 2.
+ 2017-06-09 10:18:16,628 - INFO - Tab 2 closed.
+ 2017-06-09 10:18:16,644 - INFO - Switched to tab 1.
+ 2017-06-09 10:18:18,733 - INFO - Went back 5 times to Facilities.
+ 2017-06-09 10:18:18,733 - INFO - b = 423. Moving to b = 424.
+ 2017-06-09 10:18:18,780 - INFO - Next building clicked.
+ 2017-06-09 10:18:19,849 - INFO - Monitored Data clicked.
+ 2017-06-09 10:18:20,969 - INFO - Additional Options clicked.
+ 2017-06-09 10:18:21,836 - INFO - Total Facility Energy and Demand selected.
+ 2017-06-09 10:18:21,852 - INFO - Continue clicked.
+ 2017-06-09 10:18:22,421 - INFO - Continue clicked again.
+ 2017-06-09 10:18:23,062 - INFO - Create Report clicked.
+ 2017-06-09 10:18:23,078 - INFO - Switched to tab 2.
+ 2017-06-09 10:18:28,733 - INFO - Building name acquired.
+ 2017-06-09 10:18:28,849 - INFO - Switched to tab 3.
+ 2017-06-09 10:18:39,598 - INFO - Downloading building on row 424 -- The Beresford - New York, NY
+ 2017-06-09 10:18:41,108 - INFO - Data file downloaded.
+ 2017-06-09 10:18:41,108 - INFO - Data file renamed.
+ 2017-06-09 10:18:41,108 - INFO - Data file moved.
+ 2017-06-09 10:18:41,128 - INFO - Tab 3 closed.
+ 2017-06-09 10:18:41,130 - INFO - Switched to tab 2.
+ 2017-06-09 10:18:41,161 - INFO - Tab 2 closed.
+ 2017-06-09 10:18:41,177 - INFO - Switched to tab 1.
+ 2017-06-09 10:18:43,213 - INFO - Went back 5 times to Facilities.
+ 2017-06-09 10:18:43,213 - INFO - b = 424. Moving to b = 425.
+ 2017-06-09 10:18:43,250 - INFO - Next building clicked.
+ 2017-06-09 10:18:44,336 - INFO - Monitored Data clicked.
+ 2017-06-09 10:18:45,513 - INFO - Additional Options clicked.
+ 2017-06-09 10:18:46,267 - INFO - Total Facility Energy and Demand selected.
+ 2017-06-09 10:18:46,299 - INFO - Continue clicked.
+ 2017-06-09 10:18:46,852 - INFO - Continue clicked again.
+ 2017-06-09 10:18:47,500 - INFO - Create Report clicked.
+ 2017-06-09 10:18:47,500 - INFO - Switched to tab 2.
+ 2017-06-09 10:18:55,632 - INFO - Building name acquired.
+ 2017-06-09 10:18:55,700 - INFO - Switched to tab 3.
+ 2017-06-09 10:19:10,946 - INFO - Downloading building on row 425 -- The Intrepid - New York, NY
+ 2017-06-09 10:19:14,516 - INFO - Data file downloaded.
+ 2017-06-09 10:19:14,516 - INFO - Data file renamed.
+ 2017-06-09 10:19:14,516 - INFO - Data file moved.
+ 2017-06-09 10:19:14,546 - INFO - Tab 3 closed.
+ 2017-06-09 10:19:14,546 - INFO - Switched to tab 2.
+ 2017-06-09 10:19:14,585 - INFO - Tab 2 closed.
+ 2017-06-09 10:19:14,585 - INFO - Switched to tab 1.
+ 2017-06-09 10:19:17,006 - INFO - Went back 5 times to Facilities.
+ 2017-06-09 10:19:17,006 - INFO - b = 425. Moving to b = 426.
+ 2017-06-09 10:19:17,075 - INFO - Next building clicked.
+ 2017-06-09 10:19:20,148 - INFO - Monitored Data not found.
+ 2017-06-09 10:19:21,019 - INFO - Went back 1 times to Facilities.
+ 2017-06-09 10:19:21,019 - INFO - b = 426. Moving to b = 427.
+ 2017-06-09 10:19:21,065 - INFO - Next building clicked.
+ 2017-06-09 10:19:24,144 - INFO - Monitored Data not found.
+ 2017-06-09 10:19:25,265 - INFO - Went back 1 times to Facilities.
+ 2017-06-09 10:19:25,265 - INFO - b = 427. Moving to b = 428.
+ 2017-06-09 10:19:25,348 - INFO - Next building clicked.
+ 2017-06-09 10:19:28,380 - INFO - Monitored Data not found.
+ 2017-06-09 10:19:29,417 - INFO - Went back 1 times to Facilities.
+ 2017-06-09 10:19:29,417 - INFO - b = 428. Moving to b = 429.
+ 2017-06-09 10:19:29,470 - INFO - Next building clicked.
+ 2017-06-09 10:19:30,555 - INFO - Monitored Data clicked.
+ 2017-06-09 10:19:31,140 - INFO - Additional Options clicked.
+ 2017-06-09 10:19:31,842 - INFO - Total Facility Energy and Demand selected.
+ 2017-06-09 10:19:31,875 - INFO - Continue clicked.
+ 2017-06-09 10:19:32,444 - INFO - Continue clicked again.
+ 2017-06-09 10:19:33,089 - INFO - Create Report clicked.
+ 2017-06-09 10:19:33,105 - INFO - Switched to tab 2.
+ 2017-06-09 10:19:40,759 - INFO - Building name acquired.
+ 2017-06-09 10:19:40,844 - INFO - Switched to tab 3.
+ 2017-06-09 10:19:54,575 - INFO - Downloading building on row 429 -- The Petersfield - New York, NY
+ 2017-06-09 10:19:56,082 - INFO - Data file downloaded.
+ 2017-06-09 10:19:56,082 - INFO - Data file renamed.
+ 2017-06-09 10:19:56,082 - INFO - Data file moved.
+ 2017-06-09 10:19:56,104 - INFO - Tab 3 closed.
+ 2017-06-09 10:19:56,119 - INFO - Switched to tab 2.
+ 2017-06-09 10:19:56,151 - INFO - Tab 2 closed.
+ 2017-06-09 10:19:56,151 - INFO - Switched to tab 1.
+ 2017-06-09 10:19:58,453 - INFO - Went back 5 times to Facilities.
+ 2017-06-09 10:19:58,453 - INFO - b = 429. Moving to b = 430.
+ 2017-06-09 10:19:58,506 - INFO - Next building clicked.
+ 2017-06-09 10:19:59,555 - INFO - Monitored Data clicked.
+ 2017-06-09 10:20:00,144 - INFO - Additional Options clicked.
+ 2017-06-09 10:20:01,260 - INFO - Total Facility Energy and Demand selected.
+ 2017-06-09 10:20:01,292 - INFO - Continue clicked.
+ 2017-06-09 10:20:01,914 - INFO - Continue clicked again.
+ 2017-06-09 10:20:02,614 - INFO - Create Report clicked.
+ 2017-06-09 10:20:02,615 - INFO - Switched to tab 2.
+ 2017-06-09 10:20:10,298 - INFO - Building name acquired.
+ 2017-06-09 10:20:10,367 - INFO - Switched to tab 3.
+ 2017-06-09 10:20:22,776 - INFO - Downloading building on row 430 -- The Q - Long Island City, NY
+ 2017-06-09 10:20:25,298 - INFO - Data file downloaded.
+ 2017-06-09 10:20:25,298 - INFO - Data file renamed.
+ 2017-06-09 10:20:25,298 - INFO - Data file moved.
+ 2017-06-09 10:20:25,313 - INFO - Tab 3 closed.
+ 2017-06-09 10:20:25,329 - INFO - Switched to tab 2.
+ 2017-06-09 10:20:25,361 - INFO - Tab 2 closed.
+ 2017-06-09 10:20:25,380 - INFO - Switched to tab 1.
+ 2017-06-09 10:20:26,615 - INFO - b = 430. Moving to b = 431.
+ 2017-06-09 10:20:28,302 - INFO - Next building clicked.
+ 2017-06-09 10:20:29,424 - INFO - Monitored Data clicked.
+ 2017-06-09 10:20:30,558 - INFO - Additional Options clicked.
+ 2017-06-09 10:20:31,326 - INFO - Total Facility Energy and Demand selected.
+ 2017-06-09 10:20:31,358 - INFO - Continue clicked.
+ 2017-06-09 10:20:31,947 - INFO - Continue clicked again.
+ 2017-06-09 10:20:32,562 - INFO - Create Report clicked.
+ 2017-06-09 10:20:32,578 - INFO - Switched to tab 2.
+ 2017-06-09 10:20:41,262 - INFO - Building name acquired.
+ 2017-06-09 10:20:41,323 - INFO - Switched to tab 3.
+ 2017-06-09 10:20:55,016 - INFO - Downloading building on row 431 -- The Strand - New York, NY
+ 2017-06-09 10:20:58,539 - INFO - Data file downloaded.
+ 2017-06-09 10:20:58,542 - INFO - Data file renamed.
+ 2017-06-09 10:20:58,545 - INFO - Data file moved.
+ 2017-06-09 10:20:58,578 - INFO - Tab 3 closed.
+ 2017-06-09 10:20:58,578 - INFO - Switched to tab 2.
+ 2017-06-09 10:20:58,625 - INFO - Tab 2 closed.
+ 2017-06-09 10:20:58,640 - INFO - Switched to tab 1.
+ 2017-06-09 10:21:01,144 - INFO - Went back 5 times to Facilities.
+ 2017-06-09 10:21:01,144 - INFO - b = 431. Moving to b = 432.
+ 2017-06-09 10:21:01,197 - INFO - Next building clicked.
+ 2017-06-09 10:21:02,269 - INFO - Monitored Data clicked.
+ 2017-06-09 10:21:02,874 - INFO - Additional Options clicked.
+ 2017-06-09 10:21:03,621 - INFO - Total Facility Energy and Demand selected.
+ 2017-06-09 10:21:03,637 - INFO - Continue clicked.
+ 2017-06-09 10:21:04,176 - INFO - Continue clicked again.
+ 2017-06-09 10:21:05,298 - INFO - Create Report clicked.
+ 2017-06-09 10:21:05,313 - INFO - Switched to tab 2.
+ 2017-06-09 10:21:10,907 - INFO - Building name acquired.
+ 2017-06-09 10:21:10,969 - INFO - Switched to tab 3.
+ 2017-06-09 10:21:21,357 - INFO - Downloading building on row 432 -- The Westmont - New York, NY
+ 2017-06-09 10:21:22,871 - INFO - Data file downloaded.
+ 2017-06-09 10:21:22,871 - INFO - Data file renamed.
+ 2017-06-09 10:21:22,871 - INFO - Data file moved.
+ 2017-06-09 10:21:22,901 - INFO - Tab 3 closed.
+ 2017-06-09 10:21:22,901 - INFO - Switched to tab 2.
+ 2017-06-09 10:21:22,933 - INFO - Tab 2 closed.
+ 2017-06-09 10:21:22,950 - INFO - Switched to tab 1.
+ 2017-06-09 10:21:25,236 - INFO - Went back 5 times to Facilities.
+ 2017-06-09 10:21:25,236 - INFO - b = 432. Moving to b = 433.
+ 2017-06-09 10:21:25,305 - INFO - Next building clicked.
+ 2017-06-09 10:21:26,375 - INFO - Monitored Data clicked.
+ 2017-06-09 10:21:26,959 - INFO - Additional Options clicked.
+ 2017-06-09 10:21:27,680 - INFO - Total Facility Energy and Demand selected.
+ 2017-06-09 10:21:27,696 - INFO - Continue clicked.
+ 2017-06-09 10:21:28,214 - INFO - Continue clicked again.
+ 2017-06-09 10:21:31,240 - INFO - Failed to find element. Assume last row reached. b = 433. - Message: 
+
+ 2017-06-09 10:21:31,240 - INFO - END: NYSERDA_downloadTotalsData.py
+
+
+ 2017-06-09 10:22:31,038 - INFO - START: NYSERDA_downloadTotalsData.py
+ 2017-06-09 10:22:36,644 - INFO - Begin data probing at b = 433
+ 2017-06-09 10:22:38,279 - INFO - Next building clicked.
+ 2017-06-09 10:22:39,364 - INFO - Monitored Data clicked.
+ 2017-06-09 10:22:39,924 - INFO - Additional Options clicked.
+ 2017-06-09 10:22:40,645 - INFO - Total Facility Energy and Demand selected.
+ 2017-06-09 10:22:40,674 - INFO - Continue clicked.
+ 2017-06-09 10:22:41,236 - INFO - Continue clicked again.
+ 2017-06-09 10:22:41,888 - INFO - Create Report clicked.
+ 2017-06-09 10:22:41,943 - INFO - Switched to tab 2.
+ 2017-06-09 10:22:46,654 - INFO - Building name acquired.
+ 2017-06-09 10:22:46,730 - INFO - Switched to tab 3.
+ 2017-06-09 10:23:00,154 - INFO - Downloading building on row 433 -- Times Square Apartments - New York, NY
+ 2017-06-09 10:23:00,670 - INFO - Data file downloaded.
+ 2017-06-09 10:23:00,670 - INFO - Data file renamed.
+ 2017-06-09 10:23:00,670 - INFO - Data file moved.
+ 2017-06-09 10:23:00,700 - INFO - Tab 3 closed.
+ 2017-06-09 10:23:00,700 - INFO - Switched to tab 2.
+ 2017-06-09 10:23:00,739 - INFO - Tab 2 closed.
+ 2017-06-09 10:23:00,739 - INFO - Switched to tab 1.
+ 2017-06-09 10:23:02,601 - INFO - Went back 5 times to Facilities.
+ 2017-06-09 10:23:02,601 - INFO - b = 433. Moving to b = 434.
+ 2017-06-09 10:23:02,660 - INFO - Next building clicked.
+ 2017-06-09 10:23:03,736 - INFO - Monitored Data clicked.
+ 2017-06-09 10:23:04,332 - INFO - Additional Options clicked.
+ 2017-06-09 10:23:08,009 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:23:09,295 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:23:09,295 - INFO - b = 434. Moving to b = 435.
+ 2017-06-09 10:23:09,361 - INFO - Next building clicked.
+ 2017-06-09 10:23:09,966 - INFO - Monitored Data clicked.
+ 2017-06-09 10:23:11,068 - INFO - Additional Options clicked.
+ 2017-06-09 10:23:11,773 - INFO - Total Facility Energy and Demand selected.
+ 2017-06-09 10:23:11,805 - INFO - Continue clicked.
+ 2017-06-09 10:23:12,490 - INFO - Continue clicked again.
+ 2017-06-09 10:23:13,122 - INFO - Create Report clicked.
+ 2017-06-09 10:23:13,138 - INFO - Switched to tab 2.
+ 2017-06-09 10:23:32,355 - INFO - Building name acquired.
+ 2017-06-09 10:23:32,423 - INFO - Switched to tab 3.
+ 2017-06-09 10:23:57,655 - INFO - Downloading building on row 435 -- Toren Condominiums - New York, NY
+ 2017-06-09 10:24:08,210 - INFO - Data file downloaded.
+ 2017-06-09 10:24:08,210 - INFO - Data file renamed.
+ 2017-06-09 10:24:08,210 - INFO - Data file moved.
+ 2017-06-09 10:24:08,226 - INFO - Tab 3 closed.
+ 2017-06-09 10:24:08,242 - INFO - Switched to tab 2.
+ 2017-06-09 10:24:08,263 - INFO - Tab 2 closed.
+ 2017-06-09 10:24:08,279 - INFO - Switched to tab 1.
+ 2017-06-09 10:24:10,117 - INFO - Went back 5 times to Facilities.
+ 2017-06-09 10:24:10,117 - INFO - b = 435. Moving to b = 436.
+ 2017-06-09 10:24:10,171 - INFO - Next building clicked.
+ 2017-06-09 10:24:11,286 - INFO - Monitored Data clicked.
+ 2017-06-09 10:24:11,943 - INFO - Additional Options clicked.
+ 2017-06-09 10:24:12,595 - INFO - Total Facility Energy and Demand selected.
+ 2017-06-09 10:24:12,644 - INFO - Continue clicked.
+ 2017-06-09 10:24:13,209 - INFO - Continue clicked again.
+ 2017-06-09 10:24:13,831 - INFO - Create Report clicked.
+ 2017-06-09 10:24:13,841 - INFO - Switched to tab 2.
+ 2017-06-09 10:24:21,082 - INFO - Building name acquired.
+ 2017-06-09 10:24:21,167 - INFO - Switched to tab 3.
+ 2017-06-09 10:24:33,582 - INFO - Downloading building on row 436 -- Tower West - New York, NY
+ 2017-06-09 10:24:36,085 - INFO - Data file downloaded.
+ 2017-06-09 10:24:36,085 - INFO - Data file renamed.
+ 2017-06-09 10:24:36,085 - INFO - Data file moved.
+ 2017-06-09 10:24:36,117 - INFO - Tab 3 closed.
+ 2017-06-09 10:24:36,131 - INFO - Switched to tab 2.
+ 2017-06-09 10:24:36,167 - INFO - Tab 2 closed.
+ 2017-06-09 10:24:36,170 - INFO - Switched to tab 1.
+ 2017-06-09 10:24:38,303 - INFO - Went back 5 times to Facilities.
+ 2017-06-09 10:24:38,303 - INFO - b = 436. Moving to b = 437.
+ 2017-06-09 10:24:38,351 - INFO - Next building clicked.
+ 2017-06-09 10:24:39,440 - INFO - Monitored Data clicked.
+ 2017-06-09 10:24:40,095 - INFO - Additional Options clicked.
+ 2017-06-09 10:24:43,765 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:24:45,467 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:24:45,467 - INFO - b = 437. Moving to b = 438.
+ 2017-06-09 10:24:45,551 - INFO - Next building clicked.
+ 2017-06-09 10:24:46,605 - INFO - Monitored Data clicked.
+ 2017-06-09 10:24:47,660 - INFO - Additional Options clicked.
+ 2017-06-09 10:24:51,378 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:24:53,161 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:24:53,161 - INFO - b = 438. Moving to b = 439.
+ 2017-06-09 10:24:53,285 - INFO - Next building clicked.
+ 2017-06-09 10:24:54,401 - INFO - Monitored Data clicked.
+ 2017-06-09 10:24:55,470 - INFO - Additional Options clicked.
+ 2017-06-09 10:24:59,141 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:25:00,842 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:25:00,842 - INFO - b = 439. Moving to b = 440.
+ 2017-06-09 10:25:00,911 - INFO - Next building clicked.
+ 2017-06-09 10:25:04,055 - INFO - Monitored Data not found.
+ 2017-06-09 10:25:05,342 - INFO - b = 440. Moving to b = 441.
+ 2017-06-09 10:25:07,029 - INFO - Next building clicked.
+ 2017-06-09 10:25:08,131 - INFO - Monitored Data clicked.
+ 2017-06-09 10:25:08,730 - INFO - Additional Options clicked.
+ 2017-06-09 10:25:12,397 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:25:13,857 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:25:13,857 - INFO - b = 441. Moving to b = 442.
+ 2017-06-09 10:25:13,987 - INFO - Next building clicked.
+ 2017-06-09 10:25:14,604 - INFO - Monitored Data clicked.
+ 2017-06-09 10:25:15,644 - INFO - Additional Options clicked.
+ 2017-06-09 10:25:16,342 - INFO - Total Facility Energy and Demand selected.
+ 2017-06-09 10:25:16,361 - INFO - Continue clicked.
+ 2017-06-09 10:25:17,094 - INFO - Continue clicked again.
+ 2017-06-09 10:25:17,746 - INFO - Create Report clicked.
+ 2017-06-09 10:25:17,746 - INFO - Switched to tab 2.
+ 2017-06-09 10:25:38,855 - INFO - Building name acquired.
+ 2017-06-09 10:25:38,923 - INFO - Switched to tab 3.
+ 2017-06-09 10:26:04,783 - INFO - Downloading building on row 442 -- Trump Tower - White Plains, NY
+ 2017-06-09 10:26:17,349 - INFO - Data file downloaded.
+ 2017-06-09 10:26:17,349 - INFO - Data file renamed.
+ 2017-06-09 10:26:17,351 - INFO - Data file moved.
+ 2017-06-09 10:26:17,372 - INFO - Tab 3 closed.
+ 2017-06-09 10:26:17,388 - INFO - Switched to tab 2.
+ 2017-06-09 10:26:17,418 - INFO - Tab 2 closed.
+ 2017-06-09 10:26:17,418 - INFO - Switched to tab 1.
+ 2017-06-09 10:26:19,885 - INFO - Went back 5 times to Facilities.
+ 2017-06-09 10:26:19,885 - INFO - b = 442. Moving to b = 443.
+ 2017-06-09 10:26:19,933 - INFO - Next building clicked.
+ 2017-06-09 10:26:21,003 - INFO - Monitored Data clicked.
+ 2017-06-09 10:26:22,088 - INFO - Additional Options clicked.
+ 2017-06-09 10:26:25,707 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:26:27,372 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:26:27,372 - INFO - b = 443. Moving to b = 444.
+ 2017-06-09 10:26:27,440 - INFO - Next building clicked.
+ 2017-06-09 10:26:28,078 - INFO - Monitored Data clicked.
+ 2017-06-09 10:26:29,141 - INFO - Additional Options clicked.
+ 2017-06-09 10:26:29,897 - INFO - Total Facility Energy and Demand selected.
+ 2017-06-09 10:26:29,913 - INFO - Continue clicked.
+ 2017-06-09 10:26:30,483 - INFO - Continue clicked again.
+ 2017-06-09 10:26:31,115 - INFO - Create Report clicked.
+ 2017-06-09 10:26:31,115 - INFO - Switched to tab 2.
+ 2017-06-09 10:26:37,345 - INFO - Building name acquired.
+ 2017-06-09 10:26:37,476 - INFO - Switched to tab 3.
+ 2017-06-09 10:26:50,042 - INFO - Downloading building on row 444 -- Tudor Gardens - New York, NY
+ 2017-06-09 10:26:53,548 - INFO - Data file downloaded.
+ 2017-06-09 10:26:53,548 - INFO - Data file renamed.
+ 2017-06-09 10:26:53,548 - INFO - Data file moved.
+ 2017-06-09 10:26:53,579 - INFO - Tab 3 closed.
+ 2017-06-09 10:26:53,579 - INFO - Switched to tab 2.
+ 2017-06-09 10:26:53,617 - INFO - Tab 2 closed.
+ 2017-06-09 10:26:53,632 - INFO - Switched to tab 1.
+ 2017-06-09 10:26:55,673 - INFO - Went back 5 times to Facilities.
+ 2017-06-09 10:26:55,673 - INFO - b = 444. Moving to b = 445.
+ 2017-06-09 10:26:55,724 - INFO - Next building clicked.
+ 2017-06-09 10:26:56,328 - INFO - Monitored Data clicked.
+ 2017-06-09 10:26:57,375 - INFO - Additional Options clicked.
+ 2017-06-09 10:27:01,480 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:27:03,482 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:27:03,482 - INFO - b = 445. Moving to b = 446.
+ 2017-06-09 10:27:03,551 - INFO - Next building clicked.
+ 2017-06-09 10:27:04,151 - INFO - Monitored Data clicked.
+ 2017-06-09 10:27:04,698 - INFO - Additional Options clicked.
+ 2017-06-09 10:27:08,377 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:27:10,062 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:27:10,062 - INFO - b = 446. Moving to b = 447.
+ 2017-06-09 10:27:10,145 - INFO - Next building clicked.
+ 2017-06-09 10:27:11,210 - INFO - Monitored Data clicked.
+ 2017-06-09 10:27:11,815 - INFO - Additional Options clicked.
+ 2017-06-09 10:27:15,493 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:27:17,496 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:27:17,496 - INFO - b = 447. Moving to b = 448.
+ 2017-06-09 10:27:17,641 - INFO - Next building clicked.
+ 2017-06-09 10:27:18,727 - INFO - Monitored Data clicked.
+ 2017-06-09 10:27:19,780 - INFO - Additional Options clicked.
+ 2017-06-09 10:27:20,546 - INFO - Total Facility Energy and Demand selected.
+ 2017-06-09 10:27:20,582 - INFO - Continue clicked.
+ 2017-06-09 10:27:21,161 - INFO - Continue clicked again.
+ 2017-06-09 10:27:21,799 - INFO - Create Report clicked.
+ 2017-06-09 10:27:21,815 - INFO - Switched to tab 2.
+ 2017-06-09 10:27:30,007 - INFO - Building name acquired.
+ 2017-06-09 10:27:30,155 - INFO - Switched to tab 3.
+ 2017-06-09 10:27:43,377 - INFO - Downloading building on row 448 -- Two Tudor - New York, NY
+ 2017-06-09 10:27:46,903 - INFO - Data file downloaded.
+ 2017-06-09 10:27:46,903 - INFO - Data file renamed.
+ 2017-06-09 10:27:46,903 - INFO - Data file moved.
+ 2017-06-09 10:27:46,917 - INFO - Tab 3 closed.
+ 2017-06-09 10:27:46,940 - INFO - Switched to tab 2.
+ 2017-06-09 10:27:46,987 - INFO - Tab 2 closed.
+ 2017-06-09 10:27:47,003 - INFO - Switched to tab 1.
+ 2017-06-09 10:27:49,075 - INFO - Went back 5 times to Facilities.
+ 2017-06-09 10:27:49,075 - INFO - b = 448. Moving to b = 449.
+ 2017-06-09 10:27:49,121 - INFO - Next building clicked.
+ 2017-06-09 10:27:49,713 - INFO - Monitored Data clicked.
+ 2017-06-09 10:27:50,776 - INFO - Additional Options clicked.
+ 2017-06-09 10:27:51,493 - INFO - Total Facility Energy and Demand selected.
+ 2017-06-09 10:27:51,540 - INFO - Continue clicked.
+ 2017-06-09 10:27:52,151 - INFO - Continue clicked again.
+ 2017-06-09 10:27:52,790 - INFO - Create Report clicked.
+ 2017-06-09 10:27:52,808 - INFO - Switched to tab 2.
+ 2017-06-09 10:28:11,618 - INFO - Building name acquired.
+ 2017-06-09 10:28:11,717 - INFO - Switched to tab 3.
+ 2017-06-09 10:28:35,714 - INFO - Downloading building on row 449 -- Ultra-Flex - Brooklyn, NY
+ 2017-06-09 10:28:46,288 - INFO - Data file downloaded.
+ 2017-06-09 10:28:46,288 - INFO - Data file renamed.
+ 2017-06-09 10:28:46,288 - INFO - Data file moved.
+ 2017-06-09 10:28:46,309 - INFO - Tab 3 closed.
+ 2017-06-09 10:28:46,309 - INFO - Switched to tab 2.
+ 2017-06-09 10:28:46,357 - INFO - Tab 2 closed.
+ 2017-06-09 10:28:46,372 - INFO - Switched to tab 1.
+ 2017-06-09 10:28:48,730 - INFO - Went back 5 times to Facilities.
+ 2017-06-09 10:28:48,730 - INFO - b = 449. Moving to b = 450.
+ 2017-06-09 10:28:48,878 - INFO - Next building clicked.
+ 2017-06-09 10:28:50,048 - INFO - Monitored Data clicked.
+ 2017-06-09 10:28:51,121 - INFO - Additional Options clicked.
+ 2017-06-09 10:28:51,871 - INFO - Total Facility Energy and Demand selected.
+ 2017-06-09 10:28:51,901 - INFO - Continue clicked.
+ 2017-06-09 10:28:52,486 - INFO - Continue clicked again.
+ 2017-06-09 10:28:53,102 - INFO - Create Report clicked.
+ 2017-06-09 10:28:53,102 - INFO - Switched to tab 2.
+ 2017-06-09 10:28:59,244 - INFO - Building name acquired.
+ 2017-06-09 10:28:59,308 - INFO - Switched to tab 3.
+ 2017-06-09 10:29:11,210 - INFO - Downloading building on row 450 -- Union College - Schenectady, NY
+ 2017-06-09 10:29:13,717 - INFO - Data file downloaded.
+ 2017-06-09 10:29:13,717 - INFO - Data file renamed.
+ 2017-06-09 10:29:13,717 - INFO - Data file moved.
+ 2017-06-09 10:29:13,733 - INFO - Tab 3 closed.
+ 2017-06-09 10:29:13,747 - INFO - Switched to tab 2.
+ 2017-06-09 10:29:13,779 - INFO - Tab 2 closed.
+ 2017-06-09 10:29:13,801 - INFO - Switched to tab 1.
+ 2017-06-09 10:29:15,065 - INFO - b = 450. Moving to b = 451.
+ 2017-06-09 10:29:16,865 - INFO - Next building clicked.
+ 2017-06-09 10:29:17,997 - INFO - Monitored Data clicked.
+ 2017-06-09 10:29:18,668 - INFO - Additional Options clicked.
+ 2017-06-09 10:29:22,403 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:29:23,904 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:29:23,904 - INFO - b = 451. Moving to b = 452.
+ 2017-06-09 10:29:23,957 - INFO - Next building clicked.
+ 2017-06-09 10:29:25,085 - INFO - Monitored Data clicked.
+ 2017-06-09 10:29:26,176 - INFO - Additional Options clicked.
+ 2017-06-09 10:29:27,369 - INFO - Total Facility Energy and Demand selected.
+ 2017-06-09 10:29:27,384 - INFO - Continue clicked.
+ 2017-06-09 10:29:27,938 - INFO - Continue clicked again.
+ 2017-06-09 10:29:28,571 - INFO - Create Report clicked.
+ 2017-06-09 10:29:28,571 - INFO - Switched to tab 2.
+ 2017-06-09 10:29:42,812 - INFO - Building name acquired.
+ 2017-06-09 10:29:42,874 - INFO - Switched to tab 3.
+ 2017-06-09 10:30:03,145 - INFO - Downloading building on row 452 -- Urban Horizons Building - Bronx, NY
+ 2017-06-09 10:30:11,714 - INFO - Data file downloaded.
+ 2017-06-09 10:30:11,714 - INFO - Data file renamed.
+ 2017-06-09 10:30:11,714 - INFO - Data file moved.
+ 2017-06-09 10:30:11,730 - INFO - Tab 3 closed.
+ 2017-06-09 10:30:11,746 - INFO - Switched to tab 2.
+ 2017-06-09 10:30:11,778 - INFO - Tab 2 closed.
+ 2017-06-09 10:30:11,795 - INFO - Switched to tab 1.
+ 2017-06-09 10:30:13,835 - INFO - Went back 5 times to Facilities.
+ 2017-06-09 10:30:13,835 - INFO - b = 452. Moving to b = 453.
+ 2017-06-09 10:30:13,882 - INFO - Next building clicked.
+ 2017-06-09 10:30:14,983 - INFO - Monitored Data clicked.
+ 2017-06-09 10:30:16,025 - INFO - Additional Options clicked.
+ 2017-06-09 10:30:16,772 - INFO - Total Facility Energy and Demand selected.
+ 2017-06-09 10:30:16,809 - INFO - Continue clicked.
+ 2017-06-09 10:30:17,372 - INFO - Continue clicked again.
+ 2017-06-09 10:30:18,026 - INFO - Create Report clicked.
+ 2017-06-09 10:30:18,042 - INFO - Switched to tab 2.
+ 2017-06-09 10:30:23,188 - INFO - Building name acquired.
+ 2017-06-09 10:30:23,273 - INFO - Switched to tab 3.
+ 2017-06-09 10:30:32,069 - INFO - Downloading building on row 453 -- Van Blarcom Closures - Brooklyn, NY
+ 2017-06-09 10:30:32,576 - INFO - Data file downloaded.
+ 2017-06-09 10:30:32,576 - INFO - Data file renamed.
+ 2017-06-09 10:30:32,576 - INFO - Data file moved.
+ 2017-06-09 10:30:32,592 - INFO - Tab 3 closed.
+ 2017-06-09 10:30:32,615 - INFO - Switched to tab 2.
+ 2017-06-09 10:30:32,645 - INFO - Tab 2 closed.
+ 2017-06-09 10:30:32,661 - INFO - Switched to tab 1.
+ 2017-06-09 10:30:34,961 - INFO - Went back 5 times to Facilities.
+ 2017-06-09 10:30:34,961 - INFO - b = 453. Moving to b = 454.
+ 2017-06-09 10:30:35,046 - INFO - Next building clicked.
+ 2017-06-09 10:30:35,614 - INFO - Monitored Data clicked.
+ 2017-06-09 10:30:36,233 - INFO - Additional Options clicked.
+ 2017-06-09 10:30:37,051 - INFO - Total Facility Energy and Demand selected.
+ 2017-06-09 10:30:37,082 - INFO - Continue clicked.
+ 2017-06-09 10:30:37,635 - INFO - Continue clicked again.
+ 2017-06-09 10:30:38,299 - INFO - Create Report clicked.
+ 2017-06-09 10:30:38,299 - INFO - Switched to tab 2.
+ 2017-06-09 10:30:50,092 - INFO - Building name acquired.
+ 2017-06-09 10:30:50,207 - INFO - Switched to tab 3.
+ 2017-06-09 10:31:21,520 - INFO - Downloading building on row 454 -- Vassar College - Poughkeepsie, NY
+ 2017-06-09 10:31:32,072 - INFO - Data file downloaded.
+ 2017-06-09 10:31:32,072 - INFO - Data file renamed.
+ 2017-06-09 10:31:32,072 - INFO - Data file moved.
+ 2017-06-09 10:31:32,086 - INFO - Tab 3 closed.
+ 2017-06-09 10:31:32,102 - INFO - Switched to tab 2.
+ 2017-06-09 10:31:32,134 - INFO - Tab 2 closed.
+ 2017-06-09 10:31:32,153 - INFO - Switched to tab 1.
+ 2017-06-09 10:31:34,582 - INFO - Went back 5 times to Facilities.
+ 2017-06-09 10:31:34,582 - INFO - b = 454. Moving to b = 455.
+ 2017-06-09 10:31:34,723 - INFO - Next building clicked.
+ 2017-06-09 10:31:35,788 - INFO - Monitored Data clicked.
+ 2017-06-09 10:31:36,953 - INFO - Additional Options clicked.
+ 2017-06-09 10:31:41,069 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:31:43,026 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:31:43,026 - INFO - b = 455. Moving to b = 456.
+ 2017-06-09 10:31:43,096 - INFO - Next building clicked.
+ 2017-06-09 10:31:46,233 - INFO - Monitored Data not found.
+ 2017-06-09 10:31:47,628 - INFO - Went back 1 times to Facilities.
+ 2017-06-09 10:31:47,628 - INFO - b = 456. Moving to b = 457.
+ 2017-06-09 10:31:47,707 - INFO - Next building clicked.
+ 2017-06-09 10:31:48,799 - INFO - Monitored Data clicked.
+ 2017-06-09 10:31:49,970 - INFO - Additional Options clicked.
+ 2017-06-09 10:31:53,595 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:31:55,161 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:31:55,161 - INFO - b = 457. Moving to b = 458.
+ 2017-06-09 10:31:55,260 - INFO - Next building clicked.
+ 2017-06-09 10:31:56,346 - INFO - Monitored Data clicked.
+ 2017-06-09 10:31:57,447 - INFO - Additional Options clicked.
+ 2017-06-09 10:32:01,115 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:32:03,078 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:32:03,078 - INFO - b = 458. Moving to b = 459.
+ 2017-06-09 10:32:03,200 - INFO - Next building clicked.
+ 2017-06-09 10:32:04,316 - INFO - Monitored Data clicked.
+ 2017-06-09 10:32:04,898 - INFO - Additional Options clicked.
+ 2017-06-09 10:32:08,594 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:32:10,233 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:32:10,233 - INFO - b = 459. Moving to b = 460.
+ 2017-06-09 10:32:10,348 - INFO - Next building clicked.
+ 2017-06-09 10:32:11,480 - INFO - Monitored Data clicked.
+ 2017-06-09 10:32:12,579 - INFO - Additional Options clicked.
+ 2017-06-09 10:32:16,250 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:32:17,653 - INFO - b = 460. Moving to b = 461.
+ 2017-06-09 10:32:19,233 - INFO - Next building clicked.
+ 2017-06-09 10:32:20,338 - INFO - Monitored Data clicked.
+ 2017-06-09 10:32:21,085 - INFO - Additional Options clicked.
+ 2017-06-09 10:32:24,762 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:32:26,398 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:32:26,398 - INFO - b = 461. Moving to b = 462.
+ 2017-06-09 10:32:26,451 - INFO - Next building clicked.
+ 2017-06-09 10:32:27,516 - INFO - Monitored Data clicked.
+ 2017-06-09 10:32:28,654 - INFO - Additional Options clicked.
+ 2017-06-09 10:32:29,355 - INFO - Total Facility Energy and Demand selected.
+ 2017-06-09 10:32:29,387 - INFO - Continue clicked.
+ 2017-06-09 10:32:29,987 - INFO - Continue clicked again.
+ 2017-06-09 10:32:30,602 - INFO - Create Report clicked.
+ 2017-06-09 10:32:30,602 - INFO - Switched to tab 2.
+ 2017-06-09 10:32:39,517 - INFO - Building name acquired.
+ 2017-06-09 10:32:39,601 - INFO - Switched to tab 3.
+ 2017-06-09 10:32:52,921 - INFO - Downloading building on row 462 -- Village Mall - Flushing, NY
+ 2017-06-09 10:32:54,424 - INFO - Data file downloaded.
+ 2017-06-09 10:32:54,424 - INFO - Data file renamed.
+ 2017-06-09 10:32:54,424 - INFO - Data file moved.
+ 2017-06-09 10:32:54,456 - INFO - Tab 3 closed.
+ 2017-06-09 10:32:54,456 - INFO - Switched to tab 2.
+ 2017-06-09 10:32:54,493 - INFO - Tab 2 closed.
+ 2017-06-09 10:32:54,493 - INFO - Switched to tab 1.
+ 2017-06-09 10:32:57,086 - INFO - Went back 5 times to Facilities.
+ 2017-06-09 10:32:57,086 - INFO - b = 462. Moving to b = 463.
+ 2017-06-09 10:32:57,148 - INFO - Next building clicked.
+ 2017-06-09 10:32:58,237 - INFO - Monitored Data clicked.
+ 2017-06-09 10:32:59,280 - INFO - Additional Options clicked.
+ 2017-06-09 10:33:03,417 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:33:04,819 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:33:04,819 - INFO - b = 463. Moving to b = 464.
+ 2017-06-09 10:33:04,903 - INFO - Next building clicked.
+ 2017-06-09 10:33:05,466 - INFO - Monitored Data clicked.
+ 2017-06-09 10:33:06,084 - INFO - Additional Options clicked.
+ 2017-06-09 10:33:06,869 - INFO - Total Facility Energy and Demand selected.
+ 2017-06-09 10:33:06,901 - INFO - Continue clicked.
+ 2017-06-09 10:33:07,486 - INFO - Continue clicked again.
+ 2017-06-09 10:33:08,148 - INFO - Create Report clicked.
+ 2017-06-09 10:33:08,148 - INFO - Switched to tab 2.
+ 2017-06-09 10:33:33,900 - INFO - Building name acquired.
+ 2017-06-09 10:33:33,984 - INFO - Switched to tab 3.
+ 2017-06-09 10:34:04,578 - INFO - Downloading building on row 464 -- VIP Country Club - New Rochelle, NY
+ 2017-06-09 10:34:13,165 - INFO - Data file downloaded.
+ 2017-06-09 10:34:13,165 - INFO - Data file renamed.
+ 2017-06-09 10:34:13,167 - INFO - Data file moved.
+ 2017-06-09 10:34:13,187 - INFO - Tab 3 closed.
+ 2017-06-09 10:34:13,203 - INFO - Switched to tab 2.
+ 2017-06-09 10:34:13,250 - INFO - Tab 2 closed.
+ 2017-06-09 10:34:13,272 - INFO - Switched to tab 1.
+ 2017-06-09 10:34:15,693 - INFO - Went back 5 times to Facilities.
+ 2017-06-09 10:34:15,693 - INFO - b = 464. Moving to b = 465.
+ 2017-06-09 10:34:15,740 - INFO - Next building clicked.
+ 2017-06-09 10:34:16,378 - INFO - Monitored Data clicked.
+ 2017-06-09 10:34:17,447 - INFO - Additional Options clicked.
+ 2017-06-09 10:34:21,591 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:34:23,197 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:34:23,197 - INFO - b = 465. Moving to b = 466.
+ 2017-06-09 10:34:23,243 - INFO - Next building clicked.
+ 2017-06-09 10:34:26,302 - INFO - Monitored Data not found.
+ 2017-06-09 10:34:27,207 - INFO - Went back 1 times to Facilities.
+ 2017-06-09 10:34:27,207 - INFO - b = 466. Moving to b = 467.
+ 2017-06-09 10:34:27,270 - INFO - Next building clicked.
+ 2017-06-09 10:34:28,355 - INFO - Monitored Data clicked.
+ 2017-06-09 10:34:29,414 - INFO - Additional Options clicked.
+ 2017-06-09 10:34:33,476 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:34:35,197 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:34:35,197 - INFO - b = 467. Moving to b = 468.
+ 2017-06-09 10:34:35,282 - INFO - Next building clicked.
+ 2017-06-09 10:34:35,849 - INFO - Monitored Data clicked.
+ 2017-06-09 10:34:36,884 - INFO - Additional Options clicked.
+ 2017-06-09 10:34:37,622 - INFO - Total Facility Energy and Demand selected.
+ 2017-06-09 10:34:37,670 - INFO - Continue clicked.
+ 2017-06-09 10:34:38,237 - INFO - Continue clicked again.
+ 2017-06-09 10:34:38,890 - INFO - Create Report clicked.
+ 2017-06-09 10:34:38,973 - INFO - Switched to tab 2.
+ 2017-06-09 10:35:09,243 - INFO - Failed to find element. Assume last row reached. b = 468. - Message: 
+
+ 2017-06-09 10:35:09,243 - INFO - END: NYSERDA_downloadTotalsData.py
+
+
+ 2017-06-09 10:40:41,980 - INFO - START: NYSERDA_downloadTotalsData.py
+ 2017-06-09 10:40:47,552 - INFO - Begin data probing at b = 468
+ 2017-06-09 10:40:49,183 - INFO - Next building clicked.
+ 2017-06-09 10:40:49,749 - INFO - Monitored Data clicked.
+ 2017-06-09 10:40:50,828 - INFO - Additional Options clicked.
+ 2017-06-09 10:40:51,556 - INFO - Total Facility Energy and Demand selected.
+ 2017-06-09 10:40:51,618 - INFO - Continue clicked.
+ 2017-06-09 10:40:52,180 - INFO - Continue clicked again.
+ 2017-06-09 10:40:52,812 - INFO - Create Report clicked.
+ 2017-06-09 10:40:52,834 - INFO - Switched to tab 2.
+ 2017-06-09 10:41:23,296 - INFO - Failed to find element. Assume last row reached. b = 468. - Message: 
+
+ 2017-06-09 10:41:23,296 - INFO - END: NYSERDA_downloadTotalsData.py
+
+
+ 2017-06-09 10:42:17,943 - INFO - START: NYSERDA_downloadTotalsData.py
+ 2017-06-09 10:42:23,048 - INFO - Begin data probing at b = 468
+ 2017-06-09 10:42:26,108 - INFO - Failed to find element. Assume last row reached. b = 468. - Message: 
+
+ 2017-06-09 10:42:26,108 - INFO - END: NYSERDA_downloadTotalsData.py
+
+
+ 2017-06-09 10:42:39,515 - INFO - START: NYSERDA_downloadTotalsData.py
+ 2017-06-09 10:42:44,650 - INFO - Begin data probing at b = 468
+ 2017-06-09 10:42:46,319 - INFO - Next building clicked.
+ 2017-06-09 10:42:46,913 - INFO - Monitored Data clicked.
+ 2017-06-09 10:42:47,545 - INFO - Additional Options clicked.
+ 2017-06-09 10:42:48,243 - INFO - Total Facility Energy and Demand selected.
+ 2017-06-09 10:42:48,279 - INFO - Continue clicked.
+ 2017-06-09 10:42:48,858 - INFO - Continue clicked again.
+ 2017-06-09 10:42:49,490 - INFO - Create Report clicked.
+ 2017-06-09 10:42:49,510 - INFO - Switched to tab 2.
+ 2017-06-09 10:43:19,621 - INFO - Failed to find element. Assume last row reached. b = 468. - Message: 
+
+ 2017-06-09 10:43:19,621 - INFO - END: NYSERDA_downloadTotalsData.py
+
+
+ 2017-06-09 10:43:35,125 - INFO - START: NYSERDA_downloadTotalsData.py
+ 2017-06-09 10:43:40,230 - INFO - Begin data probing at b = 468
+ 2017-06-09 10:43:41,813 - INFO - Next building clicked.
+ 2017-06-09 10:43:42,411 - INFO - Monitored Data clicked.
+ 2017-06-09 10:43:42,993 - INFO - Additional Options clicked.
+ 2017-06-09 10:43:43,687 - INFO - Total Facility Energy and Demand selected.
+ 2017-06-09 10:43:43,726 - INFO - Continue clicked.
+ 2017-06-09 10:43:44,303 - INFO - Continue clicked again.
+ 2017-06-09 10:43:44,930 - INFO - Create Report clicked.
+ 2017-06-09 10:43:44,950 - INFO - Switched to tab 2.
+ 2017-06-09 10:43:59,338 - INFO - Building name acquired.
+ 2017-06-09 10:43:59,453 - INFO - Switched to tab 3.
+ 2017-06-09 10:44:21,614 - INFO - Downloading building on row 468 -- Waldbaum's Supermarket - Hauppauge, NY
+ 2017-06-09 10:44:26,157 - INFO - Data file downloaded.
+ 2017-06-09 10:44:26,157 - INFO - Data file renamed.
+ 2017-06-09 10:44:26,158 - INFO - Data file moved.
+ 2017-06-09 10:44:26,184 - INFO - Tab 3 closed.
+ 2017-06-09 10:44:26,227 - INFO - Switched to tab 2.
+ 2017-06-09 10:44:26,262 - INFO - Tab 2 closed.
+ 2017-06-09 10:44:26,273 - INFO - Switched to tab 1.
+ 2017-06-09 10:44:27,770 - INFO - Went back 5 times to Facilities.
+ 2017-06-09 10:44:27,770 - INFO - b = 468. Moving to b = 469.
+ 2017-06-09 10:44:27,818 - INFO - Next building clicked.
+ 2017-06-09 10:44:28,888 - INFO - Monitored Data clicked.
+ 2017-06-09 10:44:29,542 - INFO - Additional Options clicked.
+ 2017-06-09 10:44:33,688 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:44:34,828 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:44:34,828 - INFO - b = 469. Moving to b = 470.
+ 2017-06-09 10:44:34,944 - INFO - Next building clicked.
+ 2017-06-09 10:44:36,013 - INFO - Monitored Data clicked.
+ 2017-06-09 10:44:37,092 - INFO - Additional Options clicked.
+ 2017-06-09 10:44:40,767 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:44:42,052 - INFO - b = 470. Moving to b = 471.
+ 2017-06-09 10:44:43,819 - INFO - Next building clicked.
+ 2017-06-09 10:44:44,903 - INFO - Monitored Data clicked.
+ 2017-06-09 10:44:45,471 - INFO - Additional Options clicked.
+ 2017-06-09 10:44:49,088 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:44:50,359 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:44:50,359 - INFO - b = 471. Moving to b = 472.
+ 2017-06-09 10:44:50,476 - INFO - Next building clicked.
+ 2017-06-09 10:44:51,539 - INFO - Monitored Data clicked.
+ 2017-06-09 10:44:52,625 - INFO - Additional Options clicked.
+ 2017-06-09 10:44:56,403 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:44:57,536 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:44:57,536 - INFO - b = 472. Moving to b = 473.
+ 2017-06-09 10:44:57,589 - INFO - Next building clicked.
+ 2017-06-09 10:44:58,674 - INFO - Monitored Data clicked.
+ 2017-06-09 10:44:59,256 - INFO - Additional Options clicked.
+ 2017-06-09 10:45:02,953 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:45:04,055 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:45:04,055 - INFO - b = 473. Moving to b = 474.
+ 2017-06-09 10:45:04,101 - INFO - Next building clicked.
+ 2017-06-09 10:45:05,358 - INFO - Monitored Data clicked.
+ 2017-06-09 10:45:06,430 - INFO - Additional Options clicked.
+ 2017-06-09 10:45:10,091 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:45:11,207 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:45:11,207 - INFO - b = 474. Moving to b = 475.
+ 2017-06-09 10:45:11,345 - INFO - Next building clicked.
+ 2017-06-09 10:45:12,427 - INFO - Monitored Data clicked.
+ 2017-06-09 10:45:13,028 - INFO - Additional Options clicked.
+ 2017-06-09 10:45:16,625 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:45:18,160 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:45:18,160 - INFO - b = 475. Moving to b = 476.
+ 2017-06-09 10:45:18,298 - INFO - Next building clicked.
+ 2017-06-09 10:45:19,384 - INFO - Monitored Data clicked.
+ 2017-06-09 10:45:20,490 - INFO - Additional Options clicked.
+ 2017-06-09 10:45:24,102 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:45:25,252 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:45:25,252 - INFO - b = 476. Moving to b = 477.
+ 2017-06-09 10:45:25,467 - INFO - Next building clicked.
+ 2017-06-09 10:45:26,538 - INFO - Monitored Data clicked.
+ 2017-06-09 10:45:27,108 - INFO - Additional Options clicked.
+ 2017-06-09 10:45:30,803 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:45:32,019 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:45:32,019 - INFO - b = 477. Moving to b = 478.
+ 2017-06-09 10:45:32,220 - INFO - Next building clicked.
+ 2017-06-09 10:45:33,267 - INFO - Monitored Data clicked.
+ 2017-06-09 10:45:34,328 - INFO - Additional Options clicked.
+ 2017-06-09 10:45:37,887 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:45:39,457 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:45:39,457 - INFO - b = 478. Moving to b = 479.
+ 2017-06-09 10:45:39,677 - INFO - Next building clicked.
+ 2017-06-09 10:45:42,701 - INFO - Monitored Data not found.
+ 2017-06-09 10:45:43,617 - INFO - Went back 1 times to Facilities.
+ 2017-06-09 10:45:43,617 - INFO - b = 479. Moving to b = 480.
+ 2017-06-09 10:45:43,802 - INFO - Next building clicked.
+ 2017-06-09 10:45:44,881 - INFO - Monitored Data clicked.
+ 2017-06-09 10:45:45,450 - INFO - Additional Options clicked.
+ 2017-06-09 10:45:49,086 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:45:50,476 - INFO - b = 480. Moving to b = 481.
+ 2017-06-09 10:45:52,226 - INFO - Next building clicked.
+ 2017-06-09 10:45:53,313 - INFO - Monitored Data clicked.
+ 2017-06-09 10:45:53,930 - INFO - Additional Options clicked.
+ 2017-06-09 10:45:57,660 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:45:59,109 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:45:59,109 - INFO - b = 481. Moving to b = 482.
+ 2017-06-09 10:45:59,368 - INFO - Next building clicked.
+ 2017-06-09 10:46:00,453 - INFO - Monitored Data clicked.
+ 2017-06-09 10:46:01,075 - INFO - Additional Options clicked.
+ 2017-06-09 10:46:05,295 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:46:07,028 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:46:07,028 - INFO - b = 482. Moving to b = 483.
+ 2017-06-09 10:46:07,065 - INFO - Next building clicked.
+ 2017-06-09 10:46:08,150 - INFO - Monitored Data clicked.
+ 2017-06-09 10:46:08,772 - INFO - Additional Options clicked.
+ 2017-06-09 10:46:12,746 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:46:14,105 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:46:14,105 - INFO - b = 483. Moving to b = 484.
+ 2017-06-09 10:46:14,151 - INFO - Next building clicked.
+ 2017-06-09 10:46:15,227 - INFO - Monitored Data clicked.
+ 2017-06-09 10:46:15,915 - INFO - Additional Options clicked.
+ 2017-06-09 10:46:19,546 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:46:20,969 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:46:20,969 - INFO - b = 484. Moving to b = 485.
+ 2017-06-09 10:46:21,036 - INFO - Next building clicked.
+ 2017-06-09 10:46:22,622 - INFO - Monitored Data clicked.
+ 2017-06-09 10:46:24,289 - INFO - Additional Options clicked.
+ 2017-06-09 10:46:28,454 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:46:30,571 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:46:30,571 - INFO - b = 485. Moving to b = 486.
+ 2017-06-09 10:46:30,842 - INFO - Next building clicked.
+ 2017-06-09 10:46:31,993 - INFO - Monitored Data clicked.
+ 2017-06-09 10:46:33,025 - INFO - Additional Options clicked.
+ 2017-06-09 10:46:34,164 - INFO - Total Facility Energy and Demand selected.
+ 2017-06-09 10:46:34,194 - INFO - Continue clicked.
+ 2017-06-09 10:46:34,779 - INFO - Continue clicked again.
+ 2017-06-09 10:46:35,447 - INFO - Create Report clicked.
+ 2017-06-09 10:46:35,470 - INFO - Switched to tab 2.
+ 2017-06-09 10:46:43,147 - INFO - Building name acquired.
+ 2017-06-09 10:46:43,216 - INFO - Switched to tab 3.
+ 2017-06-09 10:46:54,259 - INFO - Downloading building on row 486 -- West 96th Apartments - New York, NY
+ 2017-06-09 10:46:56,776 - INFO - Data file downloaded.
+ 2017-06-09 10:46:56,776 - INFO - Data file renamed.
+ 2017-06-09 10:46:56,776 - INFO - Data file moved.
+ 2017-06-09 10:46:56,792 - INFO - Tab 3 closed.
+ 2017-06-09 10:46:56,792 - INFO - Switched to tab 2.
+ 2017-06-09 10:46:56,836 - INFO - Tab 2 closed.
+ 2017-06-09 10:46:56,844 - INFO - Switched to tab 1.
+ 2017-06-09 10:46:58,976 - INFO - Went back 5 times to Facilities.
+ 2017-06-09 10:46:58,976 - INFO - b = 486. Moving to b = 487.
+ 2017-06-09 10:46:59,030 - INFO - Next building clicked.
+ 2017-06-09 10:47:00,078 - INFO - Monitored Data clicked.
+ 2017-06-09 10:47:01,121 - INFO - Additional Options clicked.
+ 2017-06-09 10:47:04,815 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:47:06,272 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:47:06,272 - INFO - b = 487. Moving to b = 488.
+ 2017-06-09 10:47:06,352 - INFO - Next building clicked.
+ 2017-06-09 10:47:07,460 - INFO - Monitored Data clicked.
+ 2017-06-09 10:47:08,565 - INFO - Additional Options clicked.
+ 2017-06-09 10:47:12,243 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:47:14,078 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:47:14,078 - INFO - b = 488. Moving to b = 489.
+ 2017-06-09 10:47:14,155 - INFO - Next building clicked.
+ 2017-06-09 10:47:15,247 - INFO - Monitored Data clicked.
+ 2017-06-09 10:47:16,367 - INFO - Additional Options clicked.
+ 2017-06-09 10:47:20,111 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:47:21,671 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:47:21,671 - INFO - b = 489. Moving to b = 490.
+ 2017-06-09 10:47:21,717 - INFO - Next building clicked.
+ 2017-06-09 10:47:22,289 - INFO - Monitored Data clicked.
+ 2017-06-09 10:47:22,858 - INFO - Additional Options clicked.
+ 2017-06-09 10:47:23,573 - INFO - Total Facility Energy and Demand selected.
+ 2017-06-09 10:47:23,605 - INFO - Continue clicked.
+ 2017-06-09 10:47:24,174 - INFO - Continue clicked again.
+ 2017-06-09 10:47:25,279 - INFO - Create Report clicked.
+ 2017-06-09 10:47:25,279 - INFO - Switched to tab 2.
+ 2017-06-09 10:47:32,405 - INFO - Building name acquired.
+ 2017-06-09 10:47:32,538 - INFO - Switched to tab 3.
+ 2017-06-09 10:47:43,520 - INFO - Downloading building on row 490 -- Wyoming County Community Hospital - Warsaw, NY
+ 2017-06-09 10:47:46,056 - INFO - Data file downloaded.
+ 2017-06-09 10:47:46,056 - INFO - Data file renamed.
+ 2017-06-09 10:47:46,056 - INFO - Data file moved.
+ 2017-06-09 10:47:46,088 - INFO - Tab 3 closed.
+ 2017-06-09 10:47:46,088 - INFO - Switched to tab 2.
+ 2017-06-09 10:47:46,125 - INFO - Tab 2 closed.
+ 2017-06-09 10:47:46,141 - INFO - Switched to tab 1.
+ 2017-06-09 10:47:47,411 - INFO - b = 490. Moving to b = 491.
+ 2017-06-09 10:47:49,005 - INFO - Next building clicked.
+ 2017-06-09 10:47:50,128 - INFO - Monitored Data clicked.
+ 2017-06-09 10:47:51,164 - INFO - Additional Options clicked.
+ 2017-06-09 10:47:54,806 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:47:56,345 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:47:56,345 - INFO - b = 491. Moving to b = 492.
+ 2017-06-09 10:47:56,430 - INFO - Next building clicked.
+ 2017-06-09 10:47:59,523 - INFO - Monitored Data not found.
+ 2017-06-09 10:48:00,701 - INFO - Went back 1 times to Facilities.
+ 2017-06-09 10:48:00,701 - INFO - b = 492. Moving to b = 493.
+ 2017-06-09 10:48:00,786 - INFO - Next building clicked.
+ 2017-06-09 10:48:01,352 - INFO - Monitored Data clicked.
+ 2017-06-09 10:48:02,392 - INFO - Additional Options clicked.
+ 2017-06-09 10:48:06,509 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:48:08,148 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:48:08,148 - INFO - b = 493. Moving to b = 494.
+ 2017-06-09 10:48:08,257 - INFO - Next building clicked.
+ 2017-06-09 10:48:09,318 - INFO - Monitored Data clicked.
+ 2017-06-09 10:48:09,934 - INFO - Additional Options clicked.
+ 2017-06-09 10:48:13,592 - INFO - Energy and Demand data not found.
+ 2017-06-09 10:48:15,233 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 10:48:15,233 - INFO - b = 494. Moving to b = 495.
+ 2017-06-09 10:48:18,283 - INFO - Failed to find element. Assume last row reached. b = 495. - Message: 
+
+ 2017-06-09 10:48:18,283 - INFO - END: NYSERDA_downloadTotalsData.py
+
+
+ 2017-06-09 11:04:34,809 - INFO - START: NYSERDA_downloadTotalsData.py
+ 2017-06-09 11:04:40,423 - INFO - Begin data probing at b = 468
+ 2017-06-09 11:04:42,088 - INFO - Next building clicked.
+ 2017-06-09 11:04:42,707 - INFO - Monitored Data clicked.
+ 2017-06-09 11:04:43,302 - INFO - Additional Options clicked.
+ 2017-06-09 11:05:33,700 - INFO - START: NYSERDA_downloadTotalsData.py
+ 2017-06-09 11:05:39,334 - INFO - Begin data probing at b = 468
+ 2017-06-09 11:05:40,936 - INFO - Next building clicked.
+ 2017-06-09 11:05:41,523 - INFO - Monitored Data clicked.
+ 2017-06-09 11:05:42,625 - INFO - Additional Options clicked.
+ 2017-06-09 11:05:43,311 - INFO - Total Facility Energy and Demand selected.
+ 2017-06-09 11:05:43,329 - INFO - Continue clicked.
+ 2017-06-09 11:05:43,885 - INFO - Continue clicked again.
+ 2017-06-09 11:05:44,509 - INFO - Create Report clicked.
+ 2017-06-09 11:05:44,536 - INFO - Switched to tab 2.
+ 2017-06-09 11:05:59,381 - INFO - Building name acquired.
+ 2017-06-09 11:05:59,461 - INFO - Switched to tab 3.
+ 2017-06-09 11:06:22,898 - INFO - END: NYSERDA_downloadTotalsData.py
+
+
+ 2017-06-09 11:10:44,980 - INFO - START: NYSERDA_downloadTotalsData.py
+ 2017-06-09 11:10:50,538 - INFO - Begin data probing at b = 468
+ 2017-06-09 11:10:52,272 - INFO - Next building clicked.
+ 2017-06-09 11:10:52,891 - INFO - Monitored Data clicked.
+ 2017-06-09 11:10:53,451 - INFO - Additional Options clicked.
+ 2017-06-09 11:10:54,028 - INFO - Total Facility Energy and Demand selected.
+ 2017-06-09 11:10:54,053 - INFO - Continue clicked.
+ 2017-06-09 11:10:54,651 - INFO - Continue clicked again.
+ 2017-06-09 11:10:55,240 - INFO - Create Report clicked.
+ 2017-06-09 11:10:55,348 - INFO - Switched to tab 2.
+ 2017-06-09 11:11:25,003 - INFO - Building name acquired.
+ 2017-06-09 11:11:25,072 - INFO - Switched to tab 3.
+ 2017-06-09 11:11:34,263 - INFO - KeyboardInterrupt Exception
+ 2017-06-09 11:11:34,263 - INFO - END: NYSERDA_downloadTotalsData.py
+
+
+ 2017-06-09 11:12:01,740 - INFO - START: NYSERDA_downloadTotalsData.py
+ 2017-06-09 11:12:06,854 - INFO - Begin data probing at b = 494
+ 2017-06-09 11:12:08,440 - INFO - Next building clicked.
+ 2017-06-09 11:12:09,522 - INFO - Monitored Data clicked.
+ 2017-06-09 11:12:10,591 - INFO - Additional Options clicked.
+ 2017-06-09 11:12:14,250 - INFO - Energy and Demand data not found.
+ 2017-06-09 11:12:15,466 - INFO - Went back 3 times to Facilities.
+ 2017-06-09 11:12:15,466 - INFO - b = 494. Moving to b = 495.
+ 2017-06-09 11:12:18,549 - INFO - Failed to find element. Assume last row reached. b = 495. - Message: 
+
+ 2017-06-09 11:12:18,549 - INFO - END: NYSERDA_downloadTotalsData.py
+
+

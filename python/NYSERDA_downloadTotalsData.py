@@ -30,7 +30,7 @@ dataDir = os.path.join(dnldPath, 'NYSERDA_datafiles')
 wait = 3 # seconds
 longWait = 30 # seconds
 delay = 0.5 # seconds
-bldgStart = 329
+bldgStart = 468
 
 def main():
     # set up directories
@@ -239,6 +239,9 @@ def main():
             nIn = 0
             logging.info('b = ' + str(b) + '. Moving to b = ' + str(b+1) + '.')
             b += 1
+        except KeyboardInterrupt:
+            logging.info('KeyboardInterrupt Exception')
+            break
         except Exception, e:
             logging.info('Failed to find element. Assume last row reached. ' \
                          + 'b = ' + str(b) + '. - ' \
