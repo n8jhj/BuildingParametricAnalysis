@@ -1,36 +1,47 @@
-function demand = getMonthlyAvgDays(data)
-%demand = getMonthlyAvgDays(data)
-% INPUTS:
-%   data        __x2 double with values in col 1, datenums in col 2
-% OUTPUTS:
-%   demand      __x12 double with average days for each month
-% 
-% Assumes uniformly spaced timesteps
-% Assumes exactly one year of data
+function averages = getMonthlyAvgDays(days, emptyDays, varargin)
+%GETMONTHLYAVGDAYS Return a struct of days containing the average demand
+%profiles for each month of the year.
+%   averages = getMonthlyAvgDays(days, emptyDays)
+%   Averages the demand values contained in input DAYS for each month and
+%   return the result in output AVERAGES. This process makes use of input
+%   EMPTYDAYS, a struct containing datetime values corresponding to days in
+%   DAYS that are empty. Assumes input DAYS is partitioned by days and each
+%   day is split into 1-hour segments, whether all 24 segments exist or
+%   not.
+%
+%   averages = getMonthlyAvgDays(days, emptyDays, nSteps)
+%   Averages demand values in DAYS assuming days in DAYS are each split
+%   into segments of size 1/NSTEPS days.
 
-% get timestep
-tstep = data(2,2) - data(1,2);
+%% Initialize return struct
+averages = struct('demand', zeros(12,1));
 
-% separate data into months
-months = month(datetime(data(:,2), 'ConvertFrom', 'datenum'));
-
-% get number indices in each month
-lastIndex = zeros(12,1);
-for i = 1:1:12
-    lastIndex(i) = find(months==i, 1, 'last');
+%% Handle input
+if ~isempty(varargin)
+    nSteps = varargin{1};
+else
+    nSteps = 24;
 end
 
-% get number days in each month
-nStepsFeb = lastIndex(2) - lastIndex(1) + 1;
-nDaysFeb = ceil(nStepsFeb * tstep);
-nDaysInMonth = [31;nDaysFeb;31;30;31;30;31;31;30;31;30;31];
+%% Initialize temporary list of months
+months = NaN * zeros(length(days),1);
+for i = 1:1:length(months)
+    if ~isempty(days(i).timestamp)
+        months(i) = month(days(i).timestamp(1));
+    end
+end
 
-% average each day
-nStepsInDay = 1/tstep;
-demand = ones(31/tstep, 12) .* NaN;
-for i = 1:1:12 % each month
-    for j = 1:1:nDaysInMonth(i) % each day
-        create running average in demand
+%% Get lists of each month
+for i = 1:1:12
+    % get average day
+    for j = 1:1:nSteps
+        for k = 1:1:length(days)
+            if month(days(k).timestamp(1)) == i
+                append(month, days(k).timestamp(j))
+            else
+                k = k + 28; % minimum number of days in a month
+            end
+        end
     end
 end
 

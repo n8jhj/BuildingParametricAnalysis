@@ -13,6 +13,7 @@ f2 = char(fdNames(2));
 f3 = char(fdNames(3));
 f4 = char(fdNames(4));
 f5 = char(fdNames(5));
+f6 = 'index'; % field to be added to emptyDays
 
 %% Check input for field timestamp as first field
 assert(strcmp(f1, 'timestamp'), ...
@@ -21,18 +22,15 @@ assert(strcmp(f1, 'timestamp'), ...
 %% Preallocate size of cell array to return
 tnum = datenum(data.timestamp);
 nDays = ceil(tnum(end)) - floor(tnum(1));
-days = struct(f1,{}, f2,{}, f3,{}, f4,{}, f5,{});
+days = struct(f1,[], f2,[], f3,[], f4,[], f5,[]);
 
 %% Fill return variable with data
 currDay = floor(tnum(1));
 prevDay = currDay - 1;
 nextDay = currDay;
-emptyDays = datetime([],[],[]);
+emptyDays = struct(f1,{}, f6,{});
 i = 1;
 for d = 1:1:nDays
-    if d == 476
-        
-    end
     if currDay == prevDay + 1
         % get range of data for this day
         iFirst = i;
@@ -55,7 +53,9 @@ for d = 1:1:nDays
             f5, data.(f5)(iFirst:iLast));
     else
         prevDay = prevDay + 1;
-        emptyDays(end+1) = datetime(prevDay,'ConvertFrom','datenum');
+        emptyDays(end+1) = struct(...
+            f1, datetime(prevDay,'ConvertFrom','datenum'), ...
+            f6, d);
     end
 end
 emptyDays = emptyDays';
