@@ -1,29 +1,28 @@
-function averages = getMonthlyAvgDays(days, emptyDays, varargin)
+function averages = getMonthlyAvgDays(days, nSteps, varargin)
 %GETMONTHLYAVGDAYS Return a struct of days containing the average demand
 %profiles for each month of the year.
-%   averages = getMonthlyAvgDays(days, emptyDays)
+%   averages = getMonthlyAvgDays(days,nSteps)
 %   Averages the demand values contained in input DAYS for each month and
-%   return the result in output AVERAGES. This process makes use of input
-%   EMPTYDAYS, a struct containing datetime values corresponding to days in
-%   DAYS that are empty. Assumes input DAYS is partitioned by days and each
-%   day is split into 1-hour segments, whether all 24 segments exist or
-%   not.
+%   return the result in output AVERAGES. Assumes each day of input DAYS is
+%   split into segments of size 1/NSTEPS days.
 %
-%   averages = getMonthlyAvgDays(days, emptyDays, nSteps)
-%   Averages demand values in DAYS assuming days in DAYS are each split
-%   into segments of size 1/NSTEPS days.
-
-%% Initialize return struct
-averages = struct('demand', zeros(12,1));
+%   averages = getMonthlyAvgDays(days,nSteps,nReqd)
+%   Input NREQD is the number of data points required for a given day to be
+%   included in averaging. Default is input NSTEPS.
 
 %% Handle input
 if ~isempty(varargin)
-    nSteps = varargin{1};
+    nReqd = varargin{1};
 else
-    nSteps = 24;
+    nReqd = nSteps;
 end
 
-%% Initialize temporary list of months
+%% Initialize return struct
+f1 = 'avgTotFacEn';
+f2 = 'avgTotFacDe';
+averages = struct(f1,{}, f2,{});
+
+%% Create temporary list of months
 months = NaN * zeros(length(days),1);
 for i = 1:1:length(months)
     if ~isempty(days(i).timestamp)
@@ -31,18 +30,45 @@ for i = 1:1:length(months)
     end
 end
 
+%% Initialize temporary lists of averaged values for one month
+avgsAtMonthEn = NaN * zeros(nSteps,1);
+avgsAtMonthDe = NaN * zeros(nSteps,1);
+
 %% Get lists of each month
-for i = 1:1:12
+for m = 1:1:12
     % get average day
-    for j = 1:1:nSteps
-        for k = 1:1:length(days)
-            if month(days(k).timestamp(1)) == i
-                append(month, days(k).timestamp(j))
-            else
-                k = k + 28; % minimum number of days in a month
+    for s = 1:1:nSteps
+        stepValsEn = [];
+        stepValsDe = [];
+        lastMonthVal = months(1);
+        searchMode = true; % inverse is append mode
+        i = 1;
+        while i <= length(months)
+            % decide whether to be in search or append mode
+            if searchMode && months(i) == m
+                searchMode = false;
+            elseif ~searchMode && months(i)~=m && ~isnan(months(i))
+                if ~isnan(lastMonthVal)
+                    
+                end
+                searchMode = true;
             end
+            % take action based on mode
+            if ~searchMode
+                stepValsEn(end+1) = days(i).totFacEn(s);
+                stepValsDe(end+1) = days(i).totFacDe(s);
+            else
+                
+            end
+            lastMonthVal = months(i);
+            i = i + 1;
         end
+        avgsAtMonthEn(s) = mean(stepValsEn);
+        avgsAtMonthDe(s) = mean(stepValsDe);
     end
+    averages(m) = struct(...
+        f1, avgsAtMonthEn, ...
+        f2, avgsAtMonthDe);
 end
 
 end

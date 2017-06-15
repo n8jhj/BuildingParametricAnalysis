@@ -22,7 +22,7 @@ assert(strcmp(f1, 'timestamp'), ...
 %% Preallocate size of cell array to return
 tnum = datenum(data.timestamp);
 nDays = ceil(tnum(end)) - floor(tnum(1));
-days = struct(f1,[], f2,[], f3,[], f4,[], f5,[]);
+days = struct(f1,{}, f2,{}, f3,{}, f4,{}, f5,{});
 
 %% Fill return variable with data
 currDay = floor(tnum(1));
