@@ -1,5 +1,6 @@
 function weekdays = getWeekdays(data)
-%GETWEEKDAYS Return list of weekday numbers based on input DATA.
+%GETWEEKDAYS Return list containing weekday numbers of each day based on
+%input DATA.
 %   weekdays = getWeekdays(data) Creates array WEEKDAYS of DATA and then
 %   returns it. Input DATA must be a struct, and is assumed to be
 %   partitioned by days.

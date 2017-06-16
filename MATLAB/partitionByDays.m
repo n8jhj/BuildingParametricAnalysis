@@ -1,10 +1,10 @@
 function [days, emptyDays] = partitionByDays(data)
 %PARTITIONBYDAYS Get input data returned as structure array of the data
 %partitioned by days.
-%   [days, emptyDays] = partitionByDays(data) Partitions input struct DATA
-%   into days using its property TIMESTAMP. DAYS is the partitioned
-%   structure array and EMPTYDAYS is an array of datetime values
-%   corresponding to the days for which there was no data.
+%   [days, emptyDays] = partitionByDays(data)
+%   Partitions input struct DATA into days using its property TIMESTAMP.
+%   DAYS is the partitioned structure array and EMPTYDAYS is an array of
+%   datetime values corresponding to the days for which there was no data.
 
 %% Get fieldnames of data
 fdNames = fieldnames(data);
