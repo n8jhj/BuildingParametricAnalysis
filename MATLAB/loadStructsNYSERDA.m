@@ -11,7 +11,7 @@ buildings = struct('name',{}, 'data',{});
 for i = 1:1:length(bldgList)
     if ~strcmp(bldgList(i).name, '.') && ~strcmp(bldgList(i).name, '..')
         fName = char(bldgList(i).name);
-        sName = erase(fName, {'.csv', ' '});
+        sName = erase(fName, '.csv');
         buildings(end+1) = struct(...
             'name', sName, ...
             'data', NYSERDA_importToStruct(fName));
