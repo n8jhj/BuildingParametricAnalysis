@@ -29,11 +29,8 @@ switch funcName
         fenceStart = varargin{1};
         [~,~,~,otlrs] = quartiles(data);
         % get outliers from output
-        outliers = [];
-        for i = fenceStart:1:length(otlrs)
-            outliers = [outliers; otlrs(i).fenceGrpLo];
-            outliers = [outliers; otlrs(i).fenceGrpHi];
-        end
+        outliers = vertcat(otlrs(fenceStart:end).fenceGrpLo, ...
+            otlrs(fenceStart:end).fenceGrpHi);
     otherwise
         error('Function ''%s'' is not an acceptable option', funcName)
 end
