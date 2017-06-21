@@ -35,7 +35,7 @@ switch funcName
             'Function ''%s'' requres %i inputs', funcName, nInputs))
         % run function
         data = varargin{1};
-        [q1, ~, q3] = quartiles(data);
+        [q1, ~, q3, ~] = quartiles(data);
         fence = 1.5 * (q3 - q1);
         filtDatMin = q1 - fence;
         filtDatMax = q3 + fence;
