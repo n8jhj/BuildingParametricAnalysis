@@ -35,12 +35,16 @@ if isempty(varargin)
     % plot Energy
     fig1 = figure;
     plot(dataStruct.timestamp, dataStruct.totFacEn)
-    title(strcat(bName, ' Total Facility Energy Demand'))
+    title({bName, 'Total Facility Energy Demand'})
+    xlabel('Timestamp')
+    ylabel('Demand (kWh)')
     
     % plot Power (or Demand)
     fig2 = figure;
     plot(dataStruct.timestamp, dataStruct.totFacDe)
-    title(strcat(bName, ' Total Facility Power Demand'))
+    title({bName, 'Total Facility Power Demand'})
+    xlabel('Timestamp')
+    ylabel('Demand (kW)')
 else
     % Set outliers apart
     % get outliers
@@ -69,7 +73,9 @@ else
     if ~isempty(outliersEn)
         plot(xOtlrsEn, outliersEn(:,2), 'r*')
     end
-    title(strcat(bName, ' Total Facility Energy Demand'))
+    title({bName, 'Total Facility Energy Demand'})
+    xlabel('Timestamp')
+    ylabel('Demand (kWh)')
     hold off
     
     % plot Power (or Demand)
@@ -79,7 +85,9 @@ else
     if ~isempty(outliersDe)
         plot(xOtlrsDe, outliersDe(:,2), 'r*')
     end
-    title(strcat(bName, ' Total Facility Power Demand'))
+    title({bName, 'Total Facility Power Demand'})
+    xlabel('Timestamp')
+    ylabel('Demand (kW)')
     hold off
 end
     

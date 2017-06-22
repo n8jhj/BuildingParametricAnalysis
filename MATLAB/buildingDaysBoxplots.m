@@ -30,9 +30,9 @@ for b = 1:1:bLen
 end
 
 %% Create boxplot
-close all
+% close all
+fig1 = figure;
 boxplot(x,g,'PlotStyle','compact');
-fig1 = gcf;
 figPos = get(fig1, 'Position');
 deltaY = 1000;
 figPos(4) = figPos(4) + deltaY;

@@ -15,11 +15,15 @@ bName = building.name;
 
 fig1 = figure;
 histogram(pctsEn)
-title(strcat(bName, ' Total Facility Energy Demand by Percent of Maximum'))
+title({bName, 'Total Facility Energy Demand by Percent of Maximum'})
+xlabel('Percent of Maximum Overall Value (%)')
+ylabel('Number of Data Points')
 
 fig2 = figure;
 histogram(pctsDe)
-title(strcat(bName, ' Total Facility Power Demand by Percent of Maximum'))
+title({bName, 'Total Facility Power Demand by Percent of Maximum'})
+xlabel('Percent of Maximum Overall Value (%)')
+ylabel('Number of Data Points')
 
 %% Clean up positioning of figures for better visibility
 positionFigures(fig1, fig2)
