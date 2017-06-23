@@ -19,13 +19,13 @@ else
 end
 
 %% Initialize return struct
-f1 = 'avgTotFacEn';
-f2 = 'avgTotFacDe';
+f1 = 'totFacEn';
+f2 = 'totFacDe';
 f3 = 'nPts'; % number points that went into the average
 averages = struct(f1,{}, f2,{}, f3,{});
 
 %% Create temporary list of months
-months = NaN * zeros(length(days),1);
+months = NaN(length(days),1);
 for i = 1:1:length(months)
     if ~isempty(days(i).timestamp)
         months(i) = month(days(i).timestamp(1));
@@ -33,8 +33,8 @@ for i = 1:1:length(months)
 end
 
 %% Initialize temporary lists of averaged values for one month
-avgsAtMonthEn = NaN * zeros(nSteps,1);
-avgsAtMonthDe = NaN * zeros(nSteps,1);
+avgsAtMonthEn = NaN(nSteps,1);
+avgsAtMonthDe = NaN(nSteps,1);
 
 
 %% Get and store lists of each month's average day

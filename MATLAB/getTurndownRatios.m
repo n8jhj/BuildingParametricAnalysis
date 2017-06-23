@@ -5,7 +5,7 @@ function tdrs = getTurndownRatios(days, field, ptsReqd)
 %   at least PTSREQD data points.
 
 %% Get turndown ratios for each day
-tdrs = NaN * zeros(length(days), 1);
+tdrs = NaN(length(days), 1);
 for i = 1:1:length(days)
     if length(days(i).timestamp) >= ptsReqd
         tdrs(i) = turndownRatio(days(i).(field));
