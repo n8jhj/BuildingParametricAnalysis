@@ -35,16 +35,12 @@ if isempty(varargin)
     % plot Energy
     fig1 = figure;
     plot(dataStruct.timestamp, dataStruct.totFacEn)
-    title({bName, 'Total Facility Energy Demand'})
-    xlabel('Timestamp')
-    ylabel('Demand (kWh)')
+    addFigureText(bName, 'energy')
     
     % plot Power (or Demand)
     fig2 = figure;
     plot(dataStruct.timestamp, dataStruct.totFacDe)
-    title({bName, 'Total Facility Power Demand'})
-    xlabel('Timestamp')
-    ylabel('Demand (kW)')
+    addFigureText(bName, 'power')
 else
     % Set outliers apart
     % get outliers
@@ -73,9 +69,7 @@ else
     if ~isempty(outliersEn)
         plot(xOtlrsEn, outliersEn(:,2), 'r*')
     end
-    title({bName, 'Total Facility Energy Demand'})
-    xlabel('Timestamp')
-    ylabel('Demand (kWh)')
+    addFigureText(bName, 'energy')
     hold off
     
     % plot Power (or Demand)
@@ -85,13 +79,30 @@ else
     if ~isempty(outliersDe)
         plot(xOtlrsDe, outliersDe(:,2), 'r*')
     end
-    title({bName, 'Total Facility Power Demand'})
-    xlabel('Timestamp')
-    ylabel('Demand (kW)')
+    addFigureText(bName, 'power')
     hold off
 end
     
 %% Clean up positioning of figures for better visibility
 positionFigures(fig1, fig2)
+
+end
+
+
+function addFigureText(bName,variable)
+
+%% Add text to figure based on which variable was plotted
+switch variable
+    case 'energy'
+        title({bName, 'Total Facility Energy Demand'})
+        xlabel('Timestamp')
+        ylabel('Demand (kWh)')
+    case 'power'
+        title({bName, 'Total Facility Power Demand'})
+        xlabel('Timestamp')
+        ylabel('Demand (kW)')
+    otherwise
+        disp('Figure text could not be added; check plot variable name')
+end
 
 end
