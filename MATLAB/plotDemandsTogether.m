@@ -1,0 +1,25 @@
+function plotDemandsTogether(building)
+%PLOTDEMANDSTOGETHER Plot of key demand graphs on one figure.
+%   plotDemandsTogether(building)
+
+%% Plot
+subplot(2,2,1)
+plotDemand(building,'nofig','totFacEn');
+subplot(2,2,2)
+plotDemand(building,'nofig','totFacDe');
+subplot(2,2,3)
+plotDemandHistogram(building,'nofig','totFacEn')
+subplot(2,2,4)
+plotDemandHistogram(building,'nofig','totFacDe')
+
+%% Resize
+fig = gcf;
+figPos = get(fig,'OuterPosition');
+deltaW = 500;
+deltaH = 300;
+figPos(2) = figPos(2) - deltaH;
+figPos(3) = figPos(3) + deltaW;
+figPos(4) = figPos(4) + deltaH;
+set(fig,'OuterPosition',figPos)
+
+end

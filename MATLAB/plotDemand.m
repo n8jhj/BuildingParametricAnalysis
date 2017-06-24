@@ -10,6 +10,10 @@ function dataStruct = plotDemand(building, varargin)
 %   plotting style. Outliers are determined by FUNCNAME, with additional
 %   arguments VARARGIN needed for certain functions.
 %
+%   dataStruct = plotDemand(building, 'nofig', fieldName)
+%   Plots field FIELDNAME of BUILDING.data. The input 'nofig' specifies
+%   that no figures should be explicitly created.
+%
 % Example:
 %   dataStruct = plotDemand(building, 'quartiles', 2);
 %   Plots energy and power demand profiles using function 'quartiles' to
@@ -28,81 +32,75 @@ else
 end
 
 %% Plot
-close all
-
-if isempty(varargin)
-    % Don't differentiate between outliers and other data
+if isempty(varargin) || ...
+        (length(varargin) > 1 && ~strcmp(varargin{end-1},'nofig'))
+    % Create figures when plotting
     % plot Energy
+    field = 'totFacEn';
     fig1 = figure;
-    plot(dataStruct.timestamp, dataStruct.totFacEn)
-    addFigureText(bName, 'energy')
+    [x,y,xOtlrs,yOtlrs] = setupPlotData(dataStruct,field,varargin{:});
+    doPlotting(x,y,xOtlrs,yOtlrs,bName,field)
     
     % plot Power (or Demand)
+    field = 'totFacDe';
     fig2 = figure;
-    plot(dataStruct.timestamp, dataStruct.totFacDe)
-    addFigureText(bName, 'power')
+    [x,y,xOtlrs,yOtlrs] = setupPlotData(dataStruct,field,varargin{:});
+    doPlotting(x,y,xOtlrs,yOtlrs,bName,field)
+    
+    % clean up positioning of figures for better visibility
+    positionFigures(fig1, fig2)
 else
-    % Set outliers apart
-    % get outliers
-    outliersEn = getOutliers(dataStruct.totFacEn, varargin{:});
-    outliersDe = getOutliers(dataStruct.totFacDe, varargin{:});
-    
-    % setup plot data
-    x = dataStruct.timestamp;
-    yEn = dataStruct.totFacEn;
-    yDe = dataStruct.totFacDe;
-    if ~isempty(outliersEn)
-        otlrIndsEn = outliersEn(:,1);
-        xOtlrsEn = dataStruct.timestamp(otlrIndsEn);
-        yEn(otlrIndsEn) = NaN;
-    end
-    if ~isempty(outliersDe)
-        otlrIndsDe = outliersDe(:,1);
-        xOtlrsDe = dataStruct.timestamp(otlrIndsDe);
-        yDe(otlrIndsDe) = NaN;
-    end
-    
-    % plot Energy
-    fig1 = figure;
-    plot(x, yEn)
-    hold on
-    if ~isempty(outliersEn)
-        plot(xOtlrsEn, outliersEn(:,2), 'r*')
-    end
-    addFigureText(bName, 'energy')
-    hold off
-    
-    % plot Power (or Demand)
-    fig2 = figure;
-    plot(x, yDe)
-    hold on
-    if ~isempty(outliersDe)
-        plot(xOtlrsDe, outliersDe(:,2), 'r*')
-    end
-    addFigureText(bName, 'power')
-    hold off
+    % Don't create figures when plotting
+    field = varargin{end};
+    [x,y,xOtlrs,yOtlrs] = setupPlotData(dataStruct,field,varargin{:});
+    doPlotting(x,y,xOtlrs,yOtlrs,bName,field)
 end
-    
-%% Clean up positioning of figures for better visibility
-positionFigures(fig1, fig2)
 
 end
 
 
-function addFigureText(bName,variable)
+%% Setup data used in plotting
+function [x,y,xOtlrs,yOtlrs] = setupPlotData(dataStruct,field,varargin)
+xOtlrs = [];
+yOtlrs = [];
+x = dataStruct.timestamp;
+y = dataStruct.(field);
+if ~isempty(varargin) && ...
+        ~(length(varargin)==2 && strcmp(varargin{end-1},'nofig'))
+    yOtlrs = getOutliers(dataStruct.(field), varargin{:});
+    if ~isempty(yOtlrs)
+        otlrInds = yOtlrs(:,1);
+        xOtlrs = dataStruct.timestamp(otlrInds);
+        y(otlrInds) = NaN;
+    end
+end
+end
+
+
+%% Perform mechanics of plotting
+function doPlotting(x,y,xOtlrs,yOtlrs,bName,var)
+plot(x, y)
+hold on
+if ~isempty(yOtlrs)
+    plot(xOtlrs, yOtlrs(:,2), 'r*')
+end
+addFigureText(bName, var)
+hold off
+end
+
 
 %% Add text to figure based on which variable was plotted
-switch variable
-    case 'energy'
+function addFigureText(bName,field)
+switch field
+    case 'totFacEn'
         title({bName, 'Total Facility Energy Demand'})
         xlabel('Timestamp')
         ylabel('Demand (kWh)')
-    case 'power'
+    case 'totFacDe'
         title({bName, 'Total Facility Power Demand'})
         xlabel('Timestamp')
         ylabel('Demand (kW)')
     otherwise
         disp('Figure text could not be added; check plot variable name')
 end
-
 end
