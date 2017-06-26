@@ -1,6 +1,9 @@
-function plotDemandsTogether(building)
+function plotDemandsTogether(building, save)
 %PLOTDEMANDSTOGETHER Plot of key demand graphs on one figure.
-%   plotDemandsTogether(building)
+%   plotDemandsTogether(building, save)
+%   BUILDING is the building for which data will be plotted. SAVE is an
+%   optional boolean argument specifying whether the figure should be
+%   saved. Default is false.
 
 %% Plot
 subplot(2,2,1)
@@ -21,5 +24,13 @@ figPos(2) = figPos(2) - deltaH;
 figPos(3) = figPos(3) + deltaW;
 figPos(4) = figPos(4) + deltaH;
 set(fig,'OuterPosition',figPos)
+
+%% Save
+if nargin < 2
+    save = false;
+end
+if save
+    saveas(fig, strcat(building.name, '_demandPlots.png'))
+end
 
 end
