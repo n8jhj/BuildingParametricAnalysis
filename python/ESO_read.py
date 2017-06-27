@@ -39,7 +39,7 @@ def main():
                 break
         copyESO(fPath)
         readESO()
-        newName = 'eplusout_' + str(i) + '.csv'
+        newName = 'eplusout_' + str(i).zfill(3) + '.csv'
         rename('eplusout.csv', newName)
         move(newName, csvDir)
 
