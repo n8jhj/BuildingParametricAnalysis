@@ -106,5 +106,4 @@ TotFacilityEnergy = cell2mat(rawNumericColumns(:, 1));
 TotFacilityDemand = cell2mat(rawNumericColumns(:, 2));
 DataQualTFE = cell2mat(rawNumericColumns(:, 3));
 DataQualTFD = cell2mat(rawNumericColumns(:, 4));
-
-
+end

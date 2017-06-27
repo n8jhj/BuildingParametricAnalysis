@@ -1,4 +1,4 @@
-%LOADSTRUCTSNYSERDA Load all data in folder 'NYSERDA_select'. Takes
+%ESO_LOADSTRUCTS Load all data in folder 'NYSERDA_select'. Takes
 %approximately 5 minutes.
 
 %% Get into proper directory
