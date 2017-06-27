@@ -24,8 +24,10 @@ for i = 1:1:length(bldgList)
 end
 
 %% Clear extraneous variables
+clear dirName
 clear dataList
 clear bldgList
+clear count
 clear fName
 clear sName
 clear i

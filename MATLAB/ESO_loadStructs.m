@@ -1,5 +1,5 @@
 %ESO_LOADSTRUCTS Load all data in specified directory. Takes approximately
-%5 minutes.
+%12 seconds.
 
 %% Get into proper directory
 dirName = strcat('C:\\Users\Admin\Documents\07_Grad Yr 2\Work', ...
@@ -25,8 +25,10 @@ for i = 1:1:length(bldgList)
 end
 
 %% Clear extraneous variables
+clear dirName
 clear dataList
 clear bldgList
+clear count
 clear fName
 clear sName
 clear i

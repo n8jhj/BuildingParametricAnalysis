@@ -8,27 +8,24 @@ function [days, emptyDays] = partitionByDays(data)
 
 %% Get fieldnames of data
 fdNames = fieldnames(data);
-f1 = char(fdNames(1));
-f2 = char(fdNames(2));
-f3 = char(fdNames(3));
-f4 = char(fdNames(4));
-f5 = char(fdNames(5));
-f6 = 'index'; % field to be added to emptyDays
 
 %% Check input for field timestamp as first field
-assert(strcmp(f1, 'timestamp'), ...
+assert(strcmp(fdNames{1}, 'timestamp'), ...
     'Input struct DATA must have TIMESTAMP as first field')
 
-%% Preallocate size of cell array to return
+%% Preallocate return cell array
 tnum = datenum(data.timestamp);
 nDays = ceil(tnum(end)) - floor(tnum(1));
-days = struct(f1,{}, f2,{}, f3,{}, f4,{}, f5,{});
+days = struct([]);
+for i = 1:1:length(fdNames)
+    [days(:).(fdNames{i})] = {};
+end
 
 %% Fill return variable with data
 currDay = floor(tnum(1));
 prevDay = currDay - 1;
 nextDay = currDay;
-emptyDays = struct(f1,{}, f6,{});
+emptyDays = struct(fdNames{1},{}, 'index',{});
 i = 1;
 for d = 1:1:nDays
     if currDay == prevDay + 1
