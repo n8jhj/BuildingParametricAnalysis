@@ -2,19 +2,23 @@
 %approximately 5 minutes.
 
 %% Get into proper directory
-cd 'C:\Users\Admin\Documents\GitHub\BuildingParametricAnalysis\NYSERDA_select'
-bldgList = dir;
+dirName = strcat('C:\\Users\Admin\Documents\GitHub', ...
+    '\BuildingParametricAnalysis\NYSERDA_select');
+bldgList = dir(dirName);
 
 %% Load data
 tic
-buildings = struct('name',{}, 'data',{});
+NYSERDA_buildings = struct('name',{}, 'data',{});
+count = 0;
 for i = 1:1:length(bldgList)
     if ~strcmp(bldgList(i).name, '.') && ~strcmp(bldgList(i).name, '..')
         fName = char(bldgList(i).name);
         sName = erase(fName, '.csv');
-        buildings(end+1) = struct(...
+        NYSERDA_buildings(i-count) = struct(...
             'name', sName, ...
             'data', NYSERDA_importToStruct(fName));
+    else
+        count = count + 1;
     end
     toc
 end

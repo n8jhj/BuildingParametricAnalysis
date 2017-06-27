@@ -37,9 +37,8 @@ def main():
             if '-EnergyPlus-0' in s:
                 fPath = os.path.join('..', 'dataPoint'+str(i), s, 'eplusout.eso')
                 break
-        newPath = os.path.join('.','eplusout.eso')
-        shutil.copyfile(fPath, newPath)
-        readESOs()
+        copyESO(fPath)
+        readESO()
         newName = 'eplusout_' + str(i) + '.csv'
         rename('eplusout.csv', newName)
         move(newName, csvDir)
@@ -54,7 +53,14 @@ def logPoint(p, final):
     if p <= 5 or p%10 == 0 or p == final:
         logging.debug('point ' + str(p) + '...')
 
-def readESOs():
+def copyESO(fPath):
+    try:
+        newPath = os.path.join('.','eplusout.eso')
+        shutil.copyfile(fPath, newPath)
+    except Exception, e:
+        logging.error('Failed to copy eplusout.eso - ' + str(e))
+
+def readESO():
     try:
         subprocess.check_call('ReadVarsESO.exe')
     except Exception, e:
