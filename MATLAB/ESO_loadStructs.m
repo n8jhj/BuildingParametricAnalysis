@@ -37,7 +37,7 @@ clear i
 % days
 bESO = addDaysToBuildings(bESO);
 % timestep
-bESO = addTimestepToBuildings(bESO);
+bESO = addNStepsToBuildings(bESO);
 % turndown ratios
 bESO = addTDRsToBuildings(bESO);
 bESO = addAvgTDRToBuildings(bESO);

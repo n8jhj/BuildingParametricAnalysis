@@ -36,7 +36,7 @@ clear i
 % days
 bNYSERDA = addDaysToBuildings(bNYSERDA);
 % timestep
-bNYSERDA = addTimestepToBuildings(bNYSERDA);
+bNYSERDA = addNStepsToBuildings(bNYSERDA);
 % turndown ratios
 bNYSERDA = addTDRsToBuildings(bNYSERDA);
 bNYSERDA = addAvgTDRToBuildings(bNYSERDA);
