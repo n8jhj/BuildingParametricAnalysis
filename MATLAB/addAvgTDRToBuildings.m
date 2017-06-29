@@ -15,15 +15,15 @@ assert(~isempty(strfind(fieldsStr, 'tdr_')), ...
 for i = 1:1:length(buildings)
     % get TDRs
     tdrsEn = [buildings(i).days.tdr_totFacEn].';
-    tdrsDe = [buildings(i).days.tdr_totFacDe].';
+%     tdrsDe = [buildings(i).days.tdr_totFacDe].';
     
     % get rid of Inf values
     tdrsEn(isinf(tdrsEn)) = NaN;
-    tdrsDe(isinf(tdrsDe)) = NaN;
+%     tdrsDe(isinf(tdrsDe)) = NaN;
     
     % average TDRs
     buildings(i).avgTdr_totFacEn = nanmean(tdrsEn);
-    buildings(i).avgTdr_totFacDe = nanmean(tdrsDe);
+%     buildings(i).avgTdr_totFacDe = nanmean(tdrsDe);
 end
 
 end
