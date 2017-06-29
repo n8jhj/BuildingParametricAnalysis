@@ -5,15 +5,18 @@ function buildings = addMADsToBuildings(buildings)
 %   Returns the input struct BUILDINGS with new field 'mads', which
 %   contains the average days for each month of the year for each building.
 
-%% Check for field days
+%% Check for fields 'days' and 'nsteps'
 assert(isfield(buildings, 'days'), ...
     strcat('Input buildings must contain field ''days''.', ...
     ' Run addDaysToBuildings.m first.'))
+assert(isfield(buildings, 'nsteps'), ...
+    strcat('Input buildings must contain field ''nsteps''.', ...
+    ' Run addNStepsToBuildings.m first.'))
 
 %% Add field 'mads' for each building
-nSteps = 24;
-nReqd = 24;
 for i = 1:1:length(buildings)
+    nSteps = buildings(i).nsteps;
+    nReqd = nSteps;
     buildings(i).mads = getMonthlyAvgDays(buildings(i).days,nSteps,nReqd);
 end
 

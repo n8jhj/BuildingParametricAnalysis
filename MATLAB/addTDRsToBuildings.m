@@ -13,7 +13,8 @@ assert(isfield(buildings, 'days'), ...
 
 %% Add fields 'tdrEn' and 'tdrDe' for each building
 for i = 1:1:length(buildings)
-    buildings(i).days = addTDRsToDays(buildings(i).days);
+    ptsReqd = round(1 / buildings(i).tstep); % only 
+    buildings(i).days = addTDRsToDays(buildings(i).days, ptsReqd);
 end
 
 end

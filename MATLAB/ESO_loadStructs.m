@@ -9,13 +9,13 @@ bldgList = dir(dirName);
 
 %% Load data
 tic
-ESO_buildings = struct('name',{}, 'data',{});
+bESO = struct('name',{}, 'data',{});
 count = 0;
 for i = 1:1:length(bldgList)
     if ~strcmp(bldgList(i).name, '.') && ~strcmp(bldgList(i).name, '..')
         fName = char(bldgList(i).name);
         sName = erase(fName, '.csv');
-        ESO_buildings(i-count) = struct(...
+        bESO(i-count) = struct(...
             'name', sName, ...
             'data', ESO_importToStruct(fName));
     else
@@ -32,3 +32,16 @@ clear count
 clear fName
 clear sName
 clear i
+
+%% Add fields...
+% days
+bESO = addDaysToBuildings(bESO);
+% timestep
+bESO = addTimestepToBuildings(bESO);
+% turndown ratios
+bESO = addTDRsToBuildings(bESO);
+bESO = addAvgTDRToBuildings(bESO);
+% mean average days
+bESO = addMADsToBuildings(bESO);
+% average day
+bESO = addAvgDayToBuildings(bESO);

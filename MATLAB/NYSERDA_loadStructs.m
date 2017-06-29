@@ -8,13 +8,13 @@ bldgList = dir(dirName);
 
 %% Load data
 tic
-NYSERDA_buildings = struct('name',{}, 'data',{});
+bNYSERDA = struct('name',{}, 'data',{});
 count = 0;
 for i = 1:1:length(bldgList)
     if ~strcmp(bldgList(i).name, '.') && ~strcmp(bldgList(i).name, '..')
         fName = char(bldgList(i).name);
         sName = erase(fName, '.csv');
-        NYSERDA_buildings(i-count) = struct(...
+        bNYSERDA(i-count) = struct(...
             'name', sName, ...
             'data', NYSERDA_importToStruct(fName));
     else
@@ -31,3 +31,16 @@ clear count
 clear fName
 clear sName
 clear i
+
+%% Add fields...
+% days
+bNYSERDA = addDaysToBuildings(bNYSERDA);
+% timestep
+bNYSERDA = addTimestepToBuildings(bNYSERDA);
+% turndown ratios
+bNYSERDA = addTDRsToBuildings(bNYSERDA);
+bNYSERDA = addAvgTDRToBuildings(bNYSERDA);
+% mean average days
+bNYSERDA = addMADsToBuildings(bNYSERDA);
+% average day
+bNYSERDA = addAvgDayToBuildings(bNYSERDA);

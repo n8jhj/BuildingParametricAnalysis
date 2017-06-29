@@ -1,13 +1,14 @@
-function days = addTDRsToDays(days)
+function days = addTDRsToDays(days, ptsReqd)
 %ADDTDRSTODAYS Add the turndown ratio as a field for each day.
 %   days = addTDRsToDays(days)
 %   Returns struct DAYS with new fields 'tdrEn' and 'tdrDe' added.
 
 %% Add turndown ratios for each day
-ptsReqd = 24; % only days with a complete set of data will have a TDR
-tdrEn = num2cell(getTurndownRatios(days, 'totFacEn', ptsReqd));
-tdrDe = num2cell(getTurndownRatios(days, 'totFacDe', ptsReqd));
-[days.tdrEn] = tdrEn{:};
-[days.tdrDe] = tdrDe{:};
+fdNames = fieldnames(days);
+for i = 2:1:length(fdNames) % omit first field: timestamp
+    tdrVals = num2cell(getTurndownRatios(days, fdNames{i}, ptsReqd));
+    tdrName = strcat('tdr_',fdNames{i});
+    [days.(tdrName)] = tdrVals{:};
+end
 
 end

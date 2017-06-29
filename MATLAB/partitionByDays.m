@@ -8,6 +8,7 @@ function [days, emptyDays] = partitionByDays(data)
 
 %% Get fieldnames of data
 fdNames = fieldnames(data);
+fdInd = 'index'; % field to be added to emptyDays struct
 
 %% Check input for field timestamp as first field
 assert(strcmp(fdNames{1}, 'timestamp'), ...
@@ -15,7 +16,7 @@ assert(strcmp(fdNames{1}, 'timestamp'), ...
 
 %% Preallocate return cell array
 tnum = datenum(data.timestamp);
-nDays = ceil(tnum(end)) - floor(tnum(1));
+nDays = floor(tnum(end)+1) - floor(tnum(1));
 days = struct([]);
 for i = 1:1:length(fdNames)
     [days(:).(fdNames{i})] = {};
@@ -25,7 +26,7 @@ end
 currDay = floor(tnum(1));
 prevDay = currDay - 1;
 nextDay = currDay;
-emptyDays = struct(fdNames{1},{}, 'index',{});
+emptyDays = struct(fdNames{1},{}, fdInd,{});
 i = 1;
 for d = 1:1:nDays
     if currDay == prevDay + 1
@@ -42,17 +43,16 @@ for d = 1:1:nDays
         prevDay = currDay;
         currDay = nextDay;
         % create struct with this day's data
-        days(d) = struct(...
-            f1, data.(f1)(iFirst:iLast), ...
-            f2, data.(f2)(iFirst:iLast), ...
-            f3, data.(f3)(iFirst:iLast), ...
-            f4, data.(f4)(iFirst:iLast), ...
-            f5, data.(f5)(iFirst:iLast));
+        tempStruct = struct(fdNames{1}, data.(fdNames{1})(iFirst:iLast));
+        for f = 2:1:length(fdNames)
+            tempStruct.(fdNames{f}) = data.(fdNames{f})(iFirst:iLast);
+        end
+        days(d) = tempStruct;
     else
         prevDay = prevDay + 1;
         emptyDays(end+1) = struct(...
-            f1, datetime(prevDay,'ConvertFrom','datenum'), ...
-            f6, d);
+            fdNames{1}, datetime(prevDay,'ConvertFrom','datenum'), ...
+            fdInd, d);
     end
 end
 emptyDays = emptyDays';

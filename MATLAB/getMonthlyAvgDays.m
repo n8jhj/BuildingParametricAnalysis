@@ -19,10 +19,21 @@ else
 end
 
 %% Initialize return struct
-f1 = 'totFacEn';
-f2 = 'totFacDe';
-f3 = 'nPts'; % number points that went into the average
-averages = struct(f1,{}, f2,{}, f3,{});
+fdNames = fieldnames(days);
+namesToUseInds = [];
+for f = 1:1:length(fdNames)
+    if strcmp(fdNames{f}(1:6),'totFac')
+        namesToUseInds(end+1) = f;
+    end
+end
+namesToUse = fdNames(namesToUseInds);
+nNames = length(namesToUse);
+averages = struct([]);
+for n = 1:1:nNames
+    [averages(:).(namesToUse{n})] = {};
+end
+fdPts = 'nPts'; % number points that went into the average
+[averages(:).(fdPts)] = {};
 
 %% Create temporary list of months
 months = NaN(length(days),1);
@@ -33,17 +44,14 @@ for i = 1:1:length(months)
 end
 
 %% Initialize temporary lists of averaged values for one month
-avgsAtMonthEn = NaN(nSteps,1);
-avgsAtMonthDe = NaN(nSteps,1);
-
+avgsAtMonth = NaN(nSteps,nNames);
 
 %% Get and store lists of each month's average day
 for m = 1:1:12
     % get average day
     for s = 1:1:nSteps
         % get average timestep
-        stepValsEn = [];
-        stepValsDe = [];
+        stepVals = NaN(0, nNames); % list of values for current timestep
         np = 0;
         lastMonth = months(1);
         searchMode = true; % inverse is append mode
@@ -56,18 +64,18 @@ for m = 1:1:12
                 if currMonth ~= m && ~isnan(currMonth)
                     searchMode = true;
                 else
-                    [stepValsEn, stepValsDe, np] = ...
-                        appendVals(days(i), stepValsEn, stepValsDe, ...
-                        np, s, nReqd);
+                    [stepVals, np] = ...
+                        appendVals(days(i), stepVals, namesToUse, np, ...
+                        s, nReqd);
                 end
             end
             % searchMode will be reached even if it was just turned on
             if searchMode % search
                 if currMonth == m
                     searchMode = false;
-                    [stepValsEn, stepValsDe, np] = ...
-                        appendVals(days(i), stepValsEn, stepValsDe, ...
-                        np, s, nReqd);
+                    [stepVals, np] = ...
+                        appendVals(days(i), stepVals, namesToUse, np, ...
+                        s, nReqd);
                 elseif currMonth == lastMonth+1 || ...
                         currMonth == lastMonth-11
                     % you're at the beginning of a month; jump ahead
@@ -81,24 +89,29 @@ for m = 1:1:12
             end
             i = i + 1;
         end
-        avgsAtMonthEn(s) = mean(stepValsEn);
-        avgsAtMonthDe(s) = mean(stepValsDe);
+        for n = 1:1:nNames
+            avgsAtMonth(s,n) = mean(stepVals(:,n));
+        end
     end
     % store results in the return struct
-    averages(m) = struct(...
-        f1, avgsAtMonthEn, ...
-        f2, avgsAtMonthDe, ...
-        f3, np);
+    tempStruct = struct(namesToUse{1}, avgsAtMonth(:,1));
+    for n = 2:1:nNames
+        tempStruct(:).(namesToUse{n}) = avgsAtMonth(:,n);
+    end
+    tempStruct(:).(fdPts) = np;
+    averages(m) = tempStruct;
 end
 
 end
 
-%% Function for appending
-function [sve,svd,np] = appendVals(struc,sve,svd,np,s,nReqd)
+%% Function for appending values to the input struct
+function [sv,np] = appendVals(struc,sv,names,np,s,nReqd)
 
 if length(struc.timestamp) >= nReqd
-    sve(end+1) = struc.totFacEn(s);
-    svd(end+1) = struc.totFacDe(s);
+    sv(end+1,1) = struc.(names{1})(s);
+    for n = 2:1:length(names)
+        sv(end,n) = struc.(names{n})(s);
+    end
     np = np + 1;
 end
 
