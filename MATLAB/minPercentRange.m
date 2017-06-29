@@ -1,4 +1,4 @@
-function [mpr, filtDat, outliers] = minPercentRange(data, pBounds)
+function [mpr, filtDat] = minPercentRange(data, pBounds)
 %MINPERCENTRANGE Input percent of data points that will result in lowest
 %range.
 %   [mpr, filtDat] = minPercentRange(data, pBounds)
@@ -33,6 +33,7 @@ if nRmv < 1
         data = data';
     end
     filtDat = data;
+    mpr = range(data);
     return
 end
 
