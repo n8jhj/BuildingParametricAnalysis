@@ -2,9 +2,9 @@ function buildings = addTDRsToBuildings(buildings)
 %ADDTDRSTOBUILDINGS Get turndown ratios of days of input buildings and add
 %them to the buildings struct.
 %   buildings = addTDRsToBuildings(buildings)
-%   Returns the input struct BUILDINGS with new fields 'tdrEn' and 'tdrDe'
-%   within field 'days' of each building, which is the turndown ratio for
-%   the energy and power demands in each day of data of each building.
+%   Returns the input struct BUILDINGS with new field 'tdr' within field
+%   'days' of each building, which is the turndown ratio for the energy
+%   and/or power demands in each day of data of each building.
 
 %% Check for field days
 assert(isfield(buildings, 'days'), ...

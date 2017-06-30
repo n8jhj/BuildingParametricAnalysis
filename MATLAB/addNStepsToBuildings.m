@@ -1,6 +1,6 @@
 function buildings = addNStepsToBuildings(buildings)
-%ADDNSTEPSTOBUILDINGS Gets the number of timesteps for the set of data of
-%each building contained in BUILDINGS.
+%ADDNSTEPSTOBUILDINGS Gets the number of timesteps in one day for each
+%building contained in BUILDINGS.
 %   buildings = addNStepsToBuildings(buildings)
 %   Returns BUILDINGS with field timestep added to each building.
 

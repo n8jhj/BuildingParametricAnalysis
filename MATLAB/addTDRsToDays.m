@@ -7,17 +7,14 @@ function days = addTDRsToDays(days, ptsReqd)
 fdNames = fieldnames(days);
 fLen = length(fdNames);
 dLen = length(days);
+% for each field
 for f = 1:1:fLen
     fn = fdNames{f};
     if strcmp(fn(1:6),'totFac')
         tdrVals = getTurndownRatios(days, fn, ptsReqd);
         % for each day
         for d = 1:1:dLen
-            if isfield(days, 'tdr')
-                days.tdr.(fn) = tdrVals(d);
-            else
-                days.tdr = struct(fn, tdrVals(d));
-            end
+            days(d).tdr.(fn) = tdrVals(d);
         end
     end
 end

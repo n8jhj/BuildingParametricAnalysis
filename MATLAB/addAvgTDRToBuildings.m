@@ -4,12 +4,10 @@ function buildings = addAvgTDRToBuildings(buildings)
 %   Returns input struct BUILDINGS with new fields 'avgTdrEn' and
 %   'avgTdrDe' for each building.
 
-%% Check for fields 'tdrEn' and 'tdrDe'
-fdNames = fieldnames(buildings(1).days);
-fieldsStr = strcat(fdNames{:});
-assert(~isempty(strfind(fieldsStr, 'tdr_')), ...
-    strcat('Input buildings must contain at least one TDR field', ...
-    ' within field days. Run addTDRsToBuildings first.'))
+%% Check for field 'tdr'
+assert(isfield(buildings(1).days, 'tdr'), ...
+    strcat('Input buildings must contain field ''tdr'' within field', ...
+    ' days. Run addTDRsToBuildings first.'))
 
 %% Add 'avgTdr' fields to each building
 bLen = length(buildings);
@@ -27,6 +25,9 @@ for b = 1:1:bLen
         end
         d = d + 1;
     end
+    if empty
+        error('All daily tdr elements are empty for building %i.', b)
+    end
     % for each field
     for f = 1:1:fLen
         fn = fdNames{f};
@@ -34,7 +35,7 @@ for b = 1:1:bLen
         % for each day
         for d = 1:1:dLen
             % get TDRs
-            tdrs = buildings(b).days(d).tdr.(fn);
+            tdrs(d) = buildings(b).days(d).tdr.(fn);
         end
         % get rid of any Inf values
         tdrs(isinf(tdrs)) = NaN;

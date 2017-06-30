@@ -49,3 +49,6 @@ bNYSERDA = addAvgTDRToBuildings(bNYSERDA);
 % nominal ranges
 bNYSERDA = addNominalRangesToBuildings(bNYSERDA);
 bNYSERDA = addAvgNomRngToBuildings(bNYSERDA);
+
+%% Final time
+toc

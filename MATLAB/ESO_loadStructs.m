@@ -1,5 +1,5 @@
 %ESO_LOADSTRUCTS Load all data in specified directory. Takes approximately
-%12 seconds.
+%20 seconds.
 
 %% Get into proper directory
 dirName = strcat('C:\\Users\Admin\Documents\07_Grad Yr 2\Work', ...
@@ -50,3 +50,6 @@ bESO = addAvgTDRToBuildings(bESO);
 % nominal ranges
 bESO = addNominalRangesToBuildings(bESO);
 bESO = addAvgNomRngToBuildings(bESO);
+
+%% Final time
+toc

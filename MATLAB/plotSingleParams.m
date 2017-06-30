@@ -13,7 +13,9 @@ function plotSingleParams(buildings, x_field, y_field, varargin)
 %   color assigned to each set of buildings.
 %
 % Example:
-%   plotAgainstSize(buildings, {'omean',1,'totFacEn'}, {'avgTdr',1,'totFacEn'}, 'Colors', 'bmr')
+%   plotAgainstSize(buildings, {'omean','totFacEn'}, {'avgTdr','totFacEn'}, 'Colors', 'bmr')
+%   Plots field avgTdr.totFacEn against omean.totFacEn for each building in
+%   BUILDINGS, all on the same figure.
 
 %% Discern input type
 if ~iscell(buildings)

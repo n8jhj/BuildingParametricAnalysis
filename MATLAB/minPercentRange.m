@@ -41,10 +41,11 @@ end
 [sorted,ind] = sort(data);
 
 %% Find minimum range
-% Assuming nRmv is small; otherwise, this will take a long time
+% Assuming nRmv is small; otherwise this will take a long time
 cMin = 0;
 minR = range(sorted(1 : end-nRmv));
-for c = 1:1:nRmv % zero-indexing, omit the first (nCombinations = nRmv+1)
+% zero-indexing, omit the first (nCombinations = nRmv+1)
+for c = 1:1:nRmv
     newR = range(sorted(1+c : end-nRmv+c));
     if newR < minR
         minR = newR;
