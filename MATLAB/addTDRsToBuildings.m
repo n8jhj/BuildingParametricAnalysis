@@ -11,9 +11,11 @@ assert(isfield(buildings, 'days'), ...
     strcat('Input buildings must contain field ''days''.', ...
     ' Run addDaysToBuildings.m first.'))
 
-%% Add fields 'tdrEn' and 'tdrDe' for each building
+%% Add field 'tdr' in days
+% for each building
 for i = 1:1:length(buildings)
-    ptsReqd = buildings(i).nsteps; % only consider days with full data sets
+    % add turndown ratio only for days with full data sets
+    ptsReqd = buildings(i).nsteps;
     buildings(i).days = addTDRsToDays(buildings(i).days, ptsReqd);
 end
 

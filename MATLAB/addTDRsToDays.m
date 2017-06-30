@@ -5,10 +5,21 @@ function days = addTDRsToDays(days, ptsReqd)
 
 %% Add turndown ratios for each day
 fdNames = fieldnames(days);
-for i = 2:1:length(fdNames) % omit first field: timestamp
-    tdrVals = num2cell(getTurndownRatios(days, fdNames{i}, ptsReqd));
-    tdrName = strcat('tdr_',fdNames{i});
-    [days.(tdrName)] = tdrVals{:};
+fLen = length(fdNames);
+dLen = length(days);
+for f = 1:1:fLen
+    fn = fdNames{f};
+    if strcmp(fn(1:6),'totFac')
+        tdrVals = getTurndownRatios(days, fn, ptsReqd);
+        % for each day
+        for d = 1:1:dLen
+            if isfield(days, 'tdr')
+                days.tdr.(fn) = tdrVals(d);
+            else
+                days.tdr = struct(fn, tdrVals(d));
+            end
+        end
+    end
 end
 
 end

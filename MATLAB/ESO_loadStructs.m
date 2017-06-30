@@ -36,12 +36,17 @@ clear i
 %% Add fields...
 % days
 bESO = addDaysToBuildings(bESO);
-% timestep
+% number timesteps
 bESO = addNStepsToBuildings(bESO);
-% turndown ratios
-bESO = addTDRsToBuildings(bESO);
-bESO = addAvgTDRToBuildings(bESO);
-% mean average days
+% monthly average days
 bESO = addMADsToBuildings(bESO);
 % average day
 bESO = addAvgDayToBuildings(bESO);
+% overall mean
+bESO = addOMeanToBuildings(bESO);
+% turndown ratios
+bESO = addTDRsToBuildings(bESO);
+bESO = addAvgTDRToBuildings(bESO);
+% nominal ranges
+bESO = addNominalRangesToBuildings(bESO);
+bESO = addAvgNomRngToBuildings(bESO);

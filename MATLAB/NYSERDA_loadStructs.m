@@ -35,12 +35,17 @@ clear i
 %% Add fields...
 % days
 bNYSERDA = addDaysToBuildings(bNYSERDA);
-% timestep
+% number timesteps
 bNYSERDA = addNStepsToBuildings(bNYSERDA);
-% turndown ratios
-bNYSERDA = addTDRsToBuildings(bNYSERDA);
-bNYSERDA = addAvgTDRToBuildings(bNYSERDA);
-% mean average days
+% monthly average days
 bNYSERDA = addMADsToBuildings(bNYSERDA);
 % average day
 bNYSERDA = addAvgDayToBuildings(bNYSERDA);
+% overall mean
+bNYSERDA = addOMeanToBuildings(bNYSERDA);
+% turndown ratios
+bNYSERDA = addTDRsToBuildings(bNYSERDA);
+bNYSERDA = addAvgTDRToBuildings(bNYSERDA);
+% nominal ranges
+bNYSERDA = addNominalRangesToBuildings(bNYSERDA);
+bNYSERDA = addAvgNomRngToBuildings(bNYSERDA);

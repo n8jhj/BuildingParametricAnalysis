@@ -28,8 +28,8 @@ for b = 1:1:bLen
     end
     % for each field
     for f = 1:1:fLen
-        nomRngs = NaN(dLen, 1);
         fn = fdNames{f};
+        nomRngs = NaN(dLen,1);
         % for each day
         for d = 1:1:dLen
             try
