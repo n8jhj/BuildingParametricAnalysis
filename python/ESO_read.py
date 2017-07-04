@@ -22,36 +22,56 @@ def main():
         if 'dataPoint' in d and int(d[9:]) > nPts:
             nPts = int(d[9:])
     logging.debug(str(nPts) + ' data points to loop through')
-
-    # for each point:
-    # 01. execute ReadVarsESO on the .eso file
-    # 02. rename the .csv file according to the data point number
-    # 03. move the .csv file to the folder csv_files
+    nZfill = len(str(nPts))
+    # be sure csv_files directory exists
     if not os.path.exists(os.path.join('..', 'csv_files')):
         os.mkdir(os.path.join('..', 'csv_files'))
+    # for each point:
     for i in range(1, nPts+1):
         logPoint(i, nPts)
-        dirsDP = os.listdir(os.path.join('..', 'dataPoint'+str(i)))
+        pathDP = os.path.join('..', 'dataPoint'+str(i))
+        dirsDP = listDirOrdered(pathDP)
+        bpSearch = True
+        bPath = None
         fPath = None
         for j, s in enumerate(dirsDP):
-            if '-EnergyPlus-0' in s:
-                fPath = os.path.join('..', 'dataPoint'+str(i), s, 'eplusout.eso')
+            if '-UserScript-0' in s and bpSearch:
+                bpSearch = False
+                bPath = os.path.join(pathDP, s, 'output')
+            elif '-EnergyPlus-0' in s:
+                fPath = os.path.join(pathDP, s, 'eplusout.eso')
                 break
+        # 01. execute ReadVarsESO on the .eso file
         copyESO(fPath)
         readESO()
-        newName = 'eplusout_' + str(i).zfill(3) + '.csv'
+        # 02. rename the .csv file according to building name
+        newName = buildingName(bPath, i, nZfill)
         rename('eplusout.csv', newName)
+        # 03. move the .csv file to the folder csv_files
         move(newName, csvDir)
-
     # clean up extraneous files
     cleanUp()
-
     # save number of data points in a shelf file
     save(nPts, 'nPts')
 
 def logPoint(p, final):
     if p <= 5 or p%10 == 0 or p == final:
         logging.debug('point ' + str(p) + '...')
+
+def listDirOrdered(dirPath):
+    dirsList = os.listdir(dirPath)
+    # find out whether there is a change in the number of digits
+    indFirst = dirsList[0].find('-')
+    indLast = dirsList[-1].find('-')
+    if indFirst > indLast:
+        # if so, return a re-ordered list
+        orderedA = filter(lambda x: x.find('-')==indLast, dirsList)
+        orderedB = filter(lambda x: x.find('-')>indLast, dirsList)
+        orderedList = orderedA + orderedB
+        return orderedList
+    else:
+        # if not, return the original list
+        return dirsList
 
 def copyESO(fPath):
     try:
@@ -65,6 +85,22 @@ def readESO():
         subprocess.check_call('ReadVarsESO.exe')
     except Exception, e:
         logging.error('Failed subprocess call of ReadVarsESO.exe - ' + str(e))
+
+def buildingName(bPath, i, nZfill):
+    try:
+        newName = None
+        dirsBP = os.listdir(bPath)
+        if len(dirsBP) > 3:
+            logging.warning('There is more than one directory in ' + bPath)
+        for el in dirsBP:
+            if not el == '.' and not el == '..':
+                newName = el + '.csv'
+        assert not newName == None
+        return newName
+    except Exception, e:
+        logging.error('Failed to get building name from ' + bPath + ' - ' + \
+                      str(e))
+        return 'eplusout_' + str(i).zfill(nZfill) + '.csv'
 
 def rename(old, new):
     if not os.path.exists(new):
