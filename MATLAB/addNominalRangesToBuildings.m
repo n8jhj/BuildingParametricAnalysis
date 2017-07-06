@@ -20,11 +20,11 @@ for b = 1:1:bLen
         fLen = length(fdNames);
         % for each field
         for f = 1:1:fLen
-            % get 
+            % add 'nomRng' to all days
             fn = fdNames{f};
             if (strcmp(fn,'totFacEn') || strcmp(fn,'totFacDe'))
                 buildings(b).days = ...
-                    getNominalRanges(buildings(b).days, fn, ptsReqd);
+                    addNominalRangesToDays(buildings(b).days, fn, ptsReqd);
             end
         end
     catch ME

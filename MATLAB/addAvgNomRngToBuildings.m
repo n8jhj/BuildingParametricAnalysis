@@ -20,7 +20,7 @@ for b = 1:1:bLen
     empty = true;
     while empty && d <= dLen
         if ~isempty(buildings(b).days(d).nomRng)
-            fdNames = fieldnames(buildings(b).days(d).nomRng);
+            fdNames = fieldnames(buildings(b).days(d).nomRng.rng);
             fLen = length(fdNames);
             empty = false;
         end
@@ -33,12 +33,8 @@ for b = 1:1:bLen
         % for each day
         for d = 1:1:dLen
             try
-                if ~isempty(buildings(b).days(d).nomRng)
-                    % get nominal ranges
-                    nomRngs(d) = [buildings(b).days(d).nomRng.(fn)];
-                else
-                    nomRngs(d) = NaN;
-                end
+                % get nominal ranges
+                nomRngs(d) = [buildings(b).days(d).nomRng.rng.(fn)];
             catch ME
                 fprintf('Error at building %i, day %i\n', b, d)
                 rethrow(ME)
