@@ -12,11 +12,17 @@ assert(isfield(buildings, 'days'), ...
     ' Run addDaysToBuildings.m first.'))
 
 %% Add field 'tdr' in days
+bLen = length(buildings);
 % for each building
-for i = 1:1:length(buildings)
-    % add turndown ratio only for days with full data sets
-    ptsReqd = buildings(i).nsteps;
-    buildings(i).days = addTDRsToDays(buildings(i).days, ptsReqd);
+for b = 1:1:bLen
+    try
+        % add turndown ratio only for days with full data sets
+        ptsReqd = buildings(b).nsteps;
+        buildings(b).days = addTDRsToDays(buildings(b).days, ptsReqd);
+    catch ME
+        fprintf('Error at building %i\n', b)
+        rethrow(ME)
+    end
 end
 
 end

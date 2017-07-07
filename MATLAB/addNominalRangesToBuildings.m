@@ -15,14 +15,16 @@ bLen = length(buildings);
 % for each building
 for b = 1:1:bLen
     try
+        % add nominal range only for days with full data sets
         ptsReqd = buildings(b).nsteps;
-        fdNames = fieldnames(buildings(b).days);
+        buildings(b).days = addNominalRangesToDays(buildings(b).days);
+        fdNames = fieldnames(buildings(b).data);
         fLen = length(fdNames);
         % for each field
         for f = 1:1:fLen
             % add 'nomRng' to all days
             fn = fdNames{f};
-            if (strcmp(fn,'totFacEn') || strcmp(fn,'totFacDe'))
+            if strcmp(fn(1:6),'totFac')
                 buildings(b).days = ...
                     addNominalRangesToDays(buildings(b).days, fn, ptsReqd);
             end

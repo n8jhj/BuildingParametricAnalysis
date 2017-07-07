@@ -4,9 +4,10 @@ function buildings = addNStepsToBuildings(buildings)
 %   buildings = addNStepsToBuildings(buildings)
 %   Returns BUILDINGS with field timestep added to each building.
 
-%% Check input buildings for field 'days'
-assert(isfield(buildings(1), 'days'), ...
-    'Input BUILDING must have field DAYS. Run addDaysToBuildings first.')
+%% Check for field 'days'; add if non-existent
+if ~isfield(buildings(1),'days')
+    buildings = addDaysToBuildings(buildings);
+end
 
 %% Find min timestep and convert to max number timesteps for each building
 for i = 1:1:length(buildings)

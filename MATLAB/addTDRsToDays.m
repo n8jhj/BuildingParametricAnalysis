@@ -1,9 +1,11 @@
 function days = addTDRsToDays(days, ptsReqd)
 %ADDTDRSTODAYS Add the turndown ratio as a field for each day.
-%   days = addTDRsToDays(days)
-%   Returns struct DAYS with new fields 'tdrEn' and 'tdrDe' added.
+%   days = addTDRsToDays(days, ptsReqd)
+%   Returns struct DAYS with new field 'tdr' added. Subfields corresponding
+%   to the types of data contained in DAYS are in turn added to days.tdr.
 
 %% Add turndown ratios for each day
+% initialize
 fdNames = fieldnames(days);
 fLen = length(fdNames);
 dLen = length(days);

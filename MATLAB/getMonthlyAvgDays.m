@@ -47,6 +47,7 @@ end
 avgsAtMonth = NaN(nSteps,nNames);
 
 %% Get and store lists of each month's average day
+% for each month
 for m = 1:1:12
     % get average day
     for s = 1:1:nSteps
