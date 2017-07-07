@@ -2,8 +2,7 @@
 %approximately 5 minutes.
 
 %% Get into proper directory
-dirName = strcat('C:\\Users\Admin\Documents\GitHub', ...
-    '\BuildingParametricAnalysis\NYSERDA_select');
+
 bldgList = dir(dirName);
 
 %% Load data
@@ -32,23 +31,29 @@ clear fName
 clear sName
 clear i
 
-%% Add fields...
-% days
-bNYSERDA = addToBuildings(bNYSERDA,'days');
-% number timesteps
-bNYSERDA = addToBuildings(bNYSERDA,'nsteps');
-% monthly average days
-bNYSERDA = addToBuildings(bNYSERDA,'mads');
-% average day
-bNYSERDA = addAvgDayToBuildings(bNYSERDA);
-% overall mean
-bNYSERDA = addOMeanToBuildings(bNYSERDA);
-% turndown ratios
-bNYSERDA = addToBuildings(bNYSERDA, 'tdr');
-bNYSERDA = addAvgTDRToBuildings(bNYSERDA);
-% nominal ranges
-bNYSERDA = addNominalRangesToBuildings(bNYSERDA);
-bNYSERDA = addAvgNomRngToBuildings(bNYSERDA);
+%% Add fields to buildings
+fields = {...
+    'days',... days
+    'nsteps',... number timesteps
+    'mads',... monthly average days
+    'avgDay',... average day
+    'omean',... overall mean
+    'tdr',... turndown ratios
+    'avgTdr',... average turndown ratio
+    'nomRng',... nominal ranges
+    'avgNomRng',... average nominal range
+    };
+bNYSERDA = addFields(bNYSERDA,fields);
 
 %% Final time
+fprintf('Done - ')
 toc
+
+function buildings = addFields(buildings,fields)
+for f = 1:1:length(fields)
+    fn = fields{f};
+    buildings = addToBuildings(buildings,fn);
+    fprintf('Added field %s - ', fn)
+    toc
+end
+end
