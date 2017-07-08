@@ -10,8 +10,8 @@ fdNames = fieldnames(avgDay);
 fLen = length(fdNames);
 % for each field
 for f = 1:1:fLen
-    avgDay = [avgDay.(fdNames{f})];
-    omean.(fdNames{f}) = mean(avgDay);
+    avdList = [avgDay.(fdNames{f})];
+    omean.(fdNames{f}) = mean(avdList);
 end
 
 end
