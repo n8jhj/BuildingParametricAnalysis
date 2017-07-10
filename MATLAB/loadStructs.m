@@ -30,12 +30,17 @@ fields = {...
     'avgTdr',... average turndown ratio
     'nomRng',... nominal ranges
     'avgNomRng',... average nominal range
+    'pkOtlrs',... peak outliers
     };
 addFields(fields);
 
 %% Final time
 fprintf('Done - ')
 toc
+
+%% Further instructions to user
+fprintf(strcat('\n\nTo see the loaded buildings in the workspace,', ...
+    ' type:\nglobal buildings\n\n'))
 
 end
 
@@ -45,8 +50,8 @@ function bldgFiles = getBldgFiles(source)
 switch source
     case 'ESO'
         dirName = strcat('C:\\Users\Admin\Documents\07_Grad Yr 2\Work', ...
-            '\BuildingParametricAnalysis\PAT_datafiles\CharacterizationStudy', ...
-            '\csv_files');
+            '\BuildingParametricAnalysis\PAT_datafiles', ...
+            '\CharacterizationStudy\4A');
     case 'NYSERDA'
         dirName = strcat('C:\\Users\Admin\Documents\GitHub', ...
             '\BuildingParametricAnalysis\NYSERDA_select');

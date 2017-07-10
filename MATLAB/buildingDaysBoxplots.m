@@ -1,4 +1,4 @@
-function buildingDaysBoxplots(buildings, fieldname)
+function buildingDaysBoxplots(buildings, fieldname, varargin)
 %BUILDINGDAYSBOXPLOTS Boxplots of a certain field of input buildings.
 %   buildingBoxplots(buildings, fieldname)
 %   Creates boxplots displaying field specified by FIELDNAME for each
@@ -9,15 +9,26 @@ function buildingDaysBoxplots(buildings, fieldname)
 %   multiple struct sets of buildings. In the case of multiple sets, each
 %   set is assigned a different color in the boxplot.
 %
+%   buildingBoxplots(buildings, fieldname, warnings)
+%   Input WARNINGS is an optional boolean input, specifying whether
+%   warnings should be displayed at all. Default is true.
+%
 % Example:
-%   buildingBoxplots(buildings, 'tdr_totFacEn')
+%   buildingBoxplots(buildings,{'tdr','totFacEn'})
 %   If buildings is not a cell array of structs, this creates boxplots of
-%   days.tdr_totFacEn for each building in BUILDINGS.
+%   days.tdr.totFacEn for each building in BUILDINGS.
 
 
 %% Handle input
+% check for cell array buildings input
 if ~iscell(buildings)
     buildings = {buildings};
+end
+% check for optional input warnings
+if isempty(varargin)
+    warnings = true;
+else
+    warnings = varargin{1};
 end
 
 %% Colors preset: blu, mrn, red, grn, cyn, blk, ylw
@@ -46,9 +57,10 @@ for set = 1:1:length(buildings)
         % assign values to combined lists
         combList(iStart:iEnd, 1) = {buildings{set}(b).name};
         for d = 1:1:length(buildings{set}(b).days)
-            % add value to field 2 cell array
-            combList(iStart-1+d, 2) = ...
-                {getFieldByPath(buildings{set}(b), ['days',d,fieldname])};
+            % add value to cell array col 2
+            combList = ...
+                addDataValue(combList, buildings{set}(b), iStart, d, ...
+                fieldname, warnings);
         end
         % update colors array
         colors(end+1) = cp(set);
@@ -67,6 +79,27 @@ resizeFigure(fig)
 end
 
 
+%% Add data value to combined list
+function combList = addDataValue(combList,bldg,iStart,d,fn,warnings)
+try
+    combList(iStart-1+d, 2) = ...
+        {getFieldByPath(bldg, ['days',d,fn])};
+catch ME
+    switch ME.identifier
+        case 'MATLAB:badsubscript'
+            if warnings
+                warning(strcat('Bad subscript at building %s, day %i.', ...
+                    ' Assigning value of NaN.'), bldg.name, d)
+            end
+            combList(iStart-1+d, 2) = {NaN};
+        otherwise
+            rethrow(ME)
+    end
+end
+end
+
+
+%% Resize boxplot figure to look better
 function resizeFigure(fig)
 figPos = get(fig, 'Position');
 deltaY = 1000;

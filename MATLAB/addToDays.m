@@ -1,5 +1,5 @@
 function days = addToDays(days, field, ptsReqd)
-%ADDTODAYS Add input FIELD to days.
+%ADDTODAYS Add FIELD to DAYS.
 %   days = addToDays(days, field, ptsReqd)
 %   Adds the specified input FIELD to each day in input struct DAYS and
 %   returns it.
@@ -33,7 +33,13 @@ for f = 1:1:fLen
                         days(d).nomRng.vals.(fn) = NaN;
                     end
                 case 'pkOtlrs'
-                    % pass (for now)
+                    if ~isnan(days(d).nomRng.vals.(fn))
+                        days(d).pkOtlrs.(fn) = ...
+                            peakOutliers(days(d).(fn),...
+                            days(d).nomRng.vals.(fn));
+                    else
+                        days(d).pkOtlrs.(fn) = NaN;
+                    end
                 otherwise
                     error('Field %s not recognized', field)
             end

@@ -4,30 +4,26 @@ function buildings = addToBuildings(buildings, field)
 %   Adds the specified input FIELD to the struct BUILDINGS and returns it.
 
 %% Necessary field checks and initialization
+dependence = 'none';
 switch field
     case 'days'
         % pass
     case 'nsteps'
-        if ~isfield(buildings,'days')
-            buildings = addToBuildings(buildings,'days');
-        end
+        dependence = 'days';
     case 'avgDay'
-        if ~isfield(buildings,'mads')
-            buildings = addToBuildings(buildings,'mads');
-        end
+        dependence = 'mads';
     case 'omean'
-        if ~isfield(buildings,'avgDay')
-            buildings = addToBuildings(buildings,'avgDay');
-        end
+        dependence = 'avgDay';
     case 'avgTdr'
-        if ~isfield(buildings(1).days,'tdr')
-            buildings = addToBuildings(buildings,'tdr');
-        end
+        dependence = {'days','tdr'};
+    case 'pkOtlrs'
+        dependence = {'days','nomRng'};
     otherwise
         % 'nsteps' needed for all other cases
-        if ~isfield(buildings,'nsteps')
-            buildings = addToBuildings(buildings,'nsteps');
-        end
+        dependence = 'nsteps';
+end
+if ~strcmp(dependence,'none')
+    buildings = ensureExistence(buildings,dependence);
 end
 
 %% Add input field to buildings
@@ -71,4 +67,26 @@ for b = 1:1:bLen
     end
 end
 
+end
+
+
+%% Ensure existence of a field upon which fields to be added are predicated
+function buildings = ensureExistence(buildings,dep)
+%% Check for cell input
+if ~iscell(dep)
+    dep = {dep};
+end
+
+%% Set up for existence check
+if length(dep) > 1
+    reliant = getFieldByPath(buildings, [1, dep(1:end-1)]);
+else
+    reliant = buildings;
+end
+
+%% Check for existence of dependence
+if ~isfield(reliant,dep{end})
+    fprintf('Dependence field %s is being added...\n', dep{end})
+    buildings = addToBuildings(buildings,dep{end});
+end
 end
