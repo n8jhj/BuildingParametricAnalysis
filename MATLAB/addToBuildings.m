@@ -8,7 +8,7 @@ dependence = 'none';
 switch field
     case 'days'
         % pass
-    case 'nsteps'
+    case {'nsteps','cumDem'}
         dependence = 'days';
     case 'avgDay'
         dependence = 'mads';
@@ -32,35 +32,7 @@ bLen = length(buildings);
 for b = 1:1:bLen
     try
         % add specified field
-        switch field
-            case 'days'
-                [days,~] = partitionByDays(buildings(b).data);
-                buildings(b).days = days;
-            case 'nsteps'
-                buildings(b).nsteps = ...
-                    getNStepsFromData(buildings(b).data);
-            case 'mads'
-                nSteps = buildings(b).nsteps;
-                buildings(b).mads = ...
-                    getMonthlyAvgDays(buildings(b).days,nSteps);
-            case 'avgDay'
-                buildings(b).avgDay = ...
-                    getAvgDayFromADs(buildings(b).mads);
-            case 'omean'
-                buildings(b).omean = ...
-                    getOMeanFromAvgDay(buildings(b).avgDay);
-            case 'avgTdr'
-                buildings(b).avgTdr = ...
-                    getAvgTDRFromDays(buildings(b).days);
-            case 'avgNomRng'
-                buildings(b).avgNomRng = ...
-                    getAvgNomRngFromDays(buildings(b).days);
-            otherwise
-                % add requested field for all days with complete data sets
-                ptsReqd = buildings(b).nsteps;
-                buildings(b).days = ...
-                    addToDays(buildings(b).days, field, ptsReqd);
-        end
+        buildings(b) = addField(buildings(b),field);
     catch ME
         fprintf('Error at building %i\n', b)
         rethrow(ME)
@@ -88,5 +60,32 @@ end
 if ~isfield(reliant,dep{end})
     fprintf('Dependence field %s is being added...\n', dep{end})
     buildings = addToBuildings(buildings,dep{end});
+end
+end
+
+
+%% Perform addition of specified field to building
+function bldg = addField(bldg,field)
+switch field
+    case 'days'
+        [days,~] = partitionByDays(bldg.data);
+        bldg.days = days;
+    case 'nsteps'
+        bldg.nsteps = getNStepsFromData(bldg.data);
+    case 'mads'
+        nSteps = bldg.nsteps;
+        bldg.mads = getMonthlyAvgDays(bldg.days,nSteps);
+    case 'avgDay'
+        bldg.avgDay = getAvgDayFromADs(bldg.mads);
+    case 'omean'
+        bldg.omean = getOMeanFromAvgDay(bldg.avgDay);
+    case 'avgTdr'
+        bldg.avgTdr = getAvgTDRFromDays(bldg.days);
+    case 'avgNomRng'
+        bldg.avgNomRng = getAvgNomRngFromDays(bldg.days);
+    otherwise
+        % add requested field for all days with complete data sets
+        ptsReqd = bldg.nsteps;
+        bldg.days = addToDays(bldg.days, field, ptsReqd);
 end
 end

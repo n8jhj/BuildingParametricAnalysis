@@ -11,7 +11,8 @@ function buildingDaysBoxplots(buildings, fieldname, varargin)
 %
 %   buildingBoxplots(buildings, fieldname, warnings)
 %   Input WARNINGS is an optional boolean input, specifying whether
-%   warnings should be displayed at all. Default is true.
+%   warnings should be displayed at all for this function. Default is true,
+%   meaning warnings will be displayed.
 %
 % Example:
 %   buildingBoxplots(buildings,{'tdr','totFacEn'})
@@ -25,10 +26,14 @@ if ~iscell(buildings)
     buildings = {buildings};
 end
 % check for optional input warnings
-if isempty(varargin)
-    warnings = true;
-else
-    warnings = varargin{1};
+if ~isempty(varargin)
+    warn = warning;
+    warnState = warn.state;
+    if varargin{1}
+        warning('on','all')
+    else
+        warning('off','all')
+    end
 end
 
 %% Colors preset: blu, mrn, red, grn, cyn, blk, ylw
@@ -60,7 +65,7 @@ for set = 1:1:length(buildings)
             % add value to cell array col 2
             combList = ...
                 addDataValue(combList, buildings{set}(b), iStart, d, ...
-                fieldname, warnings);
+                fieldname);
         end
         % update colors array
         colors(end+1) = cp(set);
@@ -76,21 +81,24 @@ boxplot(x,g, 'PlotStyle','compact', 'Colors',colors);
 % resize
 resizeFigure(fig)
 
+%% Reset state of warnings
+if ~isempty(varargin{1})
+    warning(warnState,'all')
+end
+
 end
 
 
 %% Add data value to combined list
-function combList = addDataValue(combList,bldg,iStart,d,fn,warnings)
+function combList = addDataValue(combList,bldg,iStart,d,fn)
 try
     combList(iStart-1+d, 2) = ...
         {getFieldByPath(bldg, ['days',d,fn])};
 catch ME
     switch ME.identifier
         case 'MATLAB:badsubscript'
-            if warnings
-                warning(strcat('Bad subscript at building %s, day %i.', ...
-                    ' Assigning value of NaN.'), bldg.name, d)
-            end
+            warning(strcat('Bad subscript at building %s, day %i.', ...
+                ' Assigning value of NaN.'), bldg.name, d);
             combList(iStart-1+d, 2) = {NaN};
         otherwise
             rethrow(ME)
