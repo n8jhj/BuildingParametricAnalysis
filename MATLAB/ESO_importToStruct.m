@@ -7,7 +7,7 @@ function dataStruct = ESO_importToStruct(filename)
 %% Create struct from NYSERDA_importFile output.
 % get data values
 [Timestamp,TotFacilityEnergy] = ESO_importFile(filename);
-% convert ESO buildings demand to kWh
+% convert ESO buildings demand: J to kWh
 TotFacilityEnergy_kwh = TotFacilityEnergy ./ 3600000;
 % return struct
 dataStruct = struct('timestamp',Timestamp, ...

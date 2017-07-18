@@ -1,6 +1,6 @@
 function buildingDaysBoxplots(buildings, fieldname, varargin)
 %BUILDINGDAYSBOXPLOTS Boxplots of a certain field of input buildings.
-%   buildingBoxplots(buildings, fieldname)
+%   buildingDaysBoxplots(buildings, fieldname)
 %   Creates boxplots displaying field specified by FIELDNAME for each
 %   building in the set BUILDINGS, all on the same plot axes. FIELDNAME is
 %   assumed to be within building.days and should be specified as a path
@@ -9,13 +9,13 @@ function buildingDaysBoxplots(buildings, fieldname, varargin)
 %   multiple struct sets of buildings. In the case of multiple sets, each
 %   set is assigned a different color in the boxplot.
 %
-%   buildingBoxplots(buildings, fieldname, warnings)
+%   buildingDaysBoxplots(buildings, fieldname, warnings)
 %   Input WARNINGS is an optional boolean input, specifying whether
 %   warnings should be displayed at all for this function. Default is true,
 %   meaning warnings will be displayed.
 %
 % Example:
-%   buildingBoxplots(buildings,{'tdr','totFacEn'})
+%   buildingDaysBoxplots(nbNYSERDA,{'tdr','totFacEn'})
 %   If buildings is not a cell array of structs, this creates boxplots of
 %   days.tdr.totFacEn for each building in BUILDINGS.
 
@@ -82,7 +82,7 @@ boxplot(x,g, 'PlotStyle','compact', 'Colors',colors);
 resizeFigure(fig)
 
 %% Reset state of warnings
-if ~isempty(varargin{1})
+if ~isempty(varargin)
     warning(warnState,'all')
 end
 

@@ -21,16 +21,16 @@ loadBldgData(bldgFiles,source);
 
 %% Add fields to buildings
 fields = {...
-    'days',... days
-    'nsteps',... number timesteps
-    'mads',... monthly average days
-    'avgDay',... average day
-    'omean',... overall mean
-    'tdr',... turndown ratios
-    'avgTdr',... average turndown ratio
-    'nomRng',... nominal ranges
+    'days',...      days
+    'nsteps',...    number timesteps
+    'mads',...      monthly average days
+    'avgDay',...    average day
+    'omean',...     overall mean
+    'tdr',...       turndown ratios
+    'avgTdr',...    average turndown ratio
+    'nomRng',...    nominal ranges
     'avgNomRng',... average nominal range
-    'pkOtlrs',... peak outliers
+    'pkOtlrs',...   peak outliers
     };
 addFields(fields);
 
