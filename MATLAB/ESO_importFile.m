@@ -45,12 +45,6 @@ end
 %% Close the text file.
 fclose(fileID);
 
-%% Post processing for unimportable data.
-% No unimportable data rules were applied during the import, so no post
-% processing code is included. To generate code which works for
-% unimportable data, select unimportable cells in a file and regenerate the
-% script.
-
 %% Allocate imported array to column variable names
 % get time data
 DateTime = datetime(dataArray{:, 1}, 'InputFormat', 'MM/dd  HH:mm:ss');
