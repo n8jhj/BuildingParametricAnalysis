@@ -17,18 +17,16 @@ csvDir = os.path.join('..', 'csv_files')
 def main():
     # get number of data points
     dirsAbove = os.listdir('..')
-    nPts = 0
-    for d in dirsAbove:
-        if 'dataPoint' in d and int(d[9:]) > nPts:
-            nPts = int(d[9:])
+    ptMin, ptMax = getMinAndMax(dirsAbove)
+    nPts = ptMax - ptMin + 1
     logging.debug(str(nPts) + ' data points to loop through')
-    nZfill = len(str(nPts))
+    nZfill = len(str(ptMax))
     # be sure csv_files directory exists
     if not os.path.exists(os.path.join('..', 'csv_files')):
         os.mkdir(os.path.join('..', 'csv_files'))
     # for each point:
-    for i in range(1, nPts+1):
-        logPoint(i, nPts)
+    for i in range(ptMin, ptMax+1):
+        logPoint(i, ptMin, ptMax, nPts)
         pathDP = os.path.join('..', 'dataPoint'+str(i))
         dirsDP = listDirOrdered(pathDP)
         bpSearch = True
@@ -37,7 +35,14 @@ def main():
         for j, s in enumerate(dirsDP):
             if '-UserScript-0' in s and bpSearch:
                 bpSearch = False
-                bPath = os.path.join(pathDP, s, 'output')
+                pathOpt1 = os.path.join(pathDP, s, 'output')
+                pathOpt2 = os.path.join(pathDP, s, 'mergedjob-0', 'output')
+                if os.path.exists(pathOpt1):
+                    bPath = pathOpt1
+                else:
+                    logging.debug('Path option 1 nonexistent. Trying path' \
+                                  ' option 2...')
+                    bPath = pathOpt2
             elif '-EnergyPlus-0' in s:
                 fPath = os.path.join(pathDP, s, 'eplusout.eso')
                 break
@@ -54,9 +59,22 @@ def main():
     # save number of data points in a shelf file
     save(nPts, 'nPts')
 
-def logPoint(p, final):
-    if p <= 5 or p%10 == 0 or p == final:
-        logging.debug('point ' + str(p) + '...')
+def getMinAndMax(dirsAbove):
+    ptMin = 0
+    ptMax = 0
+    for d in dirsAbove:
+        if 'dataPoint' in d:
+            if int(d[9:]) > ptMax:
+                ptMax = int(d[9:])
+            if int(d[9:]) < ptMin or ptMin == 0:
+                ptMin = int(d[9:])
+    return ptMin, ptMax
+
+def logPoint(p, ptMin, ptMax, nPts):
+    pRel = p - ptMin + 1
+    if pRel <= 5 or pRel%10 == 0 or p == ptMax:
+        logging.debug('dataPoint' + str(p) + ' (' + str(pRel) + ' of ' + \
+                      str(nPts) + ')...')
 
 def listDirOrdered(dirPath):
     dirsList = os.listdir(dirPath)

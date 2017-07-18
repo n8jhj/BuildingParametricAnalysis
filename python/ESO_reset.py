@@ -15,8 +15,9 @@ def main():
     
     # delete .csv files and shelf file
     if not nPts == None and os.path.exists(csvDir):
-        for i in range(1, nPts+1):
-            delete(os.path.join(csvDir, 'eplusout_' + str(i) + '.csv'))
+        csvFiles = os.listdir(csvDir)
+        for f in csvFiles:
+            delete(os.path.join(csvDir, f))
     if os.path.exists(shelfFile):
         delete(shelfFile)
 
