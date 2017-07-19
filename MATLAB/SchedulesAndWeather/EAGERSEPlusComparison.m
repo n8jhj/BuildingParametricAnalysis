@@ -43,12 +43,12 @@ else
     ver = '*';
 end
 x = mtr.Timestamp;
-mtrTotal = ...
-    mtr.InteriorLightsElectricity + mtr.InteriorEquipmentElectricity;
-y = {Electric,Cooling,Heating,[],Total; ...
-    mtrTotal,mtr.CoolingElectricity,mtr.HeatingElectricity,mtr.ElectricityHVAC,mtr.ElectricityFacility};
+% mtrTotal = ...
+%     mtr.InteriorLightsElectricity + mtr.InteriorEquipmentElectricity;
+y = {Electric,[],Cooling,Heating,[],Total; ...
+    mtr.InteriorLightsElectricity,mtr.InteriorEquipmentElectricity,mtr.CoolingElectricity,mtr.HeatingElectricity,mtr.ElectricityHVAC,mtr.ElectricityFacility};
 oTitle = ['v',ver,' - ',bldg,' - ',wthr];
-titles = {'Electric','Cooling','Heating',[],'Total'; 'InteriorLights+Equipment','Cooling','Heating','HVAC','Total'};
+titles = {'Electric',[],'Cooling','Heating',[],'Total'; 'InteriorLights','Equipment','Cooling','Heating','HVAC','Total'};
 xlab = '';
 ylab = 'Load (kWh)';
 
