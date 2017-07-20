@@ -33,7 +33,8 @@ load(strcat('mtr_',bldg,'.mat'))    % mtr
 Date = (datenum(mtr.Timestamp(1)) : 1/24 : datenum(mtr.Timestamp(end))).';
 
 %% Run EAGERS method
-[Electric,Cooling,Heating] = BuildingProfile(building,weather,Date);
+[Equipment,Lighting,Cooling,Heating] = BuildingProfile(building,weather,Date);
+Electric = Equipment + Lighting;
 Total = Electric + Cooling + Heating;
 
 %% Plot setup
@@ -45,10 +46,10 @@ end
 x = mtr.Timestamp;
 % mtrTotal = ...
 %     mtr.InteriorLightsElectricity + mtr.InteriorEquipmentElectricity;
-y = {Electric,[],Cooling,Heating,[],Total; ...
+y = {Lighting,Equipment,Cooling,Heating,[],Total; ...
     mtr.InteriorLightsElectricity,mtr.InteriorEquipmentElectricity,mtr.CoolingElectricity,mtr.HeatingElectricity,mtr.ElectricityHVAC,mtr.ElectricityFacility};
 oTitle = ['v',ver,' - ',bldg,' - ',wthr];
-titles = {'Electric',[],'Cooling','Heating',[],'Total'; 'InteriorLights','Equipment','Cooling','Heating','HVAC','Total'};
+titles = {'InteriorLights','Equipment','Cooling','Heating',[],'Total'; 'InteriorLights','Equipment','Cooling','Heating','HVAC','Total'};
 xlab = '';
 ylab = 'Load (kWh)';
 
