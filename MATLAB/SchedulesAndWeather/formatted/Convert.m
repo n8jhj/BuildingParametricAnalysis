@@ -47,17 +47,17 @@ for i = 1:1:length(names)
         building.Schedule.Sun.heat{1} = [0, eval(strcat(names{i},'.heat_setpt.whole_week(end,2)')); eval(strcat(names{i},'.heat_setpt.whole_week'))];
     end
     if isfield(eval(strcat(names{i},'.cool_setpt')),'sat')
-        building.Schedule.Weekday.cooling{1} = [0, eval(strcat(names{i},'.cool_setpt.weekday(end,2)')); eval(strcat(names{i},'.cool_setpt.weekday'))];
-        building.Schedule.Sat.cooling{1} = [0, eval(strcat(names{i},'.cool_setpt.sat(end,2)')); eval(strcat(names{i},'.cool_setpt.sat'))];
-        building.Schedule.Sun.cooling{1} = [0, eval(strcat(names{i},'.cool_setpt.sun(end,2)')); eval(strcat(names{i},'.cool_setpt.sun'))];
+        building.Schedule.Weekday.cool{1} = [0, eval(strcat(names{i},'.cool_setpt.weekday(end,2)')); eval(strcat(names{i},'.cool_setpt.weekday'))];
+        building.Schedule.Sat.cool{1} = [0, eval(strcat(names{i},'.cool_setpt.sat(end,2)')); eval(strcat(names{i},'.cool_setpt.sat'))];
+        building.Schedule.Sun.cool{1} = [0, eval(strcat(names{i},'.cool_setpt.sun(end,2)')); eval(strcat(names{i},'.cool_setpt.sun'))];
     elseif isfield(eval(strcat(names{i},'.cool_setpt')),'weekend')
-        building.Schedule.Weekday.cooling{1} = [0, eval(strcat(names{i},'.cool_setpt.weekday(end,2)')); eval(strcat(names{i},'.cool_setpt.weekday'))];
-        building.Schedule.Sat.cooling{1} = [0, eval(strcat(names{i},'.cool_setpt.weekend(end,2)')); eval(strcat(names{i},'.cool_setpt.weekend'))];
-        building.Schedule.Sun.cooling{1} = [0, eval(strcat(names{i},'.cool_setpt.weekend(end,2)')); eval(strcat(names{i},'.cool_setpt.weekend'))];
+        building.Schedule.Weekday.cool{1} = [0, eval(strcat(names{i},'.cool_setpt.weekday(end,2)')); eval(strcat(names{i},'.cool_setpt.weekday'))];
+        building.Schedule.Sat.cool{1} = [0, eval(strcat(names{i},'.cool_setpt.weekend(end,2)')); eval(strcat(names{i},'.cool_setpt.weekend'))];
+        building.Schedule.Sun.cool{1} = [0, eval(strcat(names{i},'.cool_setpt.weekend(end,2)')); eval(strcat(names{i},'.cool_setpt.weekend'))];
     elseif isfield(eval(strcat(names{i},'.cool_setpt')),'whole_week')
-        building.Schedule.Weekday.cooling{1} = [0, eval(strcat(names{i},'.cool_setpt.whole_week(end,2)')); eval(strcat(names{i},'.cool_setpt.whole_week'))];
-        building.Schedule.Sat.cooling{1} = [0, eval(strcat(names{i},'.cool_setpt.whole_week(end,2)')); eval(strcat(names{i},'.cool_setpt.whole_week'))];
-        building.Schedule.Sun.cooling{1} = [0, eval(strcat(names{i},'.cool_setpt.whole_week(end,2)')); eval(strcat(names{i},'.cool_setpt.whole_week'))];
+        building.Schedule.Weekday.cool{1} = [0, eval(strcat(names{i},'.cool_setpt.whole_week(end,2)')); eval(strcat(names{i},'.cool_setpt.whole_week'))];
+        building.Schedule.Sat.cool{1} = [0, eval(strcat(names{i},'.cool_setpt.whole_week(end,2)')); eval(strcat(names{i},'.cool_setpt.whole_week'))];
+        building.Schedule.Sun.cool{1} = [0, eval(strcat(names{i},'.cool_setpt.whole_week(end,2)')); eval(strcat(names{i},'.cool_setpt.whole_week'))];
     end
     save(names{i},'building')
 end

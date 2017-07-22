@@ -1,7 +1,7 @@
 function w_avg = weightedAvg(bldgType,avg_param,wt_param)
 %WEIGHTEDAVG Weighted average of a given parameter of a given building
 %type.
-%   w_avg = weightedAvg(bldgType,param)
+%   w_avg = weightedAvg(bldgType,avg_param,wt_param)
 %   Returns weighted average of parameter PARAM for the building type
 %   BLDGTYPE of the DOE prototype buildings.
 
