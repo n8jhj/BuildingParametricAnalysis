@@ -12,10 +12,7 @@ function wtdSch = weightedSchedStruct(bldgType,avg_params,wt_params)
 
 %% Handle input
 % Allow for input cell array of weighting factors.
-% At the same time, store whether all weighting factors are the same.
-same = false;
 if ~iscell(wt_params)
-    same = true;
     temp = cell(length(avg_params),1);
     temp(:) = {wt_params};
     wt_params = temp;
@@ -24,11 +21,19 @@ end
 % factors.
 
 %% Initialize struct
-wtdSch = struct(avg_params{1});
+wtdSch = struct(avg_params{1},[]);
 for p = 2:1:length(avg_params)
-    wtdSch.(avg_params{p}) = {};
+    wtdSch.(avg_params{p}) = [];
 end
 
-%% 
+%% Get weighted average for each input parameter
+for p = 1:1:length(avg_params)
+    % get schedules to be averaged
+    scheds = spaceSchedules(bldgType,avg_params{p});
+    % get weights to be used
+    [weights,~] = spaceParameters(bldgType,wt_params{p});
+    % calculate weighted average schedule and store in return structure
+    wtdSch.(avg_params{p}) = wtdAvgSched(scheds,[weights{:,2}]);
+end
 
 end
