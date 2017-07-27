@@ -45,7 +45,7 @@ wts = spaceParameters(b_type,w_param);
 %% Get schedules for each of Weekday, Saturday, and Sunday
 spc_sched_names = spaceSchedNames(b_type,a_param);
 [seasons,wkdy_scheds,sat_scheds,sun_scheds] = ...
-    spaceSchedules(spc_sched_names);
+    spaceSchedules({spc_sched_names{:,2}});
 
 %% For each of the Weekday, Sat, and Sun schedules...
 scheds = {wkdy_scheds,sat_scheds,sun_scheds};
@@ -56,7 +56,7 @@ for i = 1:1:3
     % convert schedule to matrix for weighted averaging
     sch_mat = sched2Mat(sched);
     % calculate weighted average
-    avg_mat = wtdAvgSchMat(sch_mat,wts);
+    avg_mat = wtdAvgSchMat(sch_mat,wts{:,2});
     % convert matrix back to schedule
     avg_sch = mat2Sched(avg_mat);
     % collapse schedule back to the "until-value" form

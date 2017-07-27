@@ -15,6 +15,13 @@ sch = struct(...
 %% Populate
 switch name
     
+    % |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||___[empty]
+    case ''
+        sch.Seasons = NaN;
+        sch.Weekday = [];
+        sch.Sat = [];
+        sch.Sun = [];
+        
     % ||||||||||||||||||||||||||||||||||||||||||||||||||||___PRIMARY SCHOOL
     % ||||||||||||||||||||||||||||||||||||||||||||||||||___SECONDARY SCHOOL
     % ||||||||||||||||||||||||||||||||||||||||||||||||||||||___SMALL OFFICE
@@ -536,7 +543,7 @@ switch name
     % ||||||||||||||||||||||||||||||||||||||||||||||||||||||||___OUTPATIENT
     
     otherwise
-        error('Input ''name'' not recognized: %s', name)
+        error('Input ''name'' not recognized: ''%s''', name)
 end
 
 end
