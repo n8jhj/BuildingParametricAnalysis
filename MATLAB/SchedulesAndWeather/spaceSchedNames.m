@@ -1,8 +1,8 @@
-function sData = spaceSchedules(bType,param)
-%SPACESCHEDULES Schedule for the given parameter for the given building type.
-%   sData = spaceSchedules(bType,param)
-%   Returns a cell array of alternating string-list pairs, with each pair
-%   containing the name and times and values of a certain schedule.
+function sData = spaceSchedNames(bType,param)
+%SPACESCHEDNAMES Schedule for the given parameter for the given building type.
+%   sData = spaceSchedNames(bType,param)
+%   Returns a cell array of alternating string-string pairs, with each pair
+%   containing a space name and a schedule name.
 
 switch bType
     case 'SmallHotel'

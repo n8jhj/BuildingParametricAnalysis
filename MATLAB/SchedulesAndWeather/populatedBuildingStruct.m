@@ -12,10 +12,10 @@ building = newBldgStruct();
 building.Name = bldgType;
 building.Area = bldgArea(bldgType);
 building.Volume = bldgVol(bldgType);
-building.equipment = weightedParam(bldgType,'equipment','floor_area');
-building.lighting = weightedParam(bldgType,'lighting','floor_area');
-building.occupancy = weightedParam(bldgType,'occupancy','floor_area');
-building.Schedule = weightedSchedStruct(bldgType,...
+building.equipment = wtdAvgParam(bldgType,'equipment','floor_area');
+building.lighting = wtdAvgParam(bldgType,'lighting','floor_area');
+building.occupancy = wtdAvgParam(bldgType,'occupancy','floor_area');
+building.Schedule = wtdAvgSchedStruct(bldgType,...
     {'equipment','lighting','occupancy','cooling','heating'},...
     'floor_area');
 
