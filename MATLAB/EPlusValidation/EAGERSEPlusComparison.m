@@ -1,7 +1,11 @@
 function [x,y,fig] = EAGERSEPlusComparison(bldg,wthr,varargin)
 %EAGERSEPLUSCOMPARISON Compare outputs of EAGERS and EnergyPlus
-%   [x,y] = EAGERSEPlusComparison(bldg,wthr)
+%   [x,y,fig] = EAGERSEPlusComparison(bldg,wthr)
 %   Plots demand profiles of EAGERS and EnergyPlus versions on same figure.
+%
+%   [x,y,fig] = EAGERSEPlusComparison(bldg,wthr,ver)
+%   Optional input VER is the version number of this run. It will be shown
+%   in the subplot titles.
 %
 % Example:
 %   [x,y,fig] = EAGERSEPlusComparison('SmallOffice','4A',1);
@@ -26,16 +30,16 @@ end
 %% Working function
 function [x,y,fig] = main(bldg,wthr,varargin)
 %% Load data
-cd 'C:\Users\Admin\Documents\GitHub\BuildingParametricAnalysis\MATLAB\SchedulesAndWeather\formatted'
+cd 'C:\Users\Admin\Documents\GitHub\BuildingParametricAnalysis\MATLAB\SchedulesAndWeather\formatted_buildings'
 load(strcat(bldg,'.mat'))           % building
 load(strcat('../weather/',wthr))    % weather
 load(strcat('mtr_',bldg,'.mat'))    % mtr
 Date = (datenum(mtr.Timestamp(1)) : 1/24 : datenum(mtr.Timestamp(end))).';
 
 %% Run EAGERS method
-[Equipment,Lighting,Cooling,Heating] = BuildingProfile(building,weather,Date);
+[Equipment,Lighting,Cooling,Heating,FanPower] = BuildingProfile(building,weather,Date);
 Electric = Equipment + Lighting;
-Total = Electric + Cooling + Heating;
+Total = Electric + Cooling + Heating+FanPower;
 
 %% Plot setup
 if ~isempty(varargin)
@@ -46,7 +50,7 @@ end
 x = mtr.Timestamp;
 % mtrTotal = ...
 %     mtr.InteriorLightsElectricity + mtr.InteriorEquipmentElectricity;
-y = {Lighting,Equipment,Cooling,Heating,[],Total; ...
+y = {Lighting,Equipment,Cooling,Heating,Heating+Cooling+FanPower,Total; ...
     mtr.InteriorLightsElectricity,mtr.InteriorEquipmentElectricity,mtr.CoolingElectricity,mtr.HeatingElectricity,mtr.ElectricityHVAC,mtr.ElectricityFacility};
 oTitle = ['v',ver,' - ',bldg,' - ',wthr];
 titles = {'InteriorLights','Equipment','Cooling','Heating',[],'Total'; 'InteriorLights','Equipment','Cooling','Heating','HVAC','Total'};

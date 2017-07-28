@@ -1,9 +1,22 @@
-function [Electric,Cooling,Heating] = BuildingProfile(Build,Weather,Date)
+function [Equipment,Lighting,Cooling,Heating,FanPower] = BuildingProfile(Build,Weather,Date)
 % This function estimates the energy profile of a building (electric, heating and cooling kW)
 % Build is a structure of building parameters
 % Weather is an hourly weather profile (dry bulb, wet bulb, and relative humidity)
 % Date is a vector of points in datenum format at which you are requesting the electric cooling & heating power
+COP_C = 3.65;
+COP_H = 3.73;
+Fan_Power = .7733; % kW*s/m^3
 
+%% Handle input
+% ensure date is an Mx1 vector
+[r,c] = size(Date);
+if r == 1
+    Date = Date';
+elseif c ~= 1
+    error('Date must be a row or column vector.')
+end
+
+%% Rest of function
 [Y,Month,D,H,M,S] = datevec(Date);
 days = ceil(Date(end) - datenum([Y(1),Month(1),D(1)]));
 daysAfter1_1_17 = floor(Date(1)) - datenum([2017,1,1]);
@@ -12,7 +25,7 @@ sd = floor(Date(1)); %start date
 nS = length(Date);
 dt1 = Date(2) - Date(1);
 dt = 86400*(Date - [Date(1)-dt1;Date(1:end-1)]); %duration of each time segment
-%calculate minimum air flow rate
+%calculate minimum air flow rate using density of air: 1.225 kg/m^3
 MinFlow = Build.Volume*1.225*(Build.AirChangePerHr/100)*(1/3600); %kg/s of flow
 
 %Specify ramp rate between points in building schedule
@@ -21,17 +34,17 @@ Ramp = 1e-4;%ramp period in hrs
 Occupancy = zeros(nS,1);
 Equipment = zeros(nS,1);
 Lighting = zeros(nS,1);
-TsetH = zeros(nS,1);%note that the heating setpoint must always be less than the cooling setpoint
+TsetH = zeros(nS,1); %note that the heating setpoint must always be less than the cooling setpoint
 TsetC = zeros(nS,1);
 Tdb = zeros(nS,1);
-RH = zeros(nS,1);
+RH = zeros(nS,1); %humidity ratio
 Cooling = zeros(nS,1);
 Heating = zeros(nS,1);
+AirFlow = zeros(nS,1);% flow rate in m^3/s
 h8761 = (0:1:8760)';
 p = 1;
 for d = 1:1:days
-    %hour since start of year
-    h_of_y = 24*(Date(p) - datenum([Y(p),1,1]));
+    h_of_y = 24*(Date(p) - datenum([Y(p),1,1])); %hour since start of year
     %Load schedules for this day
     occ = loadSched(Build.Schedule.occupancy,wd,h_of_y);
     equip = loadSched(Build.Schedule.equipment,wd,h_of_y);
@@ -67,11 +80,11 @@ for d = 1:1:days
         wd = 1;
     end
 end
-Electric = Equipment + Lighting; 
+Electric = Equipment + Lighting;
 InternalGains = Occupancy*.120 + Equipment + Lighting; %heat from occupants (120 W)
 %find ambient dewpoint
-P = 101.325;
-Tdb_K = Tdb+273.15;
+P = 101.325; %atmospheric pressure (kPa)
+Tdb_K = Tdb+273.15; %Tdb (Kelvin)
 satP = exp((-5.8002206e3)./Tdb_K + 1.3914993 - 4.8640239e-2*Tdb_K + 4.1764768e-5*Tdb_K.^2 - 1.4452093e-8*Tdb_K.^3 + 6.5459673*log(Tdb_K))/1000; %saturated water vapor pressure ASHRAE 2013 fundamentals eq. 6 in kPa valid for 0 to 200C
 P_H2O = RH/100.*satP;
 Tdp = 6.54 + 14.526*log(P_H2O) + 0.7389*log(P_H2O).^2 + 0.09486*log(P_H2O).^3 + 0.4569*(P_H2O).^0.1984; %Dew point from partial pressure of water using ASHRAE 2013 Fundamentals eqn 39 valid from 0C to 93C
@@ -95,52 +108,57 @@ else %initially in equilibrium between the heating and cooling setpoints
     Tact = (TsetH(1) + TsetC(1))/2;
 end
 for t = 1:1:nS
-    Heating(t) = -((Tdb(t) - TsetH(t))*Build.Area/Build.Resistance + InternalGains(t)) - (Tact - TsetH(t))*Build.Capacitance*Build.Area/dt(t); %net energy needed to be added in kJ/s
-    if Heating(t)>0
+    Energy2Add = -((Tdb(t) - TsetH(t))*Build.Area/Build.Resistance + InternalGains(t)) - (Tact - TsetH(t))*Build.Capacitance*Build.Area/dt(t); %net energy needed to be added in kJ/s
+    if Energy2Add>0
         Tact = TsetH(t);
         Flow = MinFlow;
         Damper = Build.MinDamper; %treat as little ouside air as possible
         Cp_Air = Damper*Cp_amb(t) + (1-Damper)*Cp_build;
-        Tset = Heating(t)/(Flow*Cp_Air) + Tact; %temperature of supply air to provide this heating
-        
+        Tset = Energy2Add/(Flow*Cp_Air) + Tact; %temperature of supply air to provide this heating
+        Tmix = Damper*Tdb(t) + (1-Damper)*Tact;
+        Heating(t) = Cp_Air*(Tset-Tmix)*Flow;
     else
         Heating(t) = 0;
-        Cooling(t) = ((Tdb(t) - TsetC(t))*Build.Area/Build.Resistance + InternalGains(t)) + (Tact - TsetC(t))*Build.Capacitance*Build.Area/dt(t); %net energy needed to be removed in kJ/s
-        if Cooling(t)>0 %would exceed cooling setpoint without intervention       
+        Energy2Remove = ((Tdb(t) - TsetC(t))*Build.Area/Build.Resistance + InternalGains(t)) + (Tact - TsetC(t))*Build.Capacitance*Build.Area/dt(t); %net energy needed to be removed in kJ/s
+        if Energy2Remove>0 %would exceed cooling setpoint without intervention       
             Tact = TsetC(t);
             Tset = Build.ColdAirSet;
-            if Tdb<Tact %find economizer position
-                if Tdb>Tset
+            if Tdb(t)<Tact %find economizer position
+                if Tdb(t)>Tset
                     Damper = 1;
                 else
-                    Damper = (Tset - Tact)/(Tdb(t) - Tset);
+                    Damper = (Tset - Tact)/(Tdb(t) - Tact);
                 end
             else
                 Damper = Build.MinDamper; %treat as little ouside air as possible
             end
+            Tmix = Damper*Tdb(t) + (1-Damper)*Tact;
             Cp_Air = Damper*Cp_amb(t) + (1-Damper)*Cp_build;
-            Flow = Cooling(t)/((Tact-Tset)*Cp_Air); %mass flow of air to provide this cooling
+            Flow = Energy2Remove/((Tact-Tset)*Cp_Air); %mass flow of air to provide this cooling
+            Cooling(t) = Cp_Air*(Tmix-Tset)*Flow;
         else
-            if Tdb<Tact %open economizer
-                Damper = 1;
-            else
+%             if Tdb(t)<Tact %open economizer
+%                 Damper = 1;
+%             else
                 Damper = Build.MinDamper;
-            end
+%             end
             Tmix = Damper*Tdb(t) + (1-Damper)*Tact;
             Tset = Tmix;
             Cooling(t) = 0;
-            Tact = Tact + ((Tdb(t) - Tact)*Build.Area/Build.Resistance + InternalGains(t)).*dt(t)/(Build.Capacitance*Build.Area); %net change in temperature
-            Flow = MinFlow;
+            Cp_Air = Damper*Cp_amb(t) + (1-Damper)*Cp_build;
+            Flow = 0;%MinFlow;
+            Tact = Tact + ((Tdb(t) - Tact)*Build.Area/Build.Resistance + InternalGains(t) + (Tmix - Tact)*Cp_Air*Flow).*dt(t)/(Build.Capacitance*Build.Area); %net change in temperature
         end
     end
-    %% estimate de-humidification with Cp
-    if Tdp(t)>Build.DPset %must dehumidify incoming air
-        Cp_Air = Damper*Cp_amb(t) + (1-Damper)*Cp_build;
-        Tmix = Damper*Tdb(t) + (1-Damper)*Tact;
-        Cooling(t)  = Flow*Cp_Air*(Tmix - Build.DPset); %dehumidification energy in kJ/s
-        Heating(t)  = Flow*Cp_Air*(Tset - Build.DPset); %dehumidification energy in kJ/s
-    end
-    
+    AirFlow(t) = Flow/1.225;%flow rate in m^3/s
+%     %% estimate de-humidification with Cp
+%     if Tdp(t)>Build.DPset %must dehumidify incoming air
+%         Cp_Air = Damper*Cp_amb(t) + (1-Damper)*Cp_build;
+%         Tmix = Damper*Tdb(t) + (1-Damper)*Tact;
+%         Cooling(t)  = Flow*Cp_Air*(Tmix - Build.DPset); %dehumidification energy in kJ/s
+%         Heating(t)  = Flow*Cp_Air*(Tset - Build.DPset); %dehumidification energy in kJ/s
+%     end
+%     
 %     %% compare to full enthalpy calculations
 %     if Tdp(t)>Build.DPset %must dehumidify incoming air
 %         %ambient air
@@ -159,7 +177,10 @@ for t = 1:1:nS
 %         Heating(t)  = (enthalpyAir(HeatedAir)*(MassFlow(HeatedAir) - HeatedAir.H2O*18) - enthalpyAir(CooledAir)*(MassFlow(CooledAir) - CooledAir.H2O*18)); %reheat energy in kJ/s
 %     end   
 end
-
+Cooling(abs(Cooling)<1e-10) = 0;
+Heating = Heating/COP_H;% thermal energy added to building divided by heating COP
+Cooling = Cooling/COP_C;% thermal energy added to building divided by heating COP
+FanPower = Flow*Fan_Power;
 end%Ends function BuildingProfile
 
 function loadsched = loadSched(sched,wd,h_of_y)
