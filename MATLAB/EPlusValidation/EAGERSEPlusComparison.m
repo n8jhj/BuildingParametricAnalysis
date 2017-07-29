@@ -39,48 +39,58 @@ Date = (datenum(mtr.Timestamp(1)) : 1/24 : datenum(mtr.Timestamp(end))).';
 %% Run EAGERS method
 [Equipment,Lighting,Cooling,Heating,Fan_Power] = BuildingProfile(building,weather,Date);
 Electric = Equipment + Lighting;
+HVAC = Heating + Cooling + Fan_Power;
 Total = Electric + Cooling + Heating + Fan_Power;
 
 %% Plot setup
+ver = '*';
+should_plot = true;
 if ~isempty(varargin)
-    ver = num2str(varargin{1});
-else
-    ver = '*';
+    if ~isa(varargin{1},'logical')
+        ver = num2str(varargin{1});
+        if length(varargin) > 1
+            should_plot = varargin{2};
+        end
+    else
+        should_plot = varargin{1};
+    end
 end
 x = mtr.Timestamp;
-HVAC = Heating + Cooling + Fan_Power;
 y = {
     Lighting,           mtr.InteriorLightsElectricity;
     [],                 mtr.ExteriorLightsElectricity;
     Equipment,          mtr.InteriorEquipmentElectricity;
-    [],                 mtr.WaterSystemsElectricity;
     Cooling,            mtr.CoolingElectricity;
     Heating,            mtr.HeatingElectricity;
     Fan_Power,          mtr.FansElectricity;
     HVAC,               mtr.ElectricityHVAC;
     Total,              mtr.ElectricityFacility;
-    }';
-titles = {
-    'InteriorLights',   'InteriorLights';
-    'ExteriorLights',   'ExteriorLights';
-    'Equipment',        'Equipment';
-    'WaterSystems',     'WaterSystems';
-    'Cooling',          'Cooling';
-    'Heating',          'Heating';
-    'Fans',             'Fans';
-    'HVAC',             'HVAC';
-    'Total',            'Total';
-    }';
-oTitle = ['v',ver,' - ',bldg,' - ',wthr];
-xlab = '';
-ylab = 'Load (kWh)';
+    };
 
-%% Plot
-fig = figure;
-subplotComparison(x,y,oTitle,titles,xlab,ylab)
+%% Do plotting
+fig = [];
+if should_plot
+    % titles and labels
+    titles = {
+        'InteriorLights',   'InteriorLights';
+        'ExteriorLights',   'ExteriorLights';
+        'Equipment',        'Equipment';
+        'Cooling',          'Cooling';
+        'Heating',          'Heating';
+        'Fans',             'Fans';
+        'HVAC',             'HVAC';
+        'Total',            'Total';
+        };
+    oTitle = ['v',ver,' - ',bldg,' - ',wthr];
+    xlab = '';
+    ylab = 'Load (kWh)';
 
-%% Resize
-fig = resize(fig);
+    % plot and resize
+    fig = figure;
+    subplotComparison(x,y',oTitle,titles',xlab,ylab)
+    fig = resize(fig);
+end
+
 end
 
 
