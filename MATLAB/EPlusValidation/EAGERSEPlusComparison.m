@@ -30,16 +30,16 @@ end
 %% Working function
 function [x,y,fig] = main(bldg,wthr,varargin)
 %% Load data
-cd 'C:\Users\Admin\Documents\GitHub\BuildingParametricAnalysis\MATLAB\SchedulesAndWeather\formatted_buildings'
+cd 'C:\Users\Admin\Documents\GitHub\BuildingParametricAnalysis\MATLAB\PrototypeBuildingCreation\formatted_buildings'
 load(strcat(bldg,'.mat'))           % building
-load(strcat('../weather/',wthr))    % weather
+load(strcat('../../Weather/',wthr)) % weather
 load(strcat('mtr_',bldg,'.mat'))    % mtr
 Date = (datenum(mtr.Timestamp(1)) : 1/24 : datenum(mtr.Timestamp(end))).';
 
 %% Run EAGERS method
-[Equipment,Lighting,Cooling,Heating,FanPower] = BuildingProfile(building,weather,Date);
+[Equipment,Lighting,Cooling,Heating,Fan_Power] = BuildingProfile(building,weather,Date);
 Electric = Equipment + Lighting;
-Total = Electric + Cooling + Heating+FanPower;
+Total = Electric + Cooling + Heating + Fan_Power;
 
 %% Plot setup
 if ~isempty(varargin)
@@ -48,12 +48,30 @@ else
     ver = '*';
 end
 x = mtr.Timestamp;
-% mtrTotal = ...
-%     mtr.InteriorLightsElectricity + mtr.InteriorEquipmentElectricity;
-y = {Lighting,Equipment,Cooling,Heating,Heating+Cooling+FanPower,Total; ...
-    mtr.InteriorLightsElectricity,mtr.InteriorEquipmentElectricity,mtr.CoolingElectricity,mtr.HeatingElectricity,mtr.ElectricityHVAC,mtr.ElectricityFacility};
+HVAC = Heating + Cooling + Fan_Power;
+y = {
+    Lighting,           mtr.InteriorLightsElectricity;
+    [],                 mtr.ExteriorLightsElectricity;
+    Equipment,          mtr.InteriorEquipmentElectricity;
+    [],                 mtr.WaterSystemsElectricity;
+    Cooling,            mtr.CoolingElectricity;
+    Heating,            mtr.HeatingElectricity;
+    Fan_Power,          mtr.FansElectricity;
+    HVAC,               mtr.ElectricityHVAC;
+    Total,              mtr.ElectricityFacility;
+    }';
+titles = {
+    'InteriorLights',   'InteriorLights';
+    'ExteriorLights',   'ExteriorLights';
+    'Equipment',        'Equipment';
+    'WaterSystems',     'WaterSystems';
+    'Cooling',          'Cooling';
+    'Heating',          'Heating';
+    'Fans',             'Fans';
+    'HVAC',             'HVAC';
+    'Total',            'Total';
+    }';
 oTitle = ['v',ver,' - ',bldg,' - ',wthr];
-titles = {'InteriorLights','Equipment','Cooling','Heating',[],'Total'; 'InteriorLights','Equipment','Cooling','Heating','HVAC','Total'};
 xlab = '';
 ylab = 'Load (kWh)';
 
@@ -69,7 +87,7 @@ end
 %% Resize input figure for readability
 function fig = resize(fig)
 deltaW = 800;
-deltaH = 650;
+deltaH = 800;
 figPos = get(fig,'OuterPosition');
 figPos(3) = figPos(3) + deltaW;
 figPos(4) = figPos(4) + deltaH;

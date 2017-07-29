@@ -1,14 +1,11 @@
-function [Equipment,Lighting,Cooling,Heating,FanPower] = BuildingProfile(Build,Weather,Date)
+function [Equipment,Lighting,Cooling,Heating,Fan_Power] = BuildingProfile(Build,Weather,Date)
 % This function estimates the energy profile of a building (electric, heating and cooling kW)
 % Build is a structure of building parameters
 % Weather is an hourly weather profile (dry bulb, wet bulb, and relative humidity)
 % Date is a vector of points in datenum format at which you are requesting the electric cooling & heating power
-COP_C = 3.65;
-COP_H = 3.73;
-Fan_Power = .7733; % kW*s/m^3
 
 %% Handle input
-% ensure date is an Mx1 vector
+% ensure Date is an Mx1 vector
 [r,c] = size(Date);
 if r == 1
     Date = Date';
@@ -178,9 +175,9 @@ for t = 1:1:nS
 %     end   
 end
 Cooling(abs(Cooling)<1e-10) = 0;
-Heating = Heating/COP_H;% thermal energy added to building divided by heating COP
-Cooling = Cooling/COP_C;% thermal energy added to building divided by heating COP
-FanPower = Flow*Fan_Power;
+Heating = Heating/Build.COP_H;% thermal energy added to building divided by heating COP
+Cooling = Cooling/Build.COP_C;% thermal energy added to building divided by heating COP
+Fan_Power = Flow*Build.FanPower;
 end%Ends function BuildingProfile
 
 function loadsched = loadSched(sched,wd,h_of_y)
