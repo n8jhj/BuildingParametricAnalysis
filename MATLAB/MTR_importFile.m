@@ -38,8 +38,8 @@ end
 headers = cellfun(@(x) x{1}{1}, headers, 'UniformOutput',false);
 % format headers
 for i = 1:1:length(headers)
-    h = strip(erase(headers{i},':'),'right');
-    h = strip(h,'right',')');
+    h = strip(erase(headers{i},':'),'right'); % remove ':' and trailing ' '
+    h = strip(erase(h,' '),'right',')'); % remove ' ' and trailing ')'
     h = strip(h,'right','y');
     h = strip(h,'right','l');
     h = strip(h,'right','r');
