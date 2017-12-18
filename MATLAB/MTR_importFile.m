@@ -1,13 +1,13 @@
-function [Timestamp,meters] = MTR_importFile(filename, startRow, endRow)
+function [timestamp, meters] = MTR_importFile(filename, startRow, endRow)
 %IMPORTFILE Import numeric data from a text file as column vectors.
-%   [Timestamp,meters] = MTR_IMPORTFILE(FILENAME) Reads data from text file
-%   FILENAME for the default selection.
+%   [timestamp, meters] = MTR_IMPORTFILE(FILENAME) Reads data from text
+%   file FILENAME for the default selection.
 %
-%   [Timestamp,meters] = MTR_IMPORTFILE(FILENAME, STARTROW, ENDROW) Reads
+%   [timestamp, meters] = MTR_IMPORTFILE(FILENAME, STARTROW, ENDROW) Reads
 %   data from rows STARTROW through ENDROW of text file FILENAME.
 %
 % Example:
-%   [Timestamp,meters] = MTR_importFile('MTR_SmallOffice-90.1-2010-ASHRAE 169-2006-4A.csv',2, 8761);
+%   [timestamp, meters] = MTR_importFile('MTR_SmallOffice-90.1-2010-ASHRAE 169-2006-4A.csv',2, 8761);
 %
 %    See also TEXTSCAN.
 
@@ -37,21 +37,7 @@ while true
 end
 headers = cellfun(@(x) x{1}{1}, headers, 'UniformOutput',false);
 % format headers
-for i = 1:1:length(headers)
-    h = strip(erase(headers{i},':'),'right'); % remove ':' and trailing ' '
-    h = strip(erase(h,' '),'right',')'); % remove ' ' and trailing ')'
-    h = strip(h,'right','y');
-    h = strip(h,'right','l');
-    h = strip(h,'right','r');
-    h = strip(h,'right','u');
-    h = strip(h,'right','o');
-    h = strip(h,'right','H');
-    h = strip(h,'right','(');
-    h = strip(h,'right',']');
-    h = strip(h,'right','J');
-    h = strip(h,'right','[');
-    headers{i} = strip(h,'right');
-end
+[headers, headerUnits] = format_headers(headers);
 
 %% Format for each line of text:
 % For more information, see the TEXTSCAN documentation.
@@ -79,18 +65,40 @@ end
 fclose(fileID);
 
 %% Create return data structure
-Timestamp = datetime(dataArray{:, 1},'InputFormat','MM/dd  HH:mm:ss');
-meters = cell(nh-1,2);
+timestamp = datetime(dataArray{:, 1},'InputFormat','MM/dd  HH:mm:ss');
+meters = cell(nh-1,3);
 for i = 2:1:nh
     meters{i-1,1} = headers{i};
-    meters{i-1,2} = dataArray{:, i};
+    meters{i-1,2} = headerUnits{i};
+    meters{i-1,3} = dataArray{:, i};
 end
 
-%% Handle NaT values in Timestamp
-step = 1/24;
-natInds = find(isnat(Timestamp));
+%% Handle NaT values in timestamp
+natInds = find(isnat(timestamp));
+step = timestamp(2) - timestamp(1);
 for i = natInds
-    Timestamp(i) = Timestamp(i-1) + step;
+    timestamp(i) = timestamp(i-1) + step;
+end
+
+end
+
+
+%% Internal functions
+
+% Format headers for use as struct field names
+function [headers, headerUnits] = format_headers(headers)
+
+headerUnits = cell(size(headers));
+
+for i = 1:1:length(headers)
+    header = headers{i};
+    iLeftBracket = max(strfind(header, '['));
+    iRightBracket = max(strfind(header, ']'));
+    headerUnits{i} = header(iLeftBracket+1 : iRightBracket-1);
+    strToErase = header(iLeftBracket : end);
+    newHeader = erase(header, strToErase);
+    newHeader = erase(newHeader, ':'); % remove ':'
+    headers{i} = erase(newHeader, ' '); % remove ' '
 end
 
 end
