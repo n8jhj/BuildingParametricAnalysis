@@ -1,9 +1,9 @@
 function plotDemandsTogether(buildings, save)
 %PLOTDEMANDSTOGETHER Plot of key demand graphs on one figure.
-%   plotDemandsTogether(buildings, save)
-%   BUILDINGS is the building for which data will be plotted. SAVE is an
-%   optional boolean argument specifying whether the figure should be
-%   saved. Default is false.
+% plotDemandsTogether(buildings, save)
+%   buildings - The building for which data will be plotted.
+%   save -      An optional boolean argument specifying whether the figure
+%               should be saved. Default false.
 
 %% Handle input
 if nargin < 2

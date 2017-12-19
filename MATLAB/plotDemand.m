@@ -1,21 +1,23 @@
 function dataStruct = plotDemand(building, varargin)
 %PLOTDEMAND View energy and power demand profiles.
-%   dataStruct = plotDemand(building)
-%   Plots energy and power demand profiles for input BUILDING. BUILDING may
-%   be either a string of the file name or a struct containing the name and
-%   data of a building. Returns the data struct of BUILDING.
+% dataStruct = PLOTDEMAND(building)
+%   Plots energy and power demand profiles for input building. Returns the
+%   data struct of building.
+%   building -  Either a string (file name) or a struct containing the name
+%               and data for a building.
 %
-%   dataStruct = plotDemand(building, funcName, varargin)
-%   Outliers are set apart from the rest of the data by a different
-%   plotting style. Outliers are determined by FUNCNAME, with additional
-%   arguments VARARGIN needed for certain functions.
+% dataStruct = PLOTDEMAND(building, funcName, varargin)
+%   Outliers are set apart from the rest of the data with a different
+%   plotting style.
+%   funcName -  String. Name of function for determining outliers.
+%   varargin -  Cell array with the additional arguments needed for certain functions.
 %
-%   dataStruct = plotDemand(building, 'nofig', fieldName)
-%   Plots field FIELDNAME of BUILDING.data. The input 'nofig' specifies
-%   that no figures should be explicitly created.
+% dataStruct = PLOTDEMAND(building, 'nofig', fieldName)
+%   Plots field fieldName of building.data.
+%   'nofig' -   Specifies that no figures should be explicitly created.
 %
 % Example:
-%   dataStruct = plotDemand(building, 'quartiles', 2);
+%   dataStruct = PLOTDEMAND(building, 'quartiles', 2);
 %   Plots energy and power demand profiles using function 'quartiles' to
 %   find outliers, and with starting fence of 2 (outliers between fences 1
 %   and 2 fences are not considered outliers).
