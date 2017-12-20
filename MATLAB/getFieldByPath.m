@@ -1,6 +1,6 @@
 function field = getFieldByPath(inStruct, path)
 %GETFIELDBYPATH Get field of struct specified by path.
-%   field = getFieldByPath(inStruct, path)
+% field = GETFIELDBYPATH(inStruct, path)
 %   INSTRUCT is the input struct to get the field from. PATH is the path to
 %   that field, a cell array of strings and numbers corresponding to field
 %   names and indices.

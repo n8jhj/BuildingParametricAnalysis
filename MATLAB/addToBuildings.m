@@ -1,7 +1,9 @@
 function buildings = addToBuildings(buildings, field)
 %ADDTOBUILDINGS Add input FIELD to buildings.
-%   buildings = addToBuildings(buildings, field)
-%   Adds the specified input FIELD to the struct BUILDINGS and returns it.
+% buildings = ADDTOBUILDINGS(buildings, field)
+%   Adds the specified field to the struct buildings and returns it.
+%   buildings - A struct of buildings.
+%   field -     A string of the field name to add.
 
 %% Necessary field checks and initialization
 dependence = 'none';
@@ -34,8 +36,10 @@ for b = 1:1:bLen
         % add specified field
         buildings(b) = addField(buildings(b),field);
     catch ME
-        fprintf('Error at building %i\n', b)
-        rethrow(ME)
+        printError(ME)
+        fprintf(2, strcat('Error at building %i.\n', ...
+            'Returning input buildings...\n\n'), b);
+        return
     end
 end
 

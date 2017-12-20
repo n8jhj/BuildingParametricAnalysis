@@ -1,10 +1,10 @@
-function loadStructs(source)
+function buildings = loadStructs(source)
 %LOADSTRUCTS Load all building data. Takes approximately 20 seconds for
 %EnergyPlus Standard Output data (ESO), 5 minutes for New York State Energy
 %Research and Development Authority (NYSERDA) data.
-%   buildings = loadStructs(source)
+% buildings = LOADSTRUCTS(source)
 %   Returns struct containing all building data from the specified source.
-%   SOURCE should be either 'ESO' or 'NYSERDA'.
+%   source -    Either 'ESO' or 'NYSERDA'.
 
 %% Check input
 assert(strcmp(source,'ESO') || strcmp(source,'NYSERDA'), ...
@@ -17,7 +17,7 @@ tic
 bldgFiles = getBldgFiles(source);
 
 %% Load building data from list of file names
-loadBldgData(bldgFiles,source);
+buildings = loadBldgData(bldgFiles,source);
 
 %% Add fields to buildings
 fields = {...
@@ -42,10 +42,10 @@ toc
 fprintf(strcat('\n\nTo see the loaded buildings in the workspace,', ...
     ' type:\nglobal buildings\n\n'))
 
-end
 
+%% Internal functions
 
-%% Get list of building data files
+% Get list of building data files
 function bldgFiles = getBldgFiles(source)
 switch source
     case 'ESO'
@@ -60,11 +60,9 @@ bldgFiles = dir(dirName);
 end
 
 
-%% Load building data from .csv files
-function loadBldgData(bldgFiles,source)
-%% Retain changes made up to a potential error
-global buildings
-
+% Load building data from .csv files
+function buildings = loadBldgData(bldgFiles,source)
+% Retain changes made up to a potential error
 buildings = struct('name',{}, 'data',{});
 bLen = length(bldgFiles);
 count = 0;
@@ -90,16 +88,16 @@ end
 end
 
 
-%% Add list of fields to buildings
+% Add list of fields to buildings
 function addFields(fields)
 %% Retain changes made up to a potential error
-global buildings
-
-%% Add each field to all buildings
+% Add each field to all buildings
 for f = 1:1:length(fields)
     fn = fields{f};
     buildings = addToBuildings(buildings,fn);
     fprintf('Added field %s - ', fn)
     toc
 end
+end
+
 end
