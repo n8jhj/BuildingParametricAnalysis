@@ -1,5 +1,5 @@
 function printError(ME, shouldRethrow)
-%PRINTERROR Print an error like MATLAB!
+%PRINTERROR Print an error like MATLAB, with option to not quit right away.
 
 if nargin < 2
     shouldRethrow = false;
@@ -8,16 +8,13 @@ end
 try
     errText = strcat(ME.message, '\n\n');
     for i = 1:1:length(ME.stack)
-        fullFile = ME.stack(i).file;
-        fileParts = strsplit(fullFile, filesep);
-        fileName = fileParts{end};
+        fullFile = strrep(ME.stack(i).file, '\', '/');
+        fileName = ME.stack(i).name;
         lineNum = ME.stack(i).line;
-        hyperStr = strcat('href="matlab: opentoline(which(fullFile),%i)"');
-        hyperlink = sprintf(hyperStr, lineNum);
-        lineText = sprintf([' (<a ', hyperlink, '>line %i</a>)'], ...
-            lineNum);
-        errText = strcat(errText, ...
-            ['Error in ', fileName, lineText, '\n\n']);
+        hyperlink = strcat('href="matlab: opentoline(which(''', fullFile, ...
+            '''),', num2str(lineNum), ')"');
+        lineText = [' (<a ', hyperlink, '>line ', num2str(lineNum), '</a>)'];
+        errText = strcat(errText, ['Error in ', fileName, lineText, '\n\n']);
     end
     fprintf(2, errText)
 catch metaME

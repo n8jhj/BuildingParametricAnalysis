@@ -23,14 +23,14 @@ function dataStruct = plotDemand(building, varargin)
 %   and 2 fences are not considered outliers).
 
 %% Get data
-if isa(building, 'char')
+if isa(building, 'char') && exist(building, 'file')
     dataStruct = NYSERDA_importToStruct(building);
     bName = erase(building, '.csv');
 elseif isa(building, 'struct')
     dataStruct = building.data;
     bName = building.name;
 else
-    error('Input should be either a .csv file name or a struct of data')
+    error('Input should be either a .csv file name or a struct of data.')
 end
 
 %% Plot
