@@ -1,4 +1,1 @@
-loadStructs('NYSERDA')
-global buildings
-bNYSERDA = buildings;
-clear buildings
+bNYSERDA = loadStructs('NYSERDA');
