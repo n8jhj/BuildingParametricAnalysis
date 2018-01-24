@@ -1,4 +1,1 @@
-loadStructs('ESO')
-global buildings
-bESO = buildings;
-clear buildings
+bESO = loadStructs('ESO');
