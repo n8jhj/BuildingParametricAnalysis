@@ -1,0 +1,1 @@
+These .csv files (in directory NYSERDA_structs) are the MATLAB representation of the data contained in the .csv files in directory NYSERDA_select.

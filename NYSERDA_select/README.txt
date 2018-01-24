@@ -1,0 +1,1 @@
+These .csv files (in directory NYSERDA_select) comprise a subset of the files found in directory NYSERDA_datafiles. These files were selected for the quality of their data. Data quality was decided upon subjectively. To get a feel for which sets of data are deemed to be of high enough quality, compare a file that is not in NYSERDA_select with one that is.

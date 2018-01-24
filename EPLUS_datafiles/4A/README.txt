@@ -1,0 +1,1 @@
+These .csv files (in directory EPLUS_datafiles/4A) contain the data output by EnergyPlus from a single run of each of the default prototype buildings provided by EnergyPlus in weather zone 4A.
